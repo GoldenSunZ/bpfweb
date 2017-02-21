@@ -1,0 +1,2693 @@
+/* FONT ALIASES */
+@font-face {
+	font-family: SourceHanSans-Bold;
+	src: url(../fonts/SourceHanSansCN-Bold.otf) format('truetype');
+	}
+
+@font-face {
+	font-family: SourceHanSans-Semibold;
+	src: url(../fonts/SourceHanSansCN-Medium.otf) format('truetype');
+	}
+
+@font-face {
+	font-family: SourceHanSans-Light;
+	src: url(../fonts/SourceHanSansCN-Light.otf) format('truetype');
+	}
+
+@font-face {
+	font-family: SourceHanSans;
+	src: url(../fonts/SourceHanSansCN-Regular.otf) format('truetype');
+	}
+
+/*@font-face {
+  font-family: ThirstyScriptExtraBoldDemo;
+  src: url(../fonts/ThirstyScriptExtraBoldDemo.ttf) format('truetype');
+}*/
+
+/* GENERAL */
+
+.bp-button{
+    padding: 10px 24px;
+	cursor: pointer;
+}
+
+.menu-item.active a{
+    border-bottom: 2px solid #F38E2B;
+    padding-bottom: 2px;
+}
+
+/* */
+
+.nav-1 .navbar .container{
+	/*width: 1326px;*/
+    padding: 0;
+}
+.shopping-cart.menu-icon i.icon{
+	display: none;
+}
+.menu-list{
+	text-align: right;
+	padding: 0;
+}
+#menu-item-569{
+	margin-left: 16px;
+}
+#menu-item-570{
+	margin-left: 16px;
+}
+#menu-item-571{
+	margin-left: 16px;
+}
+#menu-item-572{
+	margin-left: 16px;
+}
+#menu-item-573{
+	/*margin-left: 16px;*/
+}
+#menu-item-651{
+	margin: 0;
+	height: 40px;
+	background-color: #F38E2B;
+	border-radius: 20px;
+	padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    line-height: 20px;
+    font-family: SourceHanSans-SemiBold;
+    width: 176px;
+}
+#menu-item-651 a{
+	color:#fff;
+}
+
+
+section .container {
+    position: relative;
+    z-index: 2;
+    /*margin-right: 0;*/
+    padding-right: 0;
+}
+.header-1 {
+    padding: 0;
+}
+.header-1 .inner{
+    width: 455px;
+    min-height: 681px;
+    background-color: rgba(0,0,0,0.64);
+    padding: 40px;
+    max-width: 458px;
+    float: right;
+    border-radius: 1px;
+}
+.top-text_white{
+	max-width: 314px;
+	height: 36px;
+	font-family: ".SF NS Display";
+	font-size: 26px;
+	text-align: center;
+	line-height: 30px;
+	color: #FFFFFF;
+	display: block;
+    margin: 0 auto;
+    
+    /* Discover Your Flavor: */
+	font-family: SourceHanSans-Bold;
+	font-size: 26px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+.text-white {
+    color: #fff !important;
+    text-align: center;
+    max-width: 314px;
+	height: 115px;
+	font-family: ".AppleSystemUIFont";
+	font-size: 14px;
+	text-align: center;
+	line-height: 23px;
+	display: block;
+    margin: 0 auto;
+    
+    /* We can help you brin: */
+	font-family: ".SFNSText";
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 23px;
+}
+.form-holder.contained-form.form-email{
+	background-color: white;
+}
+.form-holder.contained-form.form-email input {
+    width: 100%;
+    width: 314px;
+    height: 40px;
+    background-color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1px;
+    border-color: transparent;
+    line-height: 29px;
+}
+
+
+.bpn-main .your-industry select{
+    width: 314px;
+    height: 40px;
+    background-color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1px!important;
+    line-height: 29px;
+    color: #888 !important;
+}
+.form-holder.contained-form textarea {
+    margin-bottom: 14px;
+    width: 314px;
+    background-color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1px;
+    line-height: 29px;
+}
+.form-holder.contained-form.form-text input{
+	width: 314px;
+    height: 100px;
+    background-color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1px;
+}
+.form-holder.contained-form.form-email input[type=submit]{
+	width: 200px;
+	height: 40px;
+	border-radius: 20px;
+	background: #F38E2B;
+    border-radius: 20px;
+    font-family: SourceHanSans-Semibold;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 14px;
+}
+h4{
+	height: 37px;
+	font-family: ".SF NS Display";
+	font-size: 26px;
+	text-align: center;
+	line-height: 30px;
+}
+#features .container{
+	position: relative;
+    z-index: 2;
+    margin-right: 140px;
+    padding-right: 10px;
+}
+
+#gallery .container{
+	position: relative;
+    z-index: 2;
+    margin-right: 140px;
+    padding-right: 10px;
+}
+#gallery h4{
+	width: 504px;
+	height: 72px;
+	font-family: ".SF NS Display";
+	font-size: 26px;
+	line-height: 30px;
+	color: #3C4D55;
+}
+#gallery p{
+	/*width: 504px;*/
+	height: 168px;
+	font-family: ".AppleSystemUIFont";
+	font-size: 14px;
+	line-height: 28px;
+	color: #3C4D55;
+}
+#gallery .more-flavors_button{
+	font-size: 14px;
+    text-align: center;
+    line-height: 17px;
+    color: #A4ADB0;
+    width: 222px;
+    height: 40px;
+    border: 1px solid #C4C4C4;
+    padding: 10px;
+    border-radius: 20px;
+}
+#gallery .flexslider {
+    padding: 0;
+    margin: 0 0 60px;
+    background: transparent;
+    border: 1px solid transparent;
+    position: relative;
+    border-radius: 4px;
+    -o-box-shadow: 0 1px 4px transparent;
+    box-shadow: 0 1px 4px transparent;
+    zoom: 1;
+}
+#gallery .flexslider .slides img {
+    width: 368px;
+    display: block;
+}
+#gallery-2 .container{
+	position: relative;
+    z-index: 2;
+    margin-right: 140px;
+    padding-right: 10px;
+}
+#gallery-2 h4{
+	width: 504px;
+	height: 36px;
+	font-family: ".SF NS Display";
+	font-size: 26px;
+	line-height: 30px;
+	color: #3C4D55;
+	text-align: left;
+}
+#gallery-2 p{
+	height: 224px;
+	font-family: ".AppleSystemUIFont";
+	font-size: 14px;
+	line-height: 28px;
+	color: #3C4D55;
+	margin-bottom: 50px;
+}
+#gallery-2 .more-labels_button{
+	font-size: 14px;
+    text-align: center;
+    line-height: 17px;
+    color: #A4ADB0;
+    width: 222px;
+    height: 40px;
+    border: 1px solid #C4C4C4;
+    padding: 10px;
+    border-radius: 20px;
+}
+#current-members .container{
+	position: relative;
+    z-index: 2;
+    margin-right: 140px;
+    padding-right: 10px;
+}
+#current-members h4{
+	text-align: center;
+    display: block;
+    margin-bottom: 50px;
+    width: 100%;
+}
+#pricing{
+	background-image: url('../../images/coastline.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#pricing .container{
+	position: relative;
+    z-index: 2;
+    margin-right: 140px;
+    padding-right: 10px;
+}
+#pricing h3{
+	width: 1017px;
+	height: 36px;
+	font-family: ".SF NS Display";
+	font-size: 26px;
+	text-align: center;
+	line-height: 30px;
+	color: #333333;
+}
+#pricing p{
+	/*width: 674px;*/
+	height: 23px;
+	font-family: ".AppleSystemUIFont";
+	font-size: 14px;
+	line-height: 23px;
+	color: #333333;
+}
+#pricing .request-sample{
+	font-size: 14px;
+    text-align: center;
+    line-height: 17px;
+    color: #fff;
+	width: 174px;
+	height: 40px;
+	background-color: #F38E2B;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 0 auto;
+	padding-top: 8px;
+}
+.header-1 li:last-child {
+    margin-bottom: 0;
+}
+.nav-1 .navbar {
+    height: 101px;
+    max-height: 101px;
+}
+.nav-1 .menu {
+    font-family: ".SFNSText";
+    font-size: 14px;
+    color: #3C4D55;
+    letter-spacing: -0.21px;
+    margin-top: 38px;
+}
+.nav-1 .logo{
+	margin-top: 27px;
+}
+#menu-item-574{
+	padding-top: 8px;
+}
+
+/** MAIN */
+.bp-main .container{
+    margin-right: 0px;
+    width: 100%;
+}
+
+#home + p {
+    display: none;
+}
+
+.bp-main__farm-to-flavor{
+	margin-left: 124px;
+}
+.your-industry select {
+    width: 314px;
+    height: 40px;
+    background-color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1px!important;
+    padding-left: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    background-image: url('../../images/Bitmap-16.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 15px;
+    border-right: 15px solid transparent;
+}
+
+.your-state select {
+    width: 314px;
+    height: 40px;
+    background-color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1px!important;
+    padding-left: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    background-image: url('../../images/Bitmap-16.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 15px;
+    border-right: 15px solid transparent;
+}
+
+/** CAPTURING THE ESSCENCE OF FRUIT JUST OFF THE VINE */
+.capture-essence-section__image{
+	width: 410px;
+}
+
+.capture-essence-section__more-flavors_button{
+	/* Rectangle 4 Copy: */
+	border: 1px solid #C5C5C5;
+	border-radius: 20px;
+	/* More About Our Flavo: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 14px;
+	color: #A5ADB0;
+	letter-spacing: 0;
+	padding: 10px;
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+#capturing-essence h4{
+	/* Capturing the Essenc: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 26px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	text-align: left;
+	height: auto;
+}
+
+#capturing-essence p{
+	/* Experience real whol: */
+	font-family: SourceHanSans-Light;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 28px;
+}
+
+/* A HERITAGE IN AUTHENTIC TO NATURE */
+.a-heritage-section{
+	background-image: url(../../images/blueberries.png);
+	background-size: cover;
+	padding-top: 109.5px;
+	text-align: center;
+}
+.a-heritage-section h1{
+	/* A Heritage in Authen: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 26px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	text-align: center;
+	
+}
+.a-heritage-section p{
+	/* Our heritage is in r: */
+	font-family: SourceHanSans;
+	font-size: 16px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 28px;
+	margin-bottom: 37px;
+}
+.heritage-row{
+	margin: 0 auto;
+}
+.heritage-content{
+	/* Rectangle 5: */
+	background: rgba(255,255,255,0.35);
+	border: 1px solid #F38E2B;
+	/* Since 1993, weâ€™ve gr: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 22px;
+	
+	max-width: 325px;
+	margin-right: 16px;
+	margin-left: 16px;
+    display: inline-block;
+    /*height: 325px;*/
+    height: 350px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 41px;
+    
+    vertical-align: top;
+}
+.heritage-content h1{
+	/* Since 1993: */
+	/*font-family: ThirstyScriptExtraBoldDemo;*/
+	font-size: 40px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 44px;
+	margin-bottom: 20px;
+}
+.heritage-content h1 sup{
+    top: -2em;
+    left: .5em;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+sup {
+    font-size: 50%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -.8em;
+}
+.heritage-content p{
+	/* Since 1993, weâ€™ve gr: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 22px;
+}
+.heritage-button{
+	/* Rectangle 4 Copy: */
+	border: 1px solid #FFFFFF;
+	border-radius: 20px;
+	/* More About Our Herit: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	
+	margin-top: 55px;
+	padding: 24px;
+	padding-bottom: 10px;
+	
+	margin-bottom: 99px;
+	display: inline-block;
+	cursor: pointer;
+	
+    width: 229px;
+    height: 40px;
+    padding-top: 7px;
+}
+
+/** CLEANLABELS SECTION */
+.cleanlabels-section{
+    padding-top: 99px;
+    background-color: white;
+    padding-bottom: 100px;
+}
+.cleanlabels-section h1{
+    /* Clean Labels, Natura: */
+    font-family: SourceHanSans-Semibold;
+    font-size: 26px;
+    color: #3C4D55;
+    letter-spacing: 0;
+}
+.cleanlabels-section p{
+    /* When consumer demand: */
+    font-family: SourceHanSans-Light;
+    font-size: 14px;
+    color: #3C4D55;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+.cleanlabels-more-button{
+    /* Rectangle 4 Copy 2: */
+    border: 1px solid #C5C5C5;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.cleanlabels-logos{
+    text-align: center;
+}
+.cleanlabels-logos img{
+    width: 341px;
+    height: 318px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+/* CAPTURING THE ESSENCE OF FRUIT OFF THE VINE */
+.capture-essence-section {
+	padding-top: 59px;
+	padding-bottom: 52px;
+	text-align: center;
+	background: url(../../images/coastline.png);
+	background-size: cover;
+}
+.capture-essence-section h1{
+	/* Capturing the Essenc: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 26px;
+	color: #333333;
+	letter-spacing: 0;
+	line-height: 40px;
+}
+.capture-essence-section p{
+	/* Discover genuine, na: */
+	font-family: SourceHanSans;
+	font-size: 14px;
+	color: #333333;
+	letter-spacing: 0;
+	line-height: 23px;
+}
+.capture-essence-section__request-a-sample-button{
+	/* Rectangle 4: */
+	background: #F38E2B;
+	border-radius: 20px;
+	/* Request a Sample: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+
+.bp-footer{
+	/*background: black;*/
+	padding-top: 64px;
+	padding-bottom: 42px;
+	background-color: #312B28;
+}
+
+.bp-footer h1{
+	font-family: SourceHanSans-Bold;
+	color: #FFFFFF;
+	font-size: 16px;
+	letter-spacing: 0;
+	line-height: 23px;
+}
+
+.bp-footer a{
+	font-family: SourceHanSans;
+	color: #FFFFFF;
+	font-size: 12px;
+	letter-spacing: 0;
+	line-height: 23px;
+	display: block;
+}
+
+.bp-footer p{
+	font-family: SourceHanSans;
+	color: #FFFFFF;
+	font-size: 12px;
+	letter-spacing: 0;
+	line-height: 23px;
+	display: block;
+}
+
+.bp-footer__newsletter h1{
+	margin-bottom: 9px;
+}
+
+.bp-footer__newsletter input{
+	width: 100%;
+    height: 40px;
+    background-color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    
+    padding: 5px;
+    padding-left: 17px;
+    margin-bottom: 6px;
+}
+
+.bp-footer a.footer__submit-button{
+    display: inline-block;
+    border: 1px solid #786D68;
+    border-radius: 20px;
+    font-family: SourceHanSans-Semibold;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    padding-left: 45px;
+    padding-right: 45px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.footer__bottom{
+	margin-top: 93px;
+}
+
+.footer__bottom .left{
+	float: left;
+}
+
+.footer__copyright{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	
+	/* Â©2015 Blue Pacific F: */
+	font-family: SourceHanSans;
+	font-size: 10px;
+	color: #9D9089;
+	letter-spacing: 0;
+	line-height: 23px;
+}
+
+.farm-flavors-footer-image{
+	float: right;
+	margin-top: -30px;
+	height: 75px;
+}
+.main-container, .nav-container, .footer-container, nav, nav.fixed, .callout{
+	max-width: 100%;
+}
+.admin-bar nav.fixed, .admin-bar nav.overlay{
+	width: 100%;
+}
+
+
+
+@media only screen and (max-width: 1092px){
+	.heritage-content{
+		max-width: 298px;
+		height: 385px;
+		margin-right: 5px;
+    	margin-left: 5px;
+	}
+	.heritage-content h1{
+		font-size: 38px;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.heritage-content{
+		max-width: 298px;
+		height: 355px;
+		margin-right: 5px;
+    	margin-left: 5px;
+	}
+	.heritage-content h1{
+		font-size: 38px;
+	}
+}
+
+@media only screen and (max-width: 990px){
+	.v-align-children {
+	    display: block !important;
+	    margin-top: 62px;
+	}
+	.header-1 .header-content * {
+	    color: #fff;
+	    margin-bottom: 30px;
+	}
+	.bp-main__farm-to-flavor {
+	    margin: 0 auto;
+	}
+	.header-1 .inner {
+	    width: 100%;
+	    height: auto;
+	    background-color: rgba(0,0,0,0.64);
+	    padding: 40px;
+	    max-width: 100%;
+	    float: none;
+	    border-radius: 1px;
+	    margin: 0 auto;
+	    display: block;
+	}
+	#bp-main .v-align-children .col-md-6{
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.header-1 form {
+	    width: 100%;
+	    max-width: 100%;
+	}
+
+
+	.form-holder.contained-form.form-email input{
+		width: 50%;
+	}
+	.your-industry select{
+		width: 50%;
+	}
+	.your-state select{
+		width: 50%;
+	}
+	.form-holder.contained-form textarea{
+		width: 50%;
+	}
+	.wpb_single_image.vc_align_left {
+	    text-align: center;
+	    margin: 0 auto;
+	    display: block;
+	}
+	.capture-essence-section__image {
+	    width: 75%;
+	    padding-bottom: 30px;
+	}
+	#capturing-essence{
+	    /*padding: 0px 0;*/
+	    position: relative;
+	    background: #fff;
+	}
+	.wpb_single_image .vc_figure {
+	    display: inline-block;
+	    vertical-align: top;
+	    margin: 0;
+	    max-width: 90%;
+	}
+	.heritage-content{
+		margin-right: 10px;
+	    margin-left: 10px;
+	    margin-bottom: 10px;
+	    max-width: 75%;
+	    height: 259px;
+	}
+	sup{
+		font-size: 50%;
+	}
+	.your-industry select{
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 768px){
+	.your-industry select{
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 767px){
+	.nav-container{
+		min-height: 87px;
+    	height: 87px;
+	}
+	.admin-bar nav.fixed, .admin-bar nav.overlay {
+	    top: 46px;
+	}
+	.v-align-children {
+	    display: block !important;
+	    margin-top: 32px;
+	}
+	.header-1 .header-content * {
+	    color: #fff;
+	    margin-bottom: 30px;
+	}
+	.bp-main__farm-to-flavor {
+	    margin-left: 0;
+	    margin: 0 auto;
+	}
+	.header-1 .inner {
+	    width: 100%;
+	    height: auto;
+	    background-color: rgba(0,0,0,0.64);
+	    padding: 40px;
+	    max-width: 100%;
+	    float: none;
+	    border-radius: 1px;
+	    margin: 0 auto;
+	    display: block;
+	}
+	#bp-main .v-align-children .col-md-6{
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.header-1 form {
+	    width: 100%;
+	    max-width: 100%;
+	}
+	.form-holder.contained-form.form-email input{
+		width: 70%;
+		margin-bottom: 10px;
+	}
+	.your-industry select{
+		width: 70%;
+		margin-bottom: 10px;
+	}
+	.your-state select{
+		width: 70%;
+		margin-bottom: 10px;
+	}
+	.form-holder.contained-form textarea{
+		width: 70%;
+		margin-bottom: 30px;
+	}
+	.text-white{
+		max-width: 80%;
+		height: 115px;
+	}
+	.form-holder.contained-form.form-email{
+		margin-top: 0;
+	}
+	.wpb_single_image.vc_align_left {
+	    text-align: center;
+	    display: block;
+	    margin: 0 auto;
+	}
+	.heritage-content{
+		margin-bottom: 10px;
+		height: 270px;
+	}
+	.your-industry select{
+		width: 70%;
+		margin-bottom: 10px;
+		border-radius: 1px;
+	}
+}
+
+
+@media only screen and (max-width: 600px){
+	.heritage-content{
+		margin-bottom: 10px;
+		max-width: 325px;
+		height: 350px;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.bp-main__farm-to-flavor{
+		margin-left: 0;
+    	margin-top: 50px;
+	}
+	.header-1 form {
+	    padding-left: 0;
+	}
+	.form-holder.contained-form.form-email input{
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	.form-holder.contained-form.form-email {
+	    margin-top: 0px;
+	}
+	.form-holder.contained-form.form-email input[type=submit]{
+		    margin-top: 30px;
+	}
+	.wpb_single_image img{
+		max-width: 100%;
+		float: left;
+	}
+	.vc_column_container > .vc_column-inner{
+		padding-right: 15px;
+	}
+	.a-heritage-section{
+		padding-top: 60.5px;
+	}
+	.a-heritage-section h1{
+		line-height: 40px;
+		margin-bottom: 10px;
+	}
+	.heritage-content{
+		margin-bottom: 10px;
+		max-width: 325px;
+		height: 350px;
+	}
+	sup{
+		font-size: 50%;
+	}
+	.heritage-button{
+		margin-bottom: 60px;
+		margin-top: 30px;
+	}
+	.cleanlabels-section h1{
+		line-height: 32px;
+		    margin-bottom: 15px;
+	}
+	.cleanlabels-section{
+		padding-top: 60px;
+	}
+	.cleanlabels-logos{
+		margin-top: 30px;
+	}
+	.cleanlabels-logos img {
+	    width: auto;
+	    height: auto;
+	    margin: 0 auto;
+	    margin-top: 20px;
+	}
+	.capture-essence-section h1{
+		line-height: 34px;
+    	margin-bottom: 10px;
+	}
+	.header-content{
+		padding-right: 0;
+	}
+	#bp-main .v-align-children .col-md-6{
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.header-1 .header-content * {
+	    color: #fff;
+	    margin-bottom: 40px;
+	    padding-left: 30px;
+	}
+	.top-text_white{
+		max-width: 100%;
+    	height: auto;
+	}
+	.text-white {
+	    max-width: 100%;
+	    height: 115px;
+	}
+	.form-holder.contained-form textarea {
+	    width: 100%;
+	    margin-bottom: 30px;
+	}
+	.v-align-children {
+	    display: block !important;
+	    margin-top: 0;
+	}
+	#capturing-essence{
+	    padding: 55px 0;
+	    position: relative;
+	    background: #fff;
+	}
+	.your-state select{
+		width: 100%;
+	}
+	.your-industry select{
+		width: 100%;
+	}
+}
+
+/*-------------------Flavors Ingredients----------------*/
+.applicatio-section{
+	background-image: url('../../images/Peaches.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 325px;
+	padding: 50px;
+}
+.applicatio-section h1{
+	text-align: center;
+	font-family: SourceHanSans-Light;
+    font-size: 45px;
+    color: #FFFFFF;
+    letter-spacing: -1.64px;
+}
+.applicatio-section h1 span{
+	font-weight: 700;
+    margin-left: 10px;
+    font-family: SourceHanSans-Light;
+    font-size: 45px;
+    color: #FFFFFF;
+    letter-spacing: -1.64px;
+}
+.applicatio-section p{
+	font-family: SourceHanSans-Bold;
+	font-size: 26px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 36px;
+	text-align: center;
+    width: 73%;
+    display: block;
+    margin: 0 auto;
+}
+.applicatio-section button{
+	width: 176px;
+	height: 40px;
+	/* Rectangle 4: */
+	background: #F38E2B;
+	border: 1px solid #F38E2B;
+	border-radius: 20px;
+	/* Request a Sample: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	margin-top: 38px!important;
+	margin:0 auto;
+	display: block;
+}
+
+
+/*---------------End Flavors Ingredients----------------*/
+
+
+/*-------------------Flavors Portfolio----------------*/
+.flavor-porfolio {
+	width: 100%;
+	height: auto;
+	background-color: #f2f9fe;
+	padding: 50px;
+}
+
+.flavor-porfolio h1{
+	/* FLAVOR PORTFOLIO: */
+	font-family: SourceHanSans-Bold;
+	font-size: 50px;
+	color: #3C4D55;
+	letter-spacing: -1.82px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.flavor-porfolio h1 span{
+	font-family: SourceHanSans;
+}
+.flavor-porfolio ul li{
+	text-align: center;
+	/* Acai Cream Californi: */
+	font-family: SourceHanSans;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: -0.51px;
+	line-height: 42px;
+	/* Bitter Almond Guanab: */
+	font-family: SourceHanSans;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: -0.51px;
+	line-height: 42px;
+	/* Bitmap: */
+	/* Cherry (Black) Lemon: */
+	font-family: SourceHanSans;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: -0.51px;
+	line-height: 42px;
+	/* Coffee Espresso Melo: */
+	font-family: SourceHanSans;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: -0.51px;
+	line-height: 42px;
+}
+.flavor-porfolio img {
+    max-width: 458px;
+    height: 328px;
+    float: right;
+    width: 100%;
+}
+
+/*flavor-porfolio-second*/
+
+.flavor-porfolio-second {
+	width: 100%;
+	height: auto;
+	background-color: #f2f9fe;
+	padding: 50px;
+}
+
+.flavor-porfolio-second h1{
+	/* FLAVOR PORTFOLIO: */
+	font-family: SourceHanSans-Bold;
+	font-size: 50px;
+	color: #3C4D55;
+	letter-spacing: -1.82px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.flavor-porfolio h1 span{
+	font-family: SourceHanSans;
+}
+.flavor-porfolio-second ul li{
+	text-align: center;
+	/* Acai Cream Californi: */
+	font-family: SourceHanSans;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: -0.51px;
+	line-height: 42px;
+	/* Bitter Almond Guanab: */
+	font-family: SourceHanSans;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: -0.51px;
+	line-height: 42px;
+	/* Bitmap: */
+	/* Cherry (Black) Lemon: */
+	font-family: SourceHanSans;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: -0.51px;
+	line-height: 42px;
+	/* Coffee Espresso Melo: */
+	font-family: SourceHanSans;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: -0.51px;
+	line-height: 42px;
+}
+.flavor-porfolio-second img {
+    max-width: 458px;
+    height: 328px;
+    margin: 0 auto;
+    display: block;
+}
+/*---------------End Flavors Portfolio----------------*/
+
+
+/*---------------Curated Flavors Portfolio----------------*/
+.curated-flavor-porfolio{
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	
+}
+.curated-flavor-porfolio .container{
+	width: 100%;
+	margin: 0;
+    padding: 0;
+}
+.curated-flavor-porfolio_list{
+	padding: 0;
+}
+
+.curated-flavor-porfolio_listed{
+	padding: 0;
+}
+
+.curated-flavor-porfolio_listing{
+	margin-top: 70px;
+}
+
+.curated-flavor-porfolio h1{
+	text-align: center;
+	/* CURATED FLAVOR PORTF: */
+	font-family: SourceHanSans-Bold;
+	font-size: 45px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 51px;
+	margin-top: 50px;
+}
+.curated-flavor-porfolio p{
+	text-align: center;
+	/* CURATED FLAVOR PORTF: */
+	font-family: SourceHanSans;
+	font-size: 45px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 51px;
+}
+.curated-flavor-porfolio h2{
+	/* OVER 6000 FLAVORS: */
+	font-family: SourceHanSans-Light;
+	font-size: 28px;
+	color: #3C4D55;
+	letter-spacing: -1.02px;
+	position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+.curated-flavor-porfolio ul li{
+	/* Acai Cream Californi: */
+	font-family: SourceHanSans;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: -0.51px;
+	line-height: 42px;
+	text-align: center;
+}
+
+.curated-flavor-porfolio img{
+	width: 100%;
+	height: auto;
+}
+
+.curated-flavor-porfolio_list_img{
+	background-image: url('../../images/Bitmap-4.png');
+	height: 600px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.curated-flavor-porfolio_list.curated-flavor-porfolio_list_img{
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+/*---------------End Curated Flavors Portfolio-------------*/
+
+
+/*------------------Product Application-------------*/
+.product-application{
+	width: 100%;
+	height: auto;
+	background-color: #FBEADB;
+	padding: 50px;
+}
+
+.product-application h1{
+	/* Product Application: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 26px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+.product-application p{
+	text-align: center;
+	/* BPF has a brand new: */
+	font-family: SourceHanSans-Light;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 25px;
+	width: 455px;
+    margin: 0 auto;
+}
+
+.product-application img{
+	width: 100%;
+	height: 111px;
+}
+/*---------------End Product Application-------------*/
+
+
+/*---------------Customized Beverage-------------*/
+.customized-section {
+    padding-top: 50px;
+    background-color: white;
+    padding-bottom: 70px;
+}
+
+.customized-section h1 {
+    font-family: SourceHanSans-Semibold;
+    font-size: 26px;
+    color: #3C4D55;
+    letter-spacing: 0;
+    line-height: 35px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.customized-section p {
+    font-family: SourceHanSans-Light;
+    font-size: 14px;
+    color: #3C4D55;
+    letter-spacing: 0;
+    line-height: 28px;
+    width: 100%;
+}
+.customized-section img{
+	width: 546px;
+	height: 405px;
+}
+.cleanlabels-logos img {
+    max-width: 565px;
+    height: auto!important;
+    float: right;
+    width: 100%;
+    position: relative;
+    bottom: 0!important; 
+}
+/*---------------End Product Application-------------*/
+
+
+/*-------------------Resaerch Development-------------*/
+.resaerch-development{
+	width: 100%;
+	height: auto;
+	background-color: #F0F7FC;
+}
+.resaerch-development .container{
+	width:100%;
+	padding: 0;
+	margin: 0;
+}
+.resaerch-development img{
+	width: 100%;
+	height: 440px;
+}
+.resaerch-development_list{
+	padding: 0;
+}
+
+.resaerch-development_listed{
+	padding-top: 66px;
+	padding-left: 66px;
+}
+
+.resaerch-development h1{
+	/* Research & Developme: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 26px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	width: 60%;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.resaerch-development p{
+	/* Blue Pacific is a be: */
+	font-family: SourceHanSans-Light;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 28px;
+	width: 89%;
+}
+
+@media only screen and (min-width: 1300px){
+	.curated-flavor-porfolio img {
+	    height: auto!important;
+	}
+	.resaerch-development img{
+		width: 100%;
+		height: auto!important;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.flavor-porfolio .container{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.flavor-porfolio-second .container{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.flavor-porfolio{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.flavor-porfolio-second{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.flavor-porfolio-second img{
+		height: auto;
+		position: relative;
+    	bottom: 56px;
+	}
+	.product-application .container{
+		width: 100%;
+	}
+	.resaerch-development_listed {
+	    padding-top: 80px;
+	    padding-left: 20px;
+	}
+	.resaerch-development h1{
+		width: 74%;
+	}
+	.resaerch-development p{
+		width: 75%;
+	}
+	.applicatio-section p{
+		width: 90%;
+	}
+	.cleanlabels-logos img{
+		float: none!important;
+		margin-top: 42px;
+	}
+	.resaerch-development p {
+	    width: 89%;
+	}
+	.curated-flavor-porfolio_list_img{
+		background-position-x: -116px;
+	}
+}
+
+@media only screen and (max-width: 991px){
+	.flavor-porfolio img{
+		float: none;
+	    margin: 0 auto;
+	    display: block;
+	}
+	.flavor-porfolio-second img{
+		bottom: 20px;
+	}
+	.curated-flavor-porfolio ul{
+		margin-bottom: 50px;
+	}
+	.curated-flavor-porfolio h2{
+		margin-bottom: 50px;
+	}
+	.resaerch-development p{
+		margin-bottom: 66px;
+	}
+	.resaerch-development img {
+	    width: 100%;
+	    height: auto;
+	}
+}
+@media only screen and (max-width: 892px){
+	.curated-flavor-porfolio img {
+	    width: 100%;
+	    height: 590px;
+	}
+	.curated-flavor-porfolio_list_img{
+		background-position-x: -142px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.curated-flavor-porfolio h2{
+		padding-bottom: 30px;
+	}
+	.resaerch-development img {
+	    width: 100%;
+	    height: auto;
+	}
+	.resaerch-development_listed{
+		padding-bottom: 50px;
+	}
+	.resaerch-development p {
+	    width: 89%;
+	}
+	.curated-flavor-porfolio_list_img{
+		height: 600px;
+		background-position-x: 0;
+	}
+}
+
+@media only screen and (max-width: 676px){
+	.applicatio-section p {
+	    width: 100%;
+	    font-size: 16px;
+	    line-height: 24px;
+	}
+	.applicatio-section h1{
+		font-size: 36px;
+    	line-height: 36px;
+	}
+	.applicatio-section button{
+		margin-top: 20px!important;
+	}
+	.applicatio-section h1 span{
+		font-size: 36px;
+	}
+	.product-application .container{
+		padding-left: 0;
+    	padding-right: 0;
+	}
+	.product-application p{
+		width: 100%;
+	}
+	.product-application{
+		padding-left: 15px;
+    	padding-right: 15px;
+	}
+	.product-application h1{
+		line-height: 32px;
+	}
+}
+
+@media only screen and (max-width: 525px){
+	.flavor-porfolio img {
+	    max-width: 100%;
+	    height: 328px;
+	    float: none;
+	}
+	.flavor-porfolio-second img {
+	    bottom: 20px;
+	    width: 100%;
+	}
+	.curated-flavor-porfolio_list_img{
+		height: 401px;
+		background-position-x: 0;
+	}
+}
+@media only screen and (max-width: 481px){
+	.flavor-porfolio img {
+	    max-width: 100%;
+	    height: 328px;
+	    float: none;
+	}
+	.flavor-porfolio-second img {
+	    bottom: 20px;
+	    width: 100%;
+	}
+	.curated-flavor-porfolio_listing {
+	    margin-top: 70px;
+	    padding: 0;
+	}
+	.curated-flavor-porfolio h2{
+		padding-bottom: 30px;
+	}
+	.curated-flavor-porfolio img{
+		height: auto!important;
+	}
+	.resaerch-development_listed {
+	    padding-top: 75px;
+	    padding-left: 20px;
+	}
+	.resaerch-development p {
+	    width: 97%;
+	}
+	.resaerch-development h1 {
+	    width: 94%;
+	}
+	.cleanlabels-logos {
+	    text-align: center;
+	    padding: 0;
+	}
+	.cleanlabels-logos img{
+		left: -20px;
+		width: 115%;
+	}
+	.bp-footer .container{
+		padding: 0;
+	}
+	/*.your-industry select{
+		width: 70%;
+	}
+	.your-state select{
+		width: 70%;
+	}*/
+	.product-application img {
+	    height: auto;
+	    margin-top: 20px;
+	}
+	.resaerch-development p {
+	    width: 90%;
+	}
+	.curated-flavor-porfolio_list_img{
+		height: 295px;
+		background-position-x: 0;
+	}
+}
+
+
+/*------------------EXPERTISE INNOVATION-------------*/
+.expertise-section{
+	background-image: url(../../images/innovation.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 325px;
+    padding: 50px;
+}
+
+.expertise-section h1{
+	text-align: center;
+    font-family: SourceHanSans-Light;
+    font-size: 45px;
+    color: #FFFFFF;
+    letter-spacing: -1.64px;
+}
+
+.expertise-section h1 span {
+    font-weight: 700;
+    margin-left: 10px;
+    font-family: SourceHanSans-Light;
+    font-size: 45px;
+    color: #FFFFFF;
+    letter-spacing: -1.64px;
+}
+
+.expertise-section p{
+	font-family: SourceHanSans-Bold;
+    font-size: 26px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 36px;
+    text-align: center;
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+
+.expertise-section button {
+    width: 176px;
+    height: 40px;
+    background: #F38E2B;
+    border: 1px solid #F38E2B;
+    border-radius: 20px;
+    font-family: SourceHanSans-Semibold;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-top: 38px!important;
+    margin: 0 auto;
+    display: block;
+}
+/*---------------End Resaerch Development-------------*/
+
+@media only screen and (max-width: 676px){
+	.expertise-section p {
+	    width: 100%;
+	    font-size: 16px;
+	    line-height: 24px;
+	}
+	.expertise-section h1{
+		font-size: 36px;
+    	line-height: 36px;
+	}
+	.expertise-section button{
+		margin-top: 20px!important;
+	}
+	.expertise-section h1 span{
+		font-size: 36px;
+	}
+}
+/*---------------Mothres Nature-------------*/
+.mothres-nature{
+	padding-top: 50px;
+    background-color: #ffefe1;
+}
+
+.mothres-nature h1{
+	font-family: SourceHanSans-Semibold;
+    font-size: 26px;
+    color: #3C4D55;
+    letter-spacing: 0;
+    line-height: 35px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.mothres-nature p{
+	font-family: SourceHanSans-Light;
+    font-size: 14px;
+    color: #3C4D55;
+    letter-spacing: 0;
+    line-height: 28px;
+    width: 96%;
+}
+
+.cleanlabels-logos img{
+	max-width: 565px;
+    height: 400px;
+    float: right;
+    width: 100%;
+    position: relative;
+    bottom: 40px;
+}
+
+/*---------------End Mothres Nature-------------*/
+
+/*--------------------Madagascar----------------*/
+.madagascar{
+	width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.madagascar .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.madagascar_list{
+	padding: 0;
+}
+
+.madagascar_listed{
+	padding-top: 100px;
+    padding-left: 100px;
+}
+
+.madagascar img{
+	width: 100%;
+    /*height: 499px;*/
+    height: auto;
+}
+
+.madagascar h1{
+	font-family: SourceHanSans-Semibold;
+    font-size: 26px;
+    color: #3C4D55;
+    letter-spacing: 0;
+    width: 60%;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.madagascar p{
+	font-family: SourceHanSans-Light;
+    font-size: 14px;
+    color: #3C4D55;
+    letter-spacing: 0;
+    line-height: 28px;
+    width: 91%;
+    padding-bottom: 100px;
+}
+/*------------------End Madagascar---------------*/
+
+/*------------------End Madagascar---------------*/
+.simply-grain-section{
+	/*padding-top: 50px;*/
+    background-color: #F1F8FD;
+}
+
+.simply-grain-section .container{
+	width: 100%;
+}
+
+.simply-grain-section h1{
+	font-family: SourceHanSans-Semibold;
+    font-size: 26px;
+    color: #3C4D55;
+    letter-spacing: 0;
+    line-height: 35px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.simply-grain-section sup {
+    font-size: 50%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -.8em;
+}
+
+.simply-grain-section p{
+	font-family: SourceHanSans-Light;
+    font-size: 14px;
+    color: #3C4D55;
+    letter-spacing: 0;
+    line-height: 28px;
+    width: 81%;
+}
+
+.simply-grain-section img{
+	/*width: 565px;*/
+	width: 100%;
+    height: 454px;
+    float: right;
+}
+
+/*------------------End Madagascar---------------*/
+
+
+/*---------------------Pure Plant---------------*/
+.pure-plant{
+	width: 100%;
+    height: auto;
+	background-color: #fff;	
+}
+.pure-plant .container{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.pure-plant .row{
+	/*padding-left: 100px;*/
+ /*   padding-top: 70px;*/
+ /*   padding-right: 100px;*/
+ /*   padding-bottom: 70px;*/
+}
+
+.pure-plant h1{
+	/* PurePlantTM: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 26px;
+	color: #3C4D55;
+	letter-spacing: 0;
+}
+
+.pure-plant_list{
+	padding: 0;
+}
+
+.pure-plant sup{
+	font-size: 50%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -.8em;
+}
+
+.pure-plant h2{
+	/* A-liminateTM Natural: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 22px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 28px;
+	margin-bottom: 10px;
+	width: 80%;
+}
+
+.pure-plant p{
+	/* A plant-based, natur: */
+	font-family: SourceHanSans-Light;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 22px;
+}
+
+.pure-plant img{
+	width: 100%;
+	/*height: 778px;*/
+	height: auto;
+}
+
+.pure-plant_listed{
+	padding:0;
+}
+
+.pure-plant .pure-plant_listing{
+	padding: 100px;
+	/*padding-top: 150px;*/
+}
+.pure-plant .pure-plant_listing h1 {
+    font-family: SourceHanSans-Semibold;
+    font-size: 26px;
+    color: #3C4D55;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-bottom: 20px;
+    width: 90%;
+} 
+.pure-plant .pure-plant_listing p {
+    font-family: SourceHanSans-Light;
+    font-size: 14px;
+    color: #3C4D55;
+    letter-spacing: 0;
+    line-height: 22px;
+    width: 91%;
+}
+/*------------------End Pure Plant---------------*/
+
+
+
+
+
+/*------------------End Pure Plant---------------*/
+.heritage-section{
+	background-image: url(../../images/heritage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 325px;
+    padding: 50px;
+}
+
+.heritage-section h1{
+	text-align: center;
+    font-family: SourceHanSans-Light;
+    font-size: 45px;
+    color: #FFFFFF;
+    letter-spacing: -1.64px;
+}
+
+.heritage-section h1 span{
+	font-weight: 700;
+    margin-left: 10px;
+    font-family: SourceHanSans-Light;
+    font-size: 45px;
+    color: #FFFFFF;
+    letter-spacing: -1.64px;
+}
+
+.heritage-section p{
+	font-family: SourceHanSans-Bold;
+    font-size: 26px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 36px;
+    text-align: center;
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+
+.heritage-section button{
+	width: 176px;
+    height: 40px;
+    background: #F38E2B;
+    border: 1px solid #F38E2B;
+    border-radius: 20px;
+    font-family: SourceHanSans-Semibold;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-top: 38px!important;
+    margin: 0 auto;
+    display: block;
+}
+/*------------------End Pure Plant---------------*/
+
+/*------------------End Pure Plant---------------*/
+.spirit-section{
+	padding-top: 50px;
+    background-color: white;
+    padding-bottom: 70px;
+}
+
+.spirit-section h1{
+	font-family: SourceHanSans-Semibold;
+    font-size: 26px;
+    color: #3C4D55;
+    letter-spacing: 0;
+    line-height: 35px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.spirit-section h2{
+	/* Discovering Heirloom: */
+	font-family: SourceHanSansLight-Italic;
+	font-size: 16px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	position: relative;
+    top: 30px;
+}
+
+.spirit-section p{
+	font-family: SourceHanSans-Light;
+    font-size: 14px;
+    color: #3C4D55;
+    letter-spacing: 0;
+    line-height: 28px;
+    width: 95%;
+}
+
+.spirit-logos img{
+	width: 535px;
+	height: 297px;
+	position: relative;
+    top: 30px;
+}
+
+.spirit-logos img.spirit-logos_oval{
+	width: 93px;
+    height: 93px;
+    position: absolute;
+    left: 41%;
+    top: 56%;
+}
+.spirit-logos img.spirit-logos_triangle{
+	width: 23px;
+    height: 34px;
+    position: absolute;
+    left: 48%;
+    top: 64%;
+}
+/*------------------End Pure Plant---------------*/
+
+/*---------------------Ceo Vision---------------*/
+.ceo-vision-section{
+	padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: url(../../images/orange-ladders-3.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 333px;
+}
+
+.ceo-vision-section h1{
+	text-align: center;
+	/* â€œOur vision is to cr: */
+	font-family: SourceHanSans-Bold;
+	font-size: 30px;
+	color: #FFFFFF;
+	letter-spacing: -1.1px;
+	width: 76%;
+    margin: 0 auto;
+    line-height: 36px;
+}
+
+.ceo-vision-section p{
+	text-align: center;
+	/* Donald Wilkes, CEO &: */
+	font-family: SourceHanSans-Light;
+	font-size: 30px;
+	color: #FFFFFF;
+	letter-spacing: -1.1px;
+	margin-top: 10px;
+}
+/*------------------End Ceo Vision---------------*/
+
+
+/*-------------------Vision-----------------*/
+.vision{
+	padding: 50px;
+	background-color: #fff;
+}
+
+.vision .container{
+	width: 100%;
+	padding: 0;
+}
+
+.vision img{
+	width: 49px;
+	height: 49px;
+	margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+}
+
+.vision h2{
+	/* Our Vision Beyond th: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 26px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+.vision h1{
+	/* Consumer Trends: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 18px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 60px;
+}
+
+.vision p{
+	/* Understanding consum: */
+	font-family: SourceHanSans;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 22px;
+	text-align: center;
+	width: 64%;
+    margin: 0 auto;
+}
+
+.vision-list{
+	padding: 0;
+}
+/*------------------End Vision---------------*/
+
+@media only screen and (max-width: 676px){
+	.heritage-section p {
+	    width: 100%;
+	    font-size: 16px;
+	    line-height: 24px;
+	}
+	.heritage-section h1{
+		font-size: 36px;
+    	line-height: 36px;
+	}
+	.heritage-section button{
+		margin-top: 20px!important;
+	}
+	.heritage-section h1 span{
+		font-size: 36px;
+	}
+}
+
+
+/*------------------California World------------------*/
+.california-world{
+	width: 100%;
+    height: auto;
+    background-color: #F0F7FC;
+    
+}
+
+.california-world .container{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.california-world h1{
+	/* From California to t: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 26px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 35px;
+}
+
+.california-world p{
+	/* Strategic agro-partn: */
+	font-family: SourceHanSans-Light;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 28px;
+}
+.california-world_listing{
+	padding: 0;
+}
+
+.california-world img{
+	width: 100%;
+	/*height: 378px;*/
+	height: auto;
+}
+
+.california-world_listing img{
+	width: 100%;
+	/*height: 464px;*/
+	height: auto;
+}
+.california-world_listed{
+	padding: 0;
+}
+
+.california-world_list{
+	padding: 96px;
+	padding-top: 50px;
+    padding-bottom: 50px;
+}
+/*------------------End California World---------------*/
+
+/*--------------------Clean Label----------------*/
+.clean-label-section{
+	background-image: url(../../images/Bitmap-13.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 325px;
+    padding: 50px;
+}
+
+.clean-label-section h1{
+	text-align: center;
+    font-family: SourceHanSans-Light;
+    font-size: 45px;
+    color: #FFFFFF;
+    letter-spacing: -1.64px;
+}
+
+.clean-label-section p{
+	font-family: SourceHanSans-Bold;
+    font-size: 26px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 36px;
+    text-align: center;
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+.clean-label-section button{
+	width: 176px;
+    height: 40px;
+    background: #F38E2B;
+    border: 1px solid #F38E2B;
+    border-radius: 20px;
+    font-family: SourceHanSans-Semibold;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-top: 38px!important;
+    margin: 0 auto;
+    display: block;
+}
+
+/*------------------End Clean Label---------------*/
+@media only screen and (max-width: 676px){
+	.clean-label-section p {
+	    width: 100%;
+	    font-size: 16px;
+	    line-height: 24px;
+	}
+	.clean-label-section h1{
+		font-size: 36px;
+    	line-height: 36px;
+	}
+	.clean-label-section button{
+		margin-top: 20px!important;
+	}
+	.clean-label-section h1 span{
+		font-size: 36px;
+	}
+}
+/*--------------------Non Gmo--------------------*/
+.non-gmo-section{
+	padding-top: 50px;
+    background-color:  #F0F7FC;
+    padding-bottom: 70px;
+}
+
+.non-gmo-section .container{
+	width: 90%;
+}
+
+.non-gmo-section h1{
+	font-family: SourceHanSans-Semibold;
+    font-size: 26px;
+    color: #3C4D55;
+    letter-spacing: 0;
+    line-height: 35px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.non-gmo-section p{
+	font-family: SourceHanSans-Light;
+    font-size: 14px;
+    color: #3C4D55;
+    letter-spacing: 0;
+    line-height: 28px;
+    width: 100%;
+}
+
+.non-gmo-section img{
+	/*width: 589px;*/
+	height: auto;
+}
+/*--------------------End Non Gmo-----------------*/
+
+
+/*--------------------Project Verified-----------------*/
+.project-verified{
+	width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.project-verified .container{
+	width: 100%;
+	padding: 0;
+}
+
+.project-verified_listed img{
+	width: 712px;
+	/*height: 550px;*/
+	height: auto;
+	width: 100%;
+}
+
+.project-verified h1{
+	/* Non-GMO Project Veri: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 26px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 32px;
+	margin-bottom: 20px;
+}
+.project-verified p{
+	/* We understand the FD: */
+	font-family: SourceHanSans-Light;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 28px;
+}
+.project-verified ul li{
+	/* Natural Peach with o: */
+	font-family: SourceHanSans-Light;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 28px;
+}
+
+.project-verified_listing{
+	padding: 0;
+}
+
+.project-verified_list{
+	padding: 88px;
+}
+
+.project-verified_listed{
+	padding: 0;
+}
+/*--------------------End Project Verified--------------*/
+
+/*--------------------News Insights--------------*/
+.news-insights-section{
+	background-image: url(../../images/News.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 325px;
+    padding: 50px;
+    padding-top: 100px;
+}
+
+.news-insights-section h1{
+	text-align: center;
+    font-family: SourceHanSans-Light;
+    font-size: 45px;
+    color: #FFFFFF;
+    letter-spacing: -1.64px;
+}
+.news-insights-section h1 span{
+	font-weight: 700;
+    margin-left: 10px;
+    font-family: SourceHanSans-Light;
+    font-size: 45px;
+    color: #FFFFFF;
+    letter-spacing: -1.64px;
+}
+
+.news-insights-section p{
+	font-family: SourceHanSans-Bold;
+    font-size: 26px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 36px;
+    text-align: center;
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*----------------End News Insights--------------*/
+@media only screen and (max-width: 676px){
+	.news-insights-section p {
+	    width: 100%;
+	    font-size: 16px;
+	    line-height: 24px;
+	}
+	.news-insights-section h1{
+		font-size: 36px;
+    	line-height: 36px;
+	}
+	.news-insights-section button{
+		margin-top: 20px!important;
+	}
+	.news-insights-section h1 span{
+		font-size: 36px;
+	}
+}
+/*----------------News Insights Non GMO-----------------*/
+.news-insights-section_non_gmo{
+	padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #fff;
+}
+
+.news-insights-section_non_gmo .container{
+	width: 100%;
+	padding: 0;
+}
+
+.news-insights-section_non_gmo h1{
+	/* Non GMO Flavors and: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 20px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 28px;
+}
+
+.news-insights-section_non_gmo p{
+	/* We understand the FD: */
+	font-family: SourceHanSans-Light;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 28px;
+	width: 86%;
+}
+
+.news-insights-section_non_gmo p.date{
+	margin-bottom: 0;
+}
+
+.news-insights-section_non_gmo button{
+	/* Rectangle 4: */
+	border: 1px solid #C5C5C5;
+	border-radius: 22.5px;
+	/* Read More: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 14px;
+	color: #A5ADB0;
+	letter-spacing: 0;
+	
+	margin: 0;
+    width: 159px;
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid #C5C5C5;
+    /*border-radius: 22px;*/
+    padding: 10px;
+    /*position: relative;*/
+    /*bottom: 10px;*/
+    line-height: 22px;
+    outline: none;
+}
+
+.news-insights-section_non_gmo img{
+	/*width: 314px;*/
+	/*height: 199px;*/
+	width: 100%;
+    height: auto;
+}
+
+.news-insights-section_non_gmo_listed{
+	padding: 0;
+	margin-top: 90px;
+}
+
+.news-insights-section_non_gmo_listing{
+	/*width:100%;*/
+}
+
+.news-insights-section_non_gmo_listing .container{
+	width: 100%;
+	padding: 0;
+}
+
+.news-insights-section_non_gmo_listing input{
+	width: 100%;
+	height:57px;
+	/* Rectangle 5: */
+	border: 1px solid #CFCFCF;
+	padding-left: 50px;
+}
+
+.news-insights-section_non_gmo_listing img{
+	width: 29px;
+	height:29px;
+	position: absolute;
+    top: 15px;
+    left: 25px;
+    
+}
+.news-insights-section_non_gmo_listing h1{
+	/* RECENT POSTS: */
+	font-family: SourceHanSans-Light;
+	font-size: 16px;
+	color: #3C4D55;
+	letter-spacing: 2px;
+	line-height: 28px;
+	margin-top: 40px;
+}
+
+.news-insights-section_non_gmo_listing ul li{
+	/* Non GMO flavors and: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 14px;
+	color: #6BC879;
+	letter-spacing: 0;
+	line-height: 43px;
+}
+.news-insights-section_non_gmo_list{
+	padding: 0;
+}
+
+.number-list{
+	padding-top: 90px;
+	padding-bottom: 0px;
+	text-align: center;
+}
+
+.number-list .container{
+	width: 100%;
+	padding: 0;
+}
+
+.number-list button{
+	background-color: transparent;
+	color: #C5C5C5;
+	width: 55px;
+    height: 40px;
+    border: 1px solid #C5C5C5;
+    border-radius: 3px;
+    outline: none;
+    font-size: 18px;
+}
+.number-list button:focus{
+	outline: none;
+    background-color: #6BC879;
+}
+
+.number-list .numbering{
+	display: inline-block;
+}
+.number-list ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.number-list ul.pagination li {display: inline;}
+
+.number-list ul.pagination li a {
+    color: #6cc87a;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.number-list ul.pagination li a:focus{
+	background-color: #6BC879;
+	color: #fff;
+	border: 1px solid #C5C5C5;
+}
+.number-list ul.pagination li a:hover{
+	background-color:  transparent;
+	color: #6cc87a;
+}
+
+.news-insights__single-item img{
+	max-width: 100%;
+    height: auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 50px;
+}
+.news-insights__single-item p{
+	font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    cursor: default;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+.comments h5 {
+    margin-bottom: 24px;
+    padding-left: 60px;
+}
+.comments-list, .comments-list ul {
+    width: 100%;
+    overflow: hidden;
+    padding-left: 50px;
+}
+.news-insights__single-item .comments{
+	padding-left: 60px;
+}
+.comments hr{
+	width: 94%;
+    float: right;
+}
+.news-insights__single-item .comment-respond{
+		padding-left: 60px;
+}
+#commentform {
+    display: block;
+    padding-left: 60px;
+}
+.comments input[type="submit"] {
+    float: right;
+    border-radius: 32px;
+}
+#searchform input[type="text"]{
+    min-width: 100%;
+    max-width: 100%;
+    background-image:url('../../images/Search.png');
+    background-repeat: no-repeat;
+    background-position-y: 15px;
+    background-position-x: 15px;
+}
+/*----------------End News Insights Non GMO--------------*/
+
+div.wpcf7-mail-sent-ng {
+    border: 2px solid #ff0000;
+    background-color: wheat;
+}
+
+.tagcloud a {
+    /* float: left; */
+    float: none;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    /* border: 1px solid #6dc77a; */
+    border: none;
+    color: #6dc77a;
+    display: block;
+    padding: 2px 6px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+ 
+.bp-footer a.footer_terms{
+	/* Terms & Conditions |: */
+	font-family: SourceHanSans;
+	font-size: 10px;
+	color: #ADA19B;
+	letter-spacing: 0;
+	line-height: 23px;
+	display: inline-block;
+}
+.curated-flavor-portfolio .tile-right {
+    padding: 0;
+    width: 50%;
+    height: auto;
+    background-size: cover;
+}
+.curated-flavor-porfolio_list.curated-flavor-portfolio__image1.tile-right {
+    padding: 0;
+    width: 50%;
+    height: auto;
+    background-size: cover;
+}
+
+.newsletter-form .footer-submit-button {
+    border: 1px solid #786D68;
+    border-radius: 26px;
+    font-family: SourceHanSans-Semibold;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #000000;
+    padding-bottom: 50px;
+}
