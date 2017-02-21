@@ -14,4 +14,10 @@ public class IndexController {
 
         return "index";
     }
+
+    @RequestMapping(value = {"applications.html"})
+    public String applicationsPage(){
+
+        return "applications";
+    }
 }

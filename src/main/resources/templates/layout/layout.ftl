@@ -54,7 +54,7 @@
             <div class="container">
                 <div class="row navbar-row">
                     <div class="col-xs-8 col-md-2 col-lg-2">
-                        <a href="index.html" class="home-link">
+                        <a href="${cpath}/index.html" class="home-link">
                             <img alt="Blue Pacific Flavors" class="logo"
                                  src="${cpath}/images/bpf-farm-flavor-logo.png"/>
                         </a>
@@ -69,28 +69,27 @@
                     <div class="col-sm-10 menu-list text-center col-xs-12 col-lg-10 col-md-10">
                         <ul id="menu-main-menu" class="menu">
                             <li id="menu-item-650"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-650"><a
-                                    href="flavors-applications.html">产品门类 &#038; 应用</a></li>
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-650">
+                                <a href="${cpath}/applications.html">产品门类 &#038; 应用</a></li>
                             <li id="menu-item-649"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-649"><a
-                                    href="heritage-vision.html">我们的传承</a></li>
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-649">
+                                <a href="${cpath}/vision.html">我们的传承</a></li>
                             <li id="menu-item-648"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-648"><a
-                                    href="innovation-expertise.html">产品创新</a></li>
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-648">
+                                <a href="${cpath}/expertise.html">产品创新</a></li>
                             <li id="menu-item-647"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-647"><a
-                                    href="clean-label-transparency.html">清洁标签透明度</a></li>
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-647">
+                                <a href="${cpath}/transparency.html">清洁标签透明度</a></li>
                             <li id="menu-item-658"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-658"><a
-                                    href="news.html">新闻&观察</a></li>
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-658">
+                                <a href="${cpath}/news.html">新闻&观察</a></li>
                             <li id="menu-item-659"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-658"><a
-                                    href="contact.html">联系我们</a></li>
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-658">
+                                <a href="${cpath}/contact.html">联系我们</a></li>
                             <li id="menu-item-651"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-651"><a
-                                    href="request-a-sample.html">索取样品</a></li>
-                            <li class="shopping-cart menu-icon"><a href=""><i
-                                    class="icon icon-caddie-shopping-streamline"></i></a></li>
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-651">
+                                <a href="request-a-sample.html">索取样品</a></li>
+                            <li class="shopping-cart menu-icon"><a href=""><i class="icon icon-caddie-shopping-streamline"></i></a></li>
                         </ul>
                     </div>
                 </div>
