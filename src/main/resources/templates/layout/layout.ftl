@@ -10,6 +10,7 @@
         <#if selId="cleanlable">清洁标签透明度 &#8211;</#if>
         <#if selId="expertise">产品创新 &#8211; </#if>
         <#if selId="news">新闻 & 观察 &#8211; </#if>
+        <#if selId="contact">联系我们 &#8211; </#if>
         蓝太平洋香料
     </title>
     <link rel='stylesheet' id='contact-form-7-css' href='${cpath}/style/css/styles.css?ver=4.5.1' type='text/css'
@@ -89,7 +90,6 @@
                             <li id="menu-item-651"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-651">
                                 <a href="request-a-sample.html">索取样品</a></li>
-                            <li class="shopping-cart menu-icon"><a href=""><i class="icon icon-caddie-shopping-streamline"></i></a></li>
                         </ul>
                     </div>
                 </div>

@@ -20,4 +20,34 @@ public class IndexController {
 
         return "applications";
     }
+
+    @RequestMapping(value = {"vision.html"})
+    public String visionPage(){
+
+        return "vision";
+    }
+
+    @RequestMapping(value = {"expertise.html"})
+    public String expertisePage(){
+
+        return "expertise";
+    }
+
+    @RequestMapping(value = {"transparency.html"})
+    public String transparencyPage(){
+
+        return "transparency";
+    }
+
+    @RequestMapping(value = {"news.html"})
+    public String newsPage(){
+
+        return "news";
+    }
+
+    @RequestMapping(value = {"contact.html"})
+    public String contactPage(){
+
+        return "contact";
+    }
 }
