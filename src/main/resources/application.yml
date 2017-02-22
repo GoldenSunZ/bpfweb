@@ -1,4 +1,3 @@
-
 spring:
   freemarker:
     cache: true
@@ -8,18 +7,44 @@ spring:
     template-loader-path: classpath:/templates/
     expose-spring-macro-helpers: true
     request-context-attribute: rca
+  profiles:
+    active: dev
+    datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      hikari:
+        maxLifetime: 1765000 #一个连接的生命时长（毫秒），超时而且没被使用则被释放（retired），缺省:30分钟，建议设置比数据库超时时长少30秒以上
+        maximumPoolSize: 15 #连接池中允许的最大连接数。缺省值：10；推荐的公式：((core_count * 2) + effective_spindle_count)
+  mail:
+    host: smtp.163.com
+    username: girlsdebug@163.com
+    password: venny806ay
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+info:
+  app:
+    name: "@project.name@" #从pom.xml中获取
+    description: "@project.description@"
+    version: "@project.version@"
+    spring-boot-version: "@project.parent.version@"
+
+---
+#  测试环境配置
+spring:
+  profiles: dev
   datasource:
-    url: jdbc:log4jdbc:mysql://218.244.135.169:3318/lexy?useUnicode=true&characterEncoding=gbk&zeroDateTimeBehavior=convertToNull&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/bpfweb
+    username: root
+    password: Root@1234
+---
+#  生产环境配置
+spring:
+  profiles: prod
+  datasource:
+    url: jdbc:mysql://218.244.135.169:3318/lexy
     username: lexy_root
     password: mapath#123
-    initial-size: 5
-  #    driver-class-name: com.mysql.jdbc.Driver
-    max-active: 50
-    max-idle: 10
-    max-wait: 10000
-    test-on-borrow: true
-    min-idle: 5
-    validation-query: SELECT 1
-    test-while-idle: true
-    time-between-eviction-runs-millis: 18800
-    driver-class-name: net.sf.log4jdbc.DriverSpy
