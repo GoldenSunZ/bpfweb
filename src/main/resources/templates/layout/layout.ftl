@@ -193,97 +193,87 @@
                         <p>想象一下，注入水果的发泡饮料或杏仁牛奶沙冰？我们可以帮你将其带到现实生活中。从蓝太平洋这里发现真实且天然的香料、植物调节剂和全食品配料。</p>
 
                         <div class="form-holder contained-form form-email">
-                            <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value=""
+                            <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" id="name1"
                                                                                    size="40"
                                                                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                    aria-required="true"
                                                                                    aria-invalid="false"
-                                                                                   placeholder="Name"/></span><br/>
-                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email"
+                                                                                   placeholder="姓名"/></span><br/>
+                             <span class="wpcf7-form-control-wrap your-company"><input type="text" name="your-company"
+                                                                                       value="" size="40" id="company1"
+                                                                                       class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                                       aria-required="true"
+                                                                                       aria-invalid="false"
+                                                                                       placeholder="公司名称"/></span><br/>
+                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" id="emailAddress1"
                                                                                     value="" size="40"
                                                                                     class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
                                                                                     aria-required="true"
                                                                                     aria-invalid="false"
-                                                                                    placeholder="Email Address"/></span><br/>
-                            <span class="wpcf7-form-control-wrap your-state"><select name="your-state"
+                                                                                    placeholder="邮箱地址"/></span><br/>
+                            <span class="wpcf7-form-control-wrap your-state"><select name="your-state" id="state1"
                                                                                      class="wpcf7-form-control wpcf7-select"
                                                                                      aria-invalid="false">
-								<option value="">Choose State</option>
-								<option value="Alaska">Alaska</option>
-								<option value="Alabama">Alabama</option>
-								<option value="Arkansas">Arkansas</option>
-								<option value="Arizona">Arizona</option>
-								<option value="California">California</option>
-								<option value="Colorado">Colorado</option>
-								<option value="Connecticut">Connecticut</option>
-								<option value="Delaware">Delaware</option>
-								<option value="Florida">Florida</option>
-								<option value="Georgia">Georgia</option>
-								<option value="Hawaii">Hawaii</option>
-								<option value="Iowa">Iowa</option>
-								<option value="Idaho">Idaho</option>
-								<option value="Illinois">Illinois</option>
-								<option value="Indiana">Indiana</option>
-								<option value="Kansas">Kansas</option>
-								<option value="Kentucky">Kentucky</option>
-								<option value="Louisiana">Louisiana</option>
-								<option value="Massachusetts">Massachusetts</option>
-								<option value="Maryland">Maryland</option>
-								<option value="Maine">Maine</option>
-								<option value="Michigan">Michigan</option>
-								<option value="Minnesota">Minnesota</option>
-								<option value="Missouri">Missouri</option>
-								<option value="Mississippi">Mississippi</option>
-								<option value="Montana">Montana</option>
-								<option value="North Carolina">North Carolina</option>
-								<option value="North Dakota">North Dakota</option>
-								<option value="Nebraska">Nebraska</option>
-								<option value="New Hampshire">New Hampshire</option>
-								<option value="New Jersey">New Jersey</option>
-								<option value="New Mexico">New Mexico</option>
-								<option value="Nevada">Nevada</option>
-								<option value="New York">New York</option>
-								<option value="Ohio">Ohio</option>
-								<option value="Oklahoma">Oklahoma</option>
-								<option value="Oregon">Oregon</option>
-								<option value="Pennsylvania">Pennsylvania</option>
-								<option value="Rhode Island">Rhode Island</option>
-								<option value="South Carolina">South Carolina</option>
-								<option value="South Dakota">South Dakota</option>
-								<option value="Tennessee">Tennessee</option>
-								<option value="Texas">Texas</option>
-								<option value="Utah">Utah</option>
-								<option value="Virginia">Virginia</option>
-								<option value="Vermont">Vermont</option>
-								<option value="Washington">Washington</option>
-								<option value="Wisconsin">Wisconsin</option>
-								<option value="West Virginia">West Virginia</option>
-								<option value="Wyoming">Wyoming</option>
-								<option value="District of Columbia">District of Columbia</option>
+                                <option value="选择地区">选择地区</option>
+                                <option value="北京市">北京市</option>
+                                <option value="广东省">广东省</option>
+                                <option value="山东省">山东省</option>
+                                <option value="江苏省">江苏省</option>
+                                <option value="河南省">河南省</option>
+                                <option value="上海市">上海市</option>
+                                <option value="河北省">河北省</option>
+                                <option value="浙江省">浙江省</option>
+                                <option value="香港特别行政区">香港特别行政区</option>
+                                <option value="陕西省">陕西省</option>
+                                <option value="湖南省">湖南省</option>
+                                <option value="重庆市">重庆市</option>
+                                <option value="福建省">福建省</option>
+                                <option value="天津市">天津市</option>
+                                <option value="云南省">云南省</option>
+                                <option value="四川省">四川省</option>
+                                <option value="广西壮族自治区">广西壮族自治区</option>
+                                <option value="安徽省">安徽省</option>
+                                <option value="海南省">海南省</option>
+                                <option value="江西省">江西省</option>
+                                <option value="湖北省">湖北省</option>
+                                <option value="山西省">山西省</option>
+                                <option value="辽宁省">辽宁省</option>
+                                <option value="台湾省">台湾省</option>
+                                <option value="黑龙江">黑龙江</option>
+                                <option value="内蒙古自治区">内蒙古自治区</option>
+                                <option value="澳门特别行政区">澳门特别行政区</option>
+                                <option value="贵州省">贵州省</option>
+                                <option value="甘肃省">甘肃省</option>
+                                <option value="青海省">青海省</option>
+                                <option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+                                <option value="西藏区">西藏区</option>
+                                <option value="吉林省">吉林省</option>
+                                <option value="宁夏回族自治区">宁夏回族自治区</option>
 							</select></span><br/>
-                            <span class="wpcf7-form-control-wrap your-industry"><select name="your-industry"
+                            <span class="wpcf7-form-control-wrap your-industry"><select name="your-industry" id="category1"
                                                                                         class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false">
-								<option value="Industry">Industry</option>
-								<option value="Food">Food</option>
-								<option value="Retail">Retail</option>
-								<option value="Marketing">Marketing</option>
-								<option value="Sales">Sales</option>
-								<option value="IT">IT</option>
+                                <option value="分类">分类</option>
+                                <option value="工业">工业</option>
+                                <option value="食品">食品</option>
+                                <option value="零售">零售</option>
+                                <option value="市场">市场</option>
+                                <option value="销售">销售</option>
+                                <option value="IT">IT</option>
 							</select></span><br/>
                             <span class="wpcf7-form-control-wrap your-phone"><input type="number" name="your-phone"
-                                                                                    value=""
+                                                                                    value="" id="phoneNumber1"
                                                                                     class="wpcf7-form-control wpcf7-number wpcf7-validates-as-required wpcf7-validates-as-number"
                                                                                     aria-required="true"
                                                                                     aria-invalid="false"
-                                                                                    placeholder="Phone Number"/></span><br/>
-                            <span class="wpcf7-form-control-wrap comment"><textarea name="comment" cols="40" rows="10"
+                                                                                    placeholder="联系电话"/></span><br/>
+                            <span class="wpcf7-form-control-wrap comment"><textarea name="comment" cols="40" rows="10" id="projectContext1"
                                                                                     class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
                                                                                     aria-required="true"
                                                                                     aria-invalid="false"
-                                                                                    placeholder="Tell us a little about your project"></textarea></span><br/>
-                            <input type="submit" value="索取样品" class="wpcf7-form-control wpcf7-submit"/>
+                                                                                    placeholder="描述一下项目情况!"></textarea></span><br/>
+                            <input type="button" id="reqbttn" value="索取样品" class="wpcf7-form-control wpcf7-submit"/>
                         </div>
                         <div class="wpcf7-response-output wpcf7-display-none"></div>
                     </form>
@@ -292,6 +282,7 @@
         </div>
     </div>
 </div>
+
 <script type='text/javascript' src='${cpath}/style/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
 <script type='text/javascript' src='${cpath}/style/js/cf7-scripts.js?ver=4.5.1'></script>
 <script type='text/javascript' src='${cpath}/style/js/bootstrap.min.js?ver=4.6.1'></script>
@@ -300,7 +291,7 @@
 <script type='text/javascript' src='${cpath}/style/js/scripts.js?ver=4.6.1'></script>
 <script type='text/javascript' src='${cpath}/style/js/comment-reply.min.js?ver=4.6.1'></script>
 <script type='text/javascript' src='${cpath}/style/js/wp-embed.min.js?ver=4.6.1'></script>
-
+<script type='text/javascript' src='${cpath}/style/js/main.js?ver=1.0.1'></script>
 </body>
 </html>
 
