@@ -300,7 +300,7 @@
 <script type='text/javascript' src='${cpath}/style/js/scripts.js?ver=4.6.1'></script>
 <script type='text/javascript' src='${cpath}/style/js/comment-reply.min.js?ver=4.6.1'></script>
 <script type='text/javascript' src='${cpath}/style/js/wp-embed.min.js?ver=4.6.1'></script>
-<script type='text/javascript' src='${cpath}/style/js/main.js?ver=1.0.1'></script>
+
 </body>
 </html>
 

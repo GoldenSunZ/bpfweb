@@ -7,7 +7,7 @@
 <body>
     <body>
         <p><span>昵称：${name!}</span></p>
-        <p><span>email：${emialAddress!}</span> </p>
+        <p><span>email：${emailAddress!}</span> </p>
         <p><span>所在省份：${state!}</span></p>
         <p><span>分类：${category!}</span></p>
         <p><span>联系电话：${phoneNumber!}</span></p>

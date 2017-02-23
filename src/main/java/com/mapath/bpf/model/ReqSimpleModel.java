@@ -6,12 +6,21 @@ package com.mapath.bpf.model;
 public class ReqSimpleModel {
 
     private String name;
-    private String emialAddress;
+    private String emailAddress;
     private String state;
     private String category;
     private String phoneNumber;
     private String projectContext;
     private String sendTomail;
+    private String companyName;
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
 
     public String getName() {
         return name;
@@ -21,13 +30,6 @@ public class ReqSimpleModel {
         this.name = name;
     }
 
-    public String getEmialAddress() {
-        return emialAddress;
-    }
-
-    public void setEmialAddress(String emialAddress) {
-        this.emialAddress = emialAddress;
-    }
 
     public String getState() {
         return state;
@@ -68,5 +70,13 @@ public class ReqSimpleModel {
 
     public void setSendTomail(String sendTomail) {
         this.sendTomail = sendTomail;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 }

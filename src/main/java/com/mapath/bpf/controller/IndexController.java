@@ -73,27 +73,34 @@ public class IndexController {
         return "contact";
     }
 
-    @RequestMapping(value = "reqsimple")
+    @RequestMapping(value = "reqsimple",produces="application/json")
     @ResponseBody
     public JsonInfo requestSimple(ReqSimpleModel reqSimpleModel){
         JsonInfo info = new JsonInfo();
         Map<String, Object> model = new HashMap<String, Object>();
-        model.put("name", "123");
+        model.put("name", reqSimpleModel.getName());
         model.put("subscriptionDate",new Date());
+        model.put("emailAddress",reqSimpleModel.getEmailAddress());
+        model.put("state",reqSimpleModel.getState());
+        model.put("category",reqSimpleModel.getCategory());
+        model.put("phoneNumber",reqSimpleModel.getPhoneNumber());
+        model.put("projectContext",reqSimpleModel.getProjectContext());
+        model.put("companyName",reqSimpleModel.getCompanyName());
+
         try {
             Template t = configuration.getTemplate("mailtemplates/email-html.ftl");
             String content = FreeMarkerTemplateUtils.processTemplateIntoString(t, model);
             logger.debug(content);
-            if(adminService.sendHtmlMail("xuyunlong@mapath.com","索取样品",content)){
-                info.setMessage("邮件发送成功");
+            if(adminService.sendHtmlMail("510029336@qq.com","索取样品"+reqSimpleModel.getName(),content)){
+                info.setMessage("索取样品信息提交成功!");
                 info.setCode(JsonInfo.OK);
             }else{
-                info.setMessage("邮件发送失败，请检查参数配置");
+                info.setMessage("索取失败!");
                 info.setCode(JsonInfo.ERROR);
             }
         } catch (Exception e) {
             e.printStackTrace();
-            info.setMessage("邮件发送失败，请检查参数配置");
+            info.setMessage("索取失败!!");
             info.setCode(JsonInfo.ERROR);
         }
 

@@ -191,6 +191,18 @@ section .container {
     letter-spacing: 0;
     line-height: 14px;
 }
+.form-holder.contained-form.form-email input[type=button]{
+	width: 200px;
+	height: 40px;
+	border-radius: 20px;
+	background: #F38E2B;
+	border-radius: 20px;
+	font-family: SourceHanSans-Semibold;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 14px;
+}
 h4{
 	height: 37px;
 	font-family: ".SF NS Display";
