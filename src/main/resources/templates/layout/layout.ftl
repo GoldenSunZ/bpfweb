@@ -282,7 +282,16 @@
         </div>
     </div>
 </div>
+<!-- Small modal -->
 
+<#--弹出框-->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content" style="height: 60px;text-align: center;line-height: 60px">
+            填写提示内容
+        </div>
+    </div>
+</div>
 <script type='text/javascript' src='${cpath}/style/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
 <script type='text/javascript' src='${cpath}/style/js/cf7-scripts.js?ver=4.5.1'></script>
 <script type='text/javascript' src='${cpath}/style/js/bootstrap.min.js?ver=4.6.1'></script>
