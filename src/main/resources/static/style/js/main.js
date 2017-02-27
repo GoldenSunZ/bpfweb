@@ -69,8 +69,6 @@ jQuery(function() {
     /*导航栏的索取样品*/
     jQuery("#reqbttn").unbind(); //解绑之前的监听事件
     jQuery("#reqbttn").click(function(){
-        console.log('1');
-
         var url="/reqsimple";
         var name=jQuery("#name1").val();
         var companyName=jQuery("#company1").val();
