@@ -18,6 +18,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class LoginController {
 
+    //跳转到login.html页面
+    @RequestMapping(value = "gotologin")
+    public String gotoLogin(){
+
+//        return "forward:login";
+//        return "redirect:login";
+        return "login";
+    }
+
+    //登陆页面的验证
     @RequestMapping(value = "loginin",produces = "application/json")
     @ResponseBody
     public JsonInfo login(LoginSimpleModel loginSimpleModel){
