@@ -91,7 +91,7 @@ public class IndexController {
             Template t = configuration.getTemplate("mailtemplates/email-html.ftl");
             String content = FreeMarkerTemplateUtils.processTemplateIntoString(t, model);
             logger.debug(content);
-            if(adminService.sendHtmlMail("510029336@qq.com","索取样品"+reqSimpleModel.getName(),content)){
+            if(adminService.sendHtmlMail("sales@bluepacificchina.com","索取样品"+reqSimpleModel.getName(),content)){
                 info.setMessage("索取样品信息提交成功!");
                 info.setCode(JsonInfo.OK);
             }else{
