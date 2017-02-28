@@ -11,9 +11,11 @@ import java.util.List;
 public interface NewsService {
 
     List<NewsModel> newslist(String keyword);
+
     NewsModel newsfindById(String id);
+
     void newsSave(NewsModel newsModel);
-    void newsUpdate(NewsModel newsModel);
+
     void newsDelete(NewsModel newsModel);
 
 }

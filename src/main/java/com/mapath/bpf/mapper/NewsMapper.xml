@@ -11,7 +11,7 @@
         <result property="author" column="author"/>
         <result property="createDt" column="createDt"/>
         <result property="clickNum" column="clickNum"/>
-        <result property="isdelte" column="isdelte"/>
+        <result property="isdelete" column="isdelete"/>
     </resultMap>
 
     <sql id="newsColumn">
@@ -22,20 +22,17 @@
           author,
           createDt,
           clickNum,
-          isdelte
+          isdelete
     </sql>
 
     <select id="findbyKeyword" parameterType="String" resultMap="newsResult">
         select
           <include refid="newsColumn" />
         from
-          news
+          news where isdelete = '0'
         <where>
-                <if test="title != null and title!= ''">
-                    and title like CONCAT('%',trim(#{title}),'%')
-                </if>
-                <if test="comments != null and comments != ''">
-                    and comments like CONCAT('%',trim(#{comments}),'%')
+                <if test="keyword != null and keyword!= ''">
+                    and (title like CONCAT('%',trim(#{title}),'%') || comments like CONCAT('%',trim(#{comments}),'%'))
                 </if>
         </where>
     </select>
@@ -58,7 +55,7 @@
             author,
             createDt,
             clickNum,
-            isdelte
+            isdelete
         </trim>
         )values(
         <trim suffix="" suffixOverrides=",">
@@ -69,7 +66,7 @@
             #{author},
             #{createDt},
             #{clickNum},
-            #{isdelte}
+            #{isdelete}
         </trim>
         )
     </insert>
@@ -85,7 +82,7 @@
           author = #{author},
           createDt = #{createDt},
           clickNum = #{clickNum},
-          isdelte = #{isdelte}
+          isdelete = #{isdelete}
         </trim>
         where
           id=#{id}

@@ -3,6 +3,7 @@ package com.mapath.bpf.service.impl;
 import com.mapath.bpf.mapper.NewsMapper;
 import com.mapath.bpf.model.NewsModel;
 import com.mapath.bpf.service.NewsService;
+import com.mapath.bpf.utils.DateUtil;
 import com.mapath.bpf.utils.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -33,13 +34,14 @@ public class NewsServiceImpl implements NewsService {
 
     @Override
     public void newsSave(NewsModel newsModel) {
-        newsmapper.save(newsModel);
-    }
-
-    @Override
-    public void newsUpdate(NewsModel newsModel) {
-        NewsModel news = new NewsModel();
-        newsmapper.update(newsModel);
+        if(newsModel.getId() != null && !"".equals(newsModel.getId())){
+            newsmapper.update(newsModel);
+        }else{
+            newsModel.setId(UUID.uuid32());
+            newsModel.setCreateDt(DateUtil.getSystemDateTime());
+            newsModel.setClickNum(new Integer(0));
+            newsmapper.save(newsModel);
+        }
     }
 
     @Override
@@ -47,6 +49,7 @@ public class NewsServiceImpl implements NewsService {
      * 将用户删除的信息也更新显示出来,
      */
     public void newsDelete(NewsModel newsModel) {
+        newsModel.setIsdelete("1");
         newsmapper.update(newsModel);
     }
 }
