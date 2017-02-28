@@ -27,11 +27,11 @@ public class LoginController {
         String messages="";
         String truename="root";
         String truepassword="root";
-        if(name=="") {
+        if(name.equals("")) {
             messages="用户名不能为空!";
         }else if(!name.equals(truename)) {
             messages = "用户名不正确!";
-        }else if(password==""){
+        }else if(password.equals("")){
             messages="密码不能为空!";
         }else if(!password.equals(truepassword)){
             messages="密码不正确";
