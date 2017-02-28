@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapath.bpf.mapper.NewsMapper">
+
+    <resultMap id="newsResult" type="com.mapath.bpf.model.NewsModel">
+        <result property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="picture" column="picture"/>
+        <result property="comments" column="comments"/>
+        <result property="author" column="author"/>
+        <result property="createDt" column="createDt"/>
+        <result property="clickNum" column="clickNum"/>
+        <result property="isdelte" column="isdelte"/>
+    </resultMap>
+
+    <sql id="newsColumn">
+          id,
+          title,
+          picture,
+          comments,
+          author,
+          createDt,
+          clickNum,
+          isdelte
+    </sql>
+
+    <select id="findbyKeyword" parameterType="String" resultMap="newsResult">
+        select
+          <include refid="newsColumn" />
+        from
+          news
+        <where>
+                <if test="title != null and title!= ''">
+                    and title like CONCAT('%',trim(#{title}),'%')
+                </if>
+                <if test="comments != null and comments != ''">
+                    and comments like CONCAT('%',trim(#{comments}),'%')
+                </if>
+        </where>
+    </select>
+
+    <select id="findById" parameterType="java.lang.String" resultType="com.mapath.bpf.model.NewsModel">
+       select
+          <include refid="newsColumn"/>
+        from
+          news
+        where id=#{id}
+    </select>
+
+    <insert id="save" parameterType="com.mapath.bpf.model.NewsModel">
+        insert into news (
+        <trim suffix="" suffixOverrides=",">
+            id,
+            title,
+            picture,
+            comments,
+            author,
+            createDt,
+            clickNum,
+            isdelte
+        </trim>
+        )values(
+        <trim suffix="" suffixOverrides=",">
+            #{id},
+            #{title},
+            #{picture},
+            #{comments},
+            #{author},
+            #{createDt},
+            #{clickNum},
+            #{isdelte}
+        </trim>
+        )
+    </insert>
+
+    <update id="update" parameterType="com.mapath.bpf.model.NewsModel">
+        update
+          news
+        set
+        <trim suffix="" suffixOverrides=",">
+          title = #{title},
+          picture = #{picture},
+          comments = #{comments},
+          author = #{author},
+          createDt = #{createDt},
+          clickNum = #{clickNum},
+          isdelte = #{isdelte}
+        </trim>
+        where
+          id=#{id}
+    </update>
+
+</mapper>
