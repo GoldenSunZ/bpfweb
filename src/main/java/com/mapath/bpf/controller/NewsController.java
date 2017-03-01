@@ -1,12 +1,18 @@
 package com.mapath.bpf.controller;
 
 import com.mapath.bpf.model.NewsModel;
+import com.mapath.bpf.service.AdminService;
 import com.mapath.bpf.service.NewsService;
 import com.mapath.bpf.service.impl.NewsServiceImpl;
 import com.mapath.bpf.utils.UUID;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -15,46 +21,28 @@ import java.util.List;
  * Created by zhouxiaobo on 2017/2/28.
  */
 
-@Controller()
+@Controller
 public class NewsController {
+
+     private Logger logger = LoggerFactory.getLogger(NewsController.class);
 
     @Autowired
     private NewsService newsService;
 
-    @RequestMapping(value={"findByKeyWord"})
-    public List<NewsModel> newFindByKeyWord(String keyword){
-        List<NewsModel> list=newsService.newslist(keyword);
-        news newsfind=new news();
-        newsfind.setList(list);
-        return (List<NewsModel>) newsfind;
-    }
-    @RequestMapping(value={"findById"})
-    public NewsModel newFindById(String id){
-        NewsModel newsmodel= newsService.newsfindById(id);
-        return newsmodel;
-    }
-    @RequestMapping(value={"save"})
-    public void newSave(NewsModel newsModel){
-        newsService.newsSave(newsModel);
-    }
-    @RequestMapping(value={"update"})
-    public void newUpdate(NewsModel newsModel){
-        newsService.newsSave(newsModel);
-    }
-    @RequestMapping(value={"delete"})
-    public void newDelete(NewsModel newsModel){
-        newsService.newsDelete(newsModel);
+    @RequestMapping(value = "newsList")
+    public String newsList(){
+        logger.info("enter news page");
+        return "news";
     }
 
-    class news {
-        private List<NewsModel> list;
+    @RequestMapping(value = "queryNews", method = RequestMethod.POST)
+    public String queryNews(String keyword, Model model){
+        logger.info("execute query");
 
-        public List<NewsModel> getList() {
-            return list;
-        }
+        List<NewsModel> records = newsService.newslist(keyword);
+        logger.info((records == null)?"0条":records.size() + "条");
 
-        public void setList(List<NewsModel> list) {
-            this.list = list;
-        }
+        model.addAttribute("news", records);
+        return "news";
     }
 }
