@@ -43,10 +43,9 @@ public class NewsServiceImpl implements NewsService {
             newsmapper.save(newsModel);
         }
     }
-
     @Override
     /**
-     * 将用户删除的信息也更新显示出来,
+     * 将用户删除的信息也更新显示出来.
      */
     public void newsDelete(NewsModel newsModel) {
         newsModel.setIsdelete("1");
