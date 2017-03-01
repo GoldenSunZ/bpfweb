@@ -5,6 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="苏州 蓝太平洋 香料 食品 天然 汲取新鲜水果的精华"/>
+    <meta name="description" content="苏州 蓝太平洋 香料 食品 天然 汲取新鲜水果的精华"/>
     <title><#if selId="version">我们的传承 &#8211;</#if>
         <#if selId="applications">产品门类 &#038; 应用 &#8211;</#if>
         <#if selId="cleanlable">清洁标签透明度 &#8211;</#if>
@@ -13,40 +15,33 @@
         <#if selId="contact">联系我们 &#8211; </#if>
         蓝太平洋香料
     </title>
-    <link rel='stylesheet' id='contact-form-7-css' href='${cpath}/style/css/styles.css?ver=4.5.1' type='text/css'
-          media='all'/>
-    <link rel='stylesheet' id='js_composer_front-css' href='${cpath}/style/css/js_composer.min.css?ver=5.0.1'
-          type='text/css' media='all'/>
-    <link rel='stylesheet' id='ebor-bootstrap-css' href='${cpath}/style/css/bootstrap.min.css?ver=4.6.1' type='text/css'
-          media='all'/>
-    <link rel='stylesheet' id='ebor-fonts-css' href='${cpath}/style/css/fonts.css?ver=4.6.1' type='text/css'
-          media='all'/>
-    <link rel='stylesheet' id='ebor-plugins-css' href='${cpath}/style/css/plugins.css?ver=4.6.1' type='text/css'
-          media='all'/>
-    <link rel='stylesheet' id='ebor-theme-styles-css' href='${cpath}/style/css/ebor-theme-styles.css?ver=1486975607'
-          type='text/css' media='all'/>
-    <link rel='stylesheet' id='ebor-style-css' href='${cpath}/style/css/style.css?ver=4.6.1' type='text/css'
-          media='all'/>
+    <link rel='stylesheet' id='contact-form-7-css' href='${cpath}/style/css/styles.css?ver=4.5.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='js_composer_front-css' href='${cpath}/style/css/js_composer.min.css?ver=5.0.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='ebor-bootstrap-css' href='${cpath}/style/css/bootstrap.min.css?ver=4.6.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='ebor-fonts-css' href='${cpath}/style/css/fonts.css?ver=4.6.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='ebor-plugins-css' href='${cpath}/style/css/plugins.css?ver=4.6.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='ebor-theme-styles-css' href='${cpath}/style/css/ebor-theme-styles.css?ver=1486975607' type='text/css' media='all'/>
+    <link rel='stylesheet' id='ebor-style-css' href='${cpath}/style/css/style.css?ver=4.6.1' type='text/css' media='all'/>
     <style id='ebor-style-inline-css' type='text/css'>
         .nav-1 .logo {
             margin-top: 20px;
             max-height: 56px;
         }
     </style>
-    <link rel='stylesheet' id='bluepacific-style-css' href='${cpath}/style/css/bluepacific.css?ver=4.6.1'
-          type='text/css' media='all'/>
-    <link rel='stylesheet' id='bluepacific-sass-style-css' href='${cpath}/style/css/bluepac.css?ver=4.6.1'
-          type='text/css' media='all'/>
+    <link rel='stylesheet' id='bluepacific-style-css' href='${cpath}/style/css/bluepacific.css?ver=4.6.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='bluepacific-sass-style-css' href='${cpath}/style/css/bluepac.css?ver=4.6.1' type='text/css' media='all'/>
     <script type='text/javascript' src='${cpath}/style/js/jquery.js?ver=1.12.4'></script>
     <script type='text/javascript' src='${cpath}/style/js/jquery-migrate.min.js?ver=1.4.1'></script>
     <meta name="generator" content="Powered by mapath.com ."/>
-    <style type="text/css" data-type="vc_custom-css">h1, h2, h3, h4, h5, h6 {
-        font-family: 'Questrial', "Helvetica Neue", 'Arimo', Helvetica, Arial, sans-serif;
-    }
+    <style type="text/css" data-type="vc_custom-css">
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Questrial', "Helvetica Neue", 'Arimo', Helvetica, Arial, sans-serif;
+        }
 
-    .social-2 .tweet {
-        font-family: 'Questrial', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }</style>
+        .social-2 .tweet {
+            font-family: 'Questrial', "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+    </style>
 </head>
 <body class="home page page-id-160 page-template page-template-templates page-template-home page-template-templateshome-php wpb-js-composer js-comp-ver-5.0.1 vc_responsive">
 <div class="nav-container">
