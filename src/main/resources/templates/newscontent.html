@@ -13,7 +13,7 @@
         jQuery(function () {
            jQuery(".query").click(function () {
                var keyword=jQuery(".keyword").val();
-               var url="/newsContentAJAX"
+               var url="/newsContentAJAX";
                var id=jQuery("#id");
                var title=jQuery("#title");
                var createdate=jQuery("#createdate");
@@ -31,6 +31,8 @@
                    var isdelete=result.isdelete;
                    if(isdelete=="0"){  //0是删除
                        istrue.checked();
+                   }else {
+                       isfalse.checked();
                    }
                });
            });
