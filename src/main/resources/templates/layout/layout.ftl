@@ -5,6 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
     <meta name="keywords" content="苏州 蓝太平洋 香料 食品 天然 汲取新鲜水果的精华"/>
     <meta name="description" content="苏州 蓝太平洋 香料 食品 天然 汲取新鲜水果的精华"/>
     <title><#if selId="version">我们的传承 &#8211;</#if>
