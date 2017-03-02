@@ -37,7 +37,7 @@ info:
 spring:
   profiles: dev
   datasource:
-    url: jdbc:mysql://218.244.135.169:3318/exercise
+    jdbcUrl: jdbc:mysql://218.244.135.169:3318/exercise
     username: exercise_root
     password: 123456
 ---
@@ -45,6 +45,6 @@ spring:
 spring:
   profiles: prod
   datasource:
-    url: jdbc:mysql://218.244.135.169:3318/exercise
+    jdbcUrl: jdbc:mysql://218.244.135.169:3318/exercise
     username: exercise_root
     password: 123456
