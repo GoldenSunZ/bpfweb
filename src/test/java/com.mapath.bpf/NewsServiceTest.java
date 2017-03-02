@@ -58,7 +58,7 @@ public class NewsServiceTest {
     public void testExecuteQuery() throws Exception{
         RequestBuilder request = null;
         request = MockMvcRequestBuilders.post("/queryNews")
-                .param("keyword","123");
+                .param("keyword","国学");
         mvc.perform(request);
     }
 }
