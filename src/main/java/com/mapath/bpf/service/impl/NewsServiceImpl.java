@@ -1,6 +1,7 @@
 package com.mapath.bpf.service.impl;
 
 import com.mapath.bpf.mapper.NewsMapper;
+import com.mapath.bpf.model.KeyWordModel;
 import com.mapath.bpf.model.NewsModel;
 import com.mapath.bpf.service.NewsService;
 import com.mapath.bpf.utils.DateUtil;
@@ -21,7 +22,7 @@ public class NewsServiceImpl implements NewsService {
     private NewsMapper newsmapper;
 
     @Override
-    public List<NewsModel> newslist(String keyword) {
+    public List<NewsModel> newslist(KeyWordModel keyword) {
         List <NewsModel> newslist=newsmapper.findbyKeyword(keyword);
         return newslist;
     }

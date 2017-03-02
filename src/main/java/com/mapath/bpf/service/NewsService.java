@@ -1,5 +1,6 @@
 package com.mapath.bpf.service;
 
+import com.mapath.bpf.model.KeyWordModel;
 import com.mapath.bpf.model.NewsModel;
 
 import java.util.Date;
@@ -10,7 +11,7 @@ import java.util.List;
  */
 public interface NewsService {
 
-    List<NewsModel> newslist(String keyword);
+    List<NewsModel> newslist(KeyWordModel keyword);
 
     NewsModel newsfindById(String id);
 
