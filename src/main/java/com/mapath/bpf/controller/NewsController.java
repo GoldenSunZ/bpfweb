@@ -15,6 +15,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
@@ -30,10 +32,25 @@ public class NewsController {
 
      private Logger logger = LoggerFactory.getLogger(NewsController.class);
 
+
     @Autowired
     private NewsService newsService;
 
+    /*测试跳转到新闻主体页面(只作为跳转使用)*/
+    @RequestMapping(value = "newsContent.html")
+    public String newsContent(Model model){
 
+        return "newscontent"; //新闻主体页面
+    }
+
+    /*ajax跳转添加数据*/
+    @RequestMapping(value = "newsContentAJAX")
+    @ResponseBody
+    public List<NewsModel> newsContentAJAX(Model model,@RequestParam String keyword){
+        List<NewsModel> newsModels=newsService.newslist(null);
+
+        return newsModels;
+    }
 
     @RequestMapping(value = "newsList")
     public String newsList(){

@@ -1,0 +1,205 @@
+<#global cpath=rca.contextPath>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type='text/javascript' src='${cpath}/style/js/jquery.js?ver=1.12.4'></script>
+    <script type='text/javascript' src='${cpath}/style/js/jquery-migrate.min.js?ver=1.4.1'></script>
+    <script type='text/javascript' src='${cpath}/style/js/bootstrap.min.js?ver=4.6.1'></script>
+    <link rel='stylesheet' id='ebor-bootstrap-css' href='${cpath}/style/css/bootstrap.min.css?ver=4.6.1'
+          type='text/css'
+          media='all'/>
+    <script>
+        jQuery(function () {
+           jQuery(".query").click(function () {
+               var keyword=jQuery(".keyword").val();
+               var url="/newsContentAJAX"
+               var id=jQuery("#id");
+               var title=jQuery("#title");
+               var createdate=jQuery("#createdate");
+               var author=jQuery("#author");
+               var istrue=jQuery("#istrue");
+               var isfalse=jQuery("#isfalse");
+               jQuery.post(url,{keyword:keyword},function (result) {
+//                  for(result:re){
+//
+//                   }
+                   id.html(result.id);
+                   title.html(result.title);
+                   createdate.html(result.createDt);
+                   author.html(result.author);
+                   var isdelete=result.isdelete;
+                   if(isdelete=="0"){  //0是删除
+                       istrue.checked();
+                   }
+               });
+           });
+        });
+    </script>
+    <title>新闻主体页面</title>
+    <style>
+        .container-fluid {
+            height: 100%;
+        }
+
+        #head {
+            border-bottom: darkgray solid 1px;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.08);
+        }
+
+        #logo {
+            padding-left: 50px;
+            padding-top: 20px;
+        }
+
+        #news {
+            border-bottom: darkgray solid 1px;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            background-image: url("images/new.jpg");
+            border-right: darkgray solid 1px;
+            opacity: 0.7;
+        }
+
+        #first {
+            text-align: center;
+            height: 50px;
+            padding-top: 10px;
+            border-bottom: darkgray solid 1px;
+            background-image: url("images/new.jpg");
+            opacity: 0.7;
+        }
+
+        #news_content {
+            background-color: lightskyblue;
+            height: 800px;
+            border-right: darkgray solid 1px;
+            opacity: 0.7;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .news_control{
+            font-size: 20px;
+        }
+        /*        .news_control:hover{
+                    background-color: #000000;
+                    color: #ffffff;
+                }*/
+        .control{
+            list-style:none;
+            padding-right: 35px;
+        }
+        .control:hover{
+            background-color: #000000;
+            color: #ffffff;
+        }
+        #tb {
+            width: 100%;
+            text-align: center;
+        }
+
+        tr {
+            height: 50px;
+        }
+        /*分页样式*/
+        #paging{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!--全局div-->
+<div class="container-fluid">
+    <!--头部-->
+    <div class="row" id="head">
+
+        <div class="col-lg-4" id="logo"><a href="${cpath}/index.html"><img src="images/bpf-farm-flavor-logo.png"></a></div>
+        <div class="col-lg-4"></div>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-1" style="color:dodgerblue;padding-top: 20px">欢迎<span class="username">${username}</span></div>
+    </div>
+    <!--主体部分-->
+    <div class="row" id="content">
+        <!--左边部分-->
+        <div class="col-lg-2" id="left">
+            <div class="row" id="news"><b>后台设置</b></div>
+            <!--新闻管理主体内容-->
+            <div class="row" id="news_content">
+                <ul class="control">
+                    <li><a class="news_control" href="#"><b>新闻管理</b></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--右边部分-->
+        <div class="col-lg-10" id="right">
+            <!--右边第一行-->
+            <div class="row" id="first">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-4">
+                    关键字:<input type="text" class="keyword">
+                </div>
+                <div class="col-lg-4">
+                    <button type="button" class="query">查询</button>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+            <!--右边第二行(表结构)-->
+            <div class="row" id="table">
+                <table class="table-bordered" id="tb">
+                    <tr>
+                        <td>序号</td>
+                        <td>标题</td>
+                        <td>发布时间</td>
+                        <td>发送人</td>
+                        <td>是否删除</td>
+                        <td>操作</td>
+                    </tr>
+                    <tr>
+                        <td id="id">1</td>
+                        <td id="title">苏州新闻</td>
+                        <td id="createdate">2017-2-27</td>
+                        <td id="author">张金阳</td>
+                        <td>
+                            是<input type="radio" id="istrue" name="rd" value="true">
+                            否<input type="radio" id="isfalse" name="rd" value="false">
+                        </td>
+                        <td>
+                            <button id="editor">编辑</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>南京新闻</td>
+                        <td>2017-2-25</td>
+                        <td>杨鹏</td>
+                        <td>
+                            是<input type="radio" name="ra" value="true">
+                            否<input type="radio" name="ra" value="false">
+                        </td>
+                        <td>
+                            <button class="button">编辑</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--右边第三行(底部分页行)-->
+            <div class="row" id="paging">
+                <ul class="pagination pagination-lg">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
