@@ -1,5 +1,6 @@
 package com.mapath.bpf.mapper;
 
+import com.mapath.bpf.model.KeyWordModel;
 import com.mapath.bpf.model.NewsModel;
 
 import java.util.Date;
@@ -13,7 +14,7 @@ public interface NewsMapper {
      * 将标题或者内容的信息查询
      * @return List<NewsModel>
      */
-    List<NewsModel> findbyKeyword (String keyword);
+    List<NewsModel> findbyKeyword (KeyWordModel keyword);
 
     /**
      * 根据id查询

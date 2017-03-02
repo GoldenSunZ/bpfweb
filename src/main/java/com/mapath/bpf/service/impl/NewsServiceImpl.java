@@ -1,6 +1,7 @@
 package com.mapath.bpf.service.impl;
 
 import com.mapath.bpf.mapper.NewsMapper;
+import com.mapath.bpf.model.KeyWordModel;
 import com.mapath.bpf.model.NewsModel;
 import com.mapath.bpf.service.NewsService;
 import com.mapath.bpf.utils.DateUtil;
@@ -21,7 +22,7 @@ public class NewsServiceImpl implements NewsService {
     private NewsMapper newsmapper;
 
     @Override
-    public List<NewsModel> newslist(String keyword) {
+    public List<NewsModel> newslist(KeyWordModel keyword) {
         List <NewsModel> newslist=newsmapper.findbyKeyword(keyword);
         return newslist;
     }
@@ -43,10 +44,9 @@ public class NewsServiceImpl implements NewsService {
             newsmapper.save(newsModel);
         }
     }
-
     @Override
     /**
-     * 将用户删除的信息也更新显示出来,
+     * 将用户删除的信息也更新显示出来.
      */
     public void newsDelete(NewsModel newsModel) {
         newsModel.setIsdelete("1");
