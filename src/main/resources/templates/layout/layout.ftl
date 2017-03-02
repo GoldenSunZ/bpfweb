@@ -11,7 +11,7 @@
     <meta name="description" content="苏州 蓝太平洋 香料 食品 天然 汲取新鲜水果的精华"/>
     <title><#if selId="version">我们的传承 &#8211;</#if>
         <#if selId="applications">产品门类 &#038; 应用 &#8211;</#if>
-        <#if selId="cleanlable">清洁标签透明度 &#8211;</#if>
+        <#if selId="cleanlable">清洁标签透明 &#8211;</#if>
         <#if selId="expertise">产品创新 &#8211; </#if>
         <#if selId="news">新闻 & 观察 &#8211; </#if>
         <#if selId="contact">联系我们 &#8211; </#if>
@@ -77,7 +77,7 @@
                                 <a href="${cpath}/expertise.html">产品创新</a></li>
                             <li id="menu-item-647"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-647">
-                                <a href="${cpath}/transparency.html">清洁标签透明度</a></li>
+                                <a href="${cpath}/transparency.html">清洁标签透明</a></li>
                             <li id="menu-item-658"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-658">
                                 <a href="${cpath}/news.html">新闻&观察</a></li>
@@ -109,7 +109,7 @@
                 <a href="flavors-applications.html">产品门类 & 应用</a>
                 <a href="heritage-vision.html">我们的传承</a>
                 <a href="innovation-expertise.html">产品创新</a>
-                <a href="clean-label-transparency.html">清洁标签透明度</a>
+                <a href="clean-label-transparency.html">清洁标签透明</a>
                 <a href="news.html">新闻 & 观察</a>
                 <a href="">联系我们</a>
             </div>

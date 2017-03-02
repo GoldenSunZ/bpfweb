@@ -1,0 +1,198 @@
+<#global cpath=rca.contextPath>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="${cpath}/style/css/newseditor.css">
+    <script type='text/javascript' src='${cpath}/style/js/jquery.js?ver=1.12.4'></script>
+    <script type='text/javascript' src='${cpath}/style/js/jquery-migrate.min.js?ver=1.4.1'></script>
+    <script type='text/javascript' src='${cpath}/style/js/bootstrap.min.js?ver=4.6.1'></script>
+    <link rel='stylesheet' id='ebor-bootstrap-css' href='${cpath}/style/css/bootstrap.min.css?ver=4.6.1'
+          type='text/css'
+          media='all'/>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+    <link href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <script src="${cpath}/style/js/bootstrap-wysiwyg.js"></script>
+    <script>
+        jQuery(function(){
+            jQuery('#editor').wysiwyg();
+        });
+    </script>
+    <title>编辑&保存页面</title>
+    <style>
+        .container-fluid {
+            height: 100%;
+        }
+
+        #head {
+            border-bottom: darkgray solid 1px;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.08);
+        }
+
+        #logo {
+            padding-left: 50px;
+            padding-top: 20px;
+        }
+
+        #news {
+            border-bottom: darkgray solid 1px;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            background-image: url("images/new.jpg");
+            border-right: darkgray solid 1px;
+            opacity: 0.7;
+        }
+
+        #first {
+            text-align: center;
+            height: 50px;
+            padding-top: 10px;
+            border-bottom: darkgray solid 1px;
+            background-image: url("images/new.jpg");
+            opacity: 0.7;
+        }
+
+        #news_content {
+            background-color: lightskyblue;
+            height: 500px;
+            border-right: darkgray solid 1px;
+            opacity: 0.7;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .news_control,#save{
+            font-size: 20px;
+        }
+        .control{
+            list-style:none;
+            padding-right: 35px;
+        }
+        .control:hover{
+            background-color: #000000;
+            color: #ffffff;
+        }
+        #tb {
+            width: 100%;
+            text-align: center;
+        }
+        /*标题栏的样式*/
+        .modal-title{
+            width: 250px;
+            height: 40px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        /*内容样式*/
+        #editor{
+            overflow:scroll; max-height:300px
+        }
+    </style>
+</head>
+<body>
+<!--全局div-->
+<div class="container-fluid">
+    <!--头部-->
+    <div class="row" id="head">
+
+        <div class="col-lg-4" id="logo"><a href="${cpath}/index.html"><img src="img/bpf-farm-flavor-logo.png"></a></div>
+        <div class="col-lg-4"></div>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-1" style="color:dodgerblue;padding-top: 20px">欢迎<span class="username">xxx</span></div>
+    </div>
+    <!--主体部分-->
+    <div class="row" id="content">
+        <!--左边部分-->
+        <div class="col-lg-2" id="left">
+            <div class="row" id="news"><b>后台设置</b></div>
+            <!--新闻管理主体内容-->
+            <div class="row" id="news_content">
+                <!--<a class="news_control" href="#"><b>新闻管理</b></a>-->
+                <ul class="control">
+                    <li><a class="news_control" href="#"><b>编辑&保存</b></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--右边部分-->
+        <div class="col-lg-10" id="right">
+            <!--右边第一行-->
+            <div class="row" id="first">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4" id="save">
+                    <b>编辑&保存</b>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+            <!--右边第二行(表结构)-->
+            <div class="row" id="table">
+                <table class="table-bordered" id="tb">
+                    <tr><td>标题(后面从后台获取)<input type="text" class="modal-title"/></td></tr>
+                    <tr><td>
+                        <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+                            <div class="btn-group">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="icon-font"></i><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="icon-text-height"></i>&nbsp;<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
+                                    <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
+                                    <li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="icon-bold"></i></a>
+                                <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="icon-italic"></i></a>
+                                <a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="icon-strikethrough"></i></a>
+                                <a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="icon-underline"></i></a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="icon-list-ul"></i></a>
+                                <a class="btn" data-edit="insertorderedlist" title="Number list"><i class="icon-list-ol"></i></a>
+                                <a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="icon-indent-left"></i></a>
+                                <a class="btn" data-edit="indent" title="Indent (Tab)"><i class="icon-indent-right"></i></a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="icon-align-left"></i></a>
+                                <a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="icon-align-center"></i></a>
+                                <a class="btn" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="icon-align-right"></i></a>
+                                <a class="btn" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="icon-align-justify"></i></a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" title="Hyperlink"><i class="icon-link"></i></a>
+                                <div class="dropdown-menu input-append">
+                                    <input class="span2" placeholder="URL" type="text" data-edit="createLink"/>
+                                    <button class="btn" type="button">Add</button>
+                                </div>
+                                <a class="btn" data-edit="unlink" title="Remove Hyperlink"><i class="icon-cut"></i></a>
+
+                            </div>
+
+                            <div class="btn-group">
+                                <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="icon-picture"></i></a>
+                                <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="icon-undo"></i></a>
+                                <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
+                            </div>
+                            <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="">
+                        </div>
+
+                        <div id="editor">
+                            Go ahead&hellip;输入文本的内容!
+                        </div>
+                    </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

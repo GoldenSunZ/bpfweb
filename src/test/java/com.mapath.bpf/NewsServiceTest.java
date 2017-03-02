@@ -4,8 +4,12 @@ package com.mapath.bpf;
  * Created by zhouxiaobo on 2017/2/28.
  */
 import com.mapath.bpf.controller.NewsController;
+import com.mapath.bpf.model.KeyWordModel;
+import com.mapath.bpf.model.NewsModel;
 import com.mapath.bpf.service.AdminService;
 import com.mapath.bpf.service.NewsService;
+import com.mapath.bpf.utils.DateUtil;
+import com.mapath.bpf.utils.UUID;
 import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Before;
@@ -50,7 +54,16 @@ public class NewsServiceTest {
     @Test
     public void testEnterPage() throws Exception{
         RequestBuilder request = null;
-        request = MockMvcRequestBuilders.get("/newsList");
+        NewsModel newsModel=new NewsModel();
+        newsModel.setId(UUID.uuid32());
+        newsModel.setTitle("国家");
+        newsModel.setPicture("");
+        newsModel.setComments("梦想");
+        newsModel.setAuthor("于丹");
+        newsModel.setCreateDt(DateUtil.getSystemDateTime());
+        newsModel.setClickNum(0);
+        newsModel.setIsdelete("0");
+        request = MockMvcRequestBuilders.get("/newsList",newsModel);
         mvc.perform(request);
     }
 
