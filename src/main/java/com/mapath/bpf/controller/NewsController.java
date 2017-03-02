@@ -36,6 +36,7 @@ public class NewsController {
     @Autowired
     private NewsService newsService;
 
+
     /*测试跳转到新闻主体页面(只作为跳转使用)*/
     @RequestMapping(value = "newsContent")
     public String newsContent(Model model){
@@ -46,7 +47,7 @@ public class NewsController {
     /*ajax跳转添加数据*/
     @RequestMapping(value = "newsContentAJAX")
     @ResponseBody
-    public List<NewsModel> newsContentAJAX(Model model,@RequestParam KeyWordModel keyword){
+    public List<NewsModel> newsContentAJAX(Model model,KeyWordModel keyword){
         List<NewsModel> newsModels=newsService.newslist(keyword);
         logger.info(newsModels.size()+"我的查询结果");
 
@@ -73,4 +74,5 @@ public class NewsController {
         return "news";
     }
 }
+
 
