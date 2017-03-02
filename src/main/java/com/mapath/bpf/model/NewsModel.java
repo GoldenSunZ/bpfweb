@@ -128,4 +128,6 @@ public class NewsModel implements Serializable {
         result = 31 * result + (isdelete != null ? isdelete.hashCode() : 0);
         return result;
     }
+
+
 }
