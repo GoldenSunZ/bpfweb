@@ -33,7 +33,7 @@ public class NewsController {
     private NewsService newsService;
 
     /*测试跳转到新闻主体页面(只作为跳转使用)*/
-    @RequestMapping(value = "newsContent.html")
+    @RequestMapping(value = "newsContent")
     public String newsContent(Model model){
 
         return "newscontent"; //新闻主体页面
@@ -44,7 +44,7 @@ public class NewsController {
     @ResponseBody
     public List<NewsModel> newsContentAJAX(Model model,@RequestParam String keyword){
         List<NewsModel> newsModels=newsService.newslist(keyword);
-
+        logger.info(newsModels.size()+"我的查询结果");
         return newsModels;
     }
 
