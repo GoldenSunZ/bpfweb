@@ -97,10 +97,10 @@
     <!--头部-->
     <div class="row" id="head">
 
-        <div class="col-lg-4" id="logo"><a href="${cpath}/index.html"><img src="img/bpf-farm-flavor-logo.png"></a></div>
+        <div class="col-lg-4" id="logo"><a href="${cpath}/index.html"><img src="images/bpf-farm-flavor-logo.png"></a></div>
         <div class="col-lg-4"></div>
         <div class="col-lg-3"></div>
-        <div class="col-lg-1" style="color:dodgerblue;padding-top: 20px">欢迎<span class="username">xxx</span></div>
+        <div class="col-lg-1" style="color:dodgerblue;padding-top: 20px">欢迎<span class="username">${user!}</span></div>
     </div>
     <!--主体部分-->
     <div class="row" id="content">
@@ -128,7 +128,9 @@
             <!--右边第二行(表结构)-->
             <div class="row" id="table">
                 <table class="table-bordered" id="tb">
-                    <tr><td>标题(后面从后台获取)<input type="text" class="modal-title"/></td></tr>
+                    <!--此处为标题-->
+                    <tr><td><input type="text" class="modal-title" value="${title!}"/></td></tr>
+                    <!--以下为主体内容-->
                     <tr><td>
                         <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
                             <div class="btn-group">
@@ -184,7 +186,7 @@
                         </div>
 
                         <div id="editor">
-                            Go ahead&hellip;输入文本的内容!
+                            ${comments!}
                         </div>
                     </td>
                     </tr>

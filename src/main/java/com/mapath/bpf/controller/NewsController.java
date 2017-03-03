@@ -13,12 +13,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -56,6 +54,16 @@ public class NewsController {
         newsService.newsDelete(deletenews);   //删除操作，逻辑删除
         return newsModel;
     }
+
+    /*跳转到新闻编辑页面*/
+    @RequestMapping(value = "newsEditor/{id}")
+    public String newsEditor(@PathVariable String id, Model model){
+        NewsModel newsModel=newsService.newsfindById(id); //通过id找到对应的newsModel对象
+        model.addAttribute("title",newsModel.getTitle());
+        model.addAttribute("comments",newsModel.getComments());
+        return "newseditor";
+    }
+
 
     @RequestMapping(value = "newsList")
     public String newsList(){
