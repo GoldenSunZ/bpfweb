@@ -11,6 +11,7 @@
           media='all'/>
     <script>
         jQuery(function () {
+            /*删除按钮的ajax*/
            jQuery(".isdelete").click(function () {
                var parent=this.parentNode.parentNode; //获取到的是button按钮的父父节点 ，也就是tr节点
                var id=jQuery(".isdelete").val();   //获取要删除对象的id值，传入控制器，进行删除
@@ -19,6 +20,14 @@
                    parent.remove(); //删除tr节点
                });
            });
+           /*编辑按钮的操作*/
+//           jQuery(".editor").click(function () {
+//              var id=jQuery(".editor").val();     //获取要编辑对象的id的值（传入控制器，根据ID找到对应对象）
+//               var url="/newsEditor";
+//               jQuery.post(url,{id:id},function () {
+//
+//               });
+//           });
         });
     </script>
     <title>新闻主体页面</title>
@@ -150,7 +159,7 @@
                         <td id="author">${items.author!}</td>
                         <td>
                             <button type="button" class="isdelete" value="${items.id!}">删除</button>
-                            <button type="button" id="editor">编辑</button>
+                            <a class="btn" href="${cpath}/newsEditor/${items.id!}">编辑</a>
                         </td>
                     </tr>
                         </#list>
