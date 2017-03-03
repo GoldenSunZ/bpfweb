@@ -151,7 +151,7 @@
                         <td id="author">${items.author!}</td>
                         <td>
                             <button type="button" class="isdelete" value="${items.id!}">删除</button>
-                            <a class="btn" href="${cpath}/newsEditor/${items.id!}">编辑</a>
+                            <a class="btn" role="button" href="${cpath}/newsEditor/${items.id!}">编辑</a>
                         </td>
                     </tr>
                         </#list>
@@ -165,13 +165,13 @@
             <!--右边第三行(底部分页行)-->
             <div class="row" id="paging">
                 <ul class="pagination pagination-lg">
-                    <li><a href="#">&laquo;</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">&raquo;</a></li>
+                    <li><a href="${cpath}/newsContent">&laquo;</a></li>
+                    <li><a href="${cpath}/newsContent/1">1</a></li>
+                    <li><a href="${cpath}/newsContent">2</a></li>
+                    <li><a href="${cpath}/newsContent">3</a></li>
+                    <li><a href="${cpath}/newsContent">4</a></li>
+                    <li><a href="${cpath}/newsContent">5</a></li>
+                    <li><a href="${cpath}/newsContent">&raquo;</a></li>
                 </ul>
             </div>
         </div>
