@@ -31,9 +31,10 @@ public class NewsServiceImpl implements NewsService {
         keyword.setStart((page-1)*10);
         //记录的总录
         int total=newsmapper.count();
+
         if(total%10==0) {
             //总的页数
-            pagetotal = total / 10;
+            pagetotal = total/10;
         } else{
             //总的页数+1
             pagetotal=(total/10)+1;
