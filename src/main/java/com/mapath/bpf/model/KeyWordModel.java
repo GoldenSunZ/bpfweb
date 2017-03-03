@@ -6,7 +6,9 @@ package com.mapath.bpf.model;
 public class KeyWordModel {
 
     private String keyword;
+    //数据的起始
     private int start;
+    //传过来的页码的编号
     private int page;
 
     public String getKeyword() {

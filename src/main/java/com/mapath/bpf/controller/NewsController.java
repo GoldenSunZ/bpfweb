@@ -38,20 +38,23 @@ public class NewsController {
 
 
     /*测试跳转到新闻主体页面(只作为跳转使用)*/
-    @RequestMapping(value = "newsContent")
-    public String newsContent(Model model){
 
+    @RequestMapping(value = "newsContent")
+    public String newsContent(Model model,KeyWordModel keyword){
+        List<NewsModel> newsModels=newsService.newslist(keyword);
+        model.addAttribute("newsModels",newsModels);
+        model.addAttribute("key",keyword.getKeyword());
         return "newscontent"; //新闻主体页面
     }
 
-    /*ajax跳转添加数据*/
-    @RequestMapping(value = "newsContentAJAX")
+    /*ajax跳转删除数据*/
+    @RequestMapping(value = "deletedata")
     @ResponseBody
-    public List<NewsModel> newsContentAJAX(Model model,KeyWordModel keyword){
-        List<NewsModel> newsModels=newsService.newslist(keyword);
-        logger.info(newsModels.size()+"我的查询结果");
-
-        return newsModels;
+    public NewsModel newsDeleteData(Model model,NewsModel newsModel){
+        String id=newsModel.getId();
+        NewsModel deletenews=newsService.newsfindById(id);  //通过id找到对应的newsModel对象
+        newsService.newsDelete(deletenews);   //删除操作，逻辑删除
+        return newsModel;
     }
 
     @RequestMapping(value = "newsList")

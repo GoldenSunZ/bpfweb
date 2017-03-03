@@ -11,29 +11,12 @@
           media='all'/>
     <script>
         jQuery(function () {
-           jQuery(".query").click(function () {
-               var keyword=jQuery(".keyword").val();
-               var url="/newsContentAJAX";
-               var id=jQuery("#id");
-               var title=jQuery("#title");
-               var createdate=jQuery("#createdate");
-               var author=jQuery("#author");
-               var istrue=jQuery("#istrue");
-               var isfalse=jQuery("#isfalse");
-               jQuery.post(url,{keyword:keyword},function (result) {
-//                  for(result:re){
-//
-//                   }
-                   id.html(result.id);
-                   title.html(result.title);
-                   createdate.html(result.createDt);
-                   author.html(result.author);
-                   var isdelete=result.isdelete;
-                   if(isdelete=="0"){  //0是删除
-                       istrue.checked();
-                   }else {
-                       isfalse.checked();
-                   }
+           jQuery(".isdelete").click(function () {
+               var parent=this.parentNode.parentNode; //获取到的是button按钮的父父节点 ，也就是tr节点
+               var id=jQuery(".isdelete").val();   //获取要删除对象的id值，传入控制器，进行删除
+               var url="/deletedata";
+               jQuery.post(url,{id:id},function (result) {
+                   parent.remove(); //删除tr节点
                });
            });
         });
@@ -121,7 +104,7 @@
         <div class="col-lg-4" id="logo"><a href="${cpath}/index.html"><img src="images/bpf-farm-flavor-logo.png"></a></div>
         <div class="col-lg-4"></div>
         <div class="col-lg-3"></div>
-        <div class="col-lg-1" style="color:dodgerblue;padding-top: 20px">欢迎<span class="username">xxx</span></div>
+        <div class="col-lg-1" style="color:dodgerblue;padding-top: 20px">欢迎<span class="username">${user!}</span></div>
     </div>
     <!--主体部分-->
     <div class="row" id="content">
@@ -140,13 +123,13 @@
             <!--右边第一行-->
             <div class="row" id="first">
                 <div class="col-lg-3"></div>
-                <div class="col-lg-4">
-                    关键字:<input type="text" class="keyword">
+                <form action="newsContent" method="post">
+                <div class="col-lg-5">
+                    关键字:<input type="text" name="keyword" value="${key!}" class="keyword">
+                    <button type="submit" class="query">查询</button>
                 </div>
-                <div class="col-lg-4">
-                    <button type="button" class="query">查询</button>
-                </div>
-                <div class="col-lg-1"></div>
+                <div class="col-lg-4"></div>
+                </form>
             </div>
             <!--右边第二行(表结构)-->
             <div class="row" id="table">
@@ -156,35 +139,26 @@
                         <td>标题</td>
                         <td>发布时间</td>
                         <td>发送人</td>
-                        <td>是否删除</td>
                         <td>操作</td>
                     </tr>
+                    <#if (newsModels?size>0)>
+                        <#list newsModels as items>
                     <tr>
-                        <td id="id">1</td>
-                        <td id="title">苏州新闻</td>
-                        <td id="createdate">2017-2-27</td>
-                        <td id="author">张金阳</td>
+                        <td id="id">${items_index+1}</td>
+                        <td id="title">${items.title!}</td>
+                        <td id="createdate">${items.createDt?string('yyyy-MM-dd')}</td>
+                        <td id="author">${items.author!}</td>
                         <td>
-                            是<input type="radio" id="istrue" name="rd" value="true">
-                            否<input type="radio" id="isfalse" name="rd" value="false">
-                        </td>
-                        <td>
-                            <button id="editor">编辑</button>
+                            <button type="button" class="isdelete" value="${items.id!}">删除</button>
+                            <button type="button" id="editor">编辑</button>
                         </td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>南京新闻</td>
-                        <td>2017-2-25</td>
-                        <td>杨鹏</td>
-                        <td>
-                            是<input type="radio" name="ra" value="true">
-                            否<input type="radio" name="ra" value="false">
-                        </td>
-                        <td>
-                            <button class="button">编辑</button>
-                        </td>
-                    </tr>
+                        </#list>
+                        <#else>
+                            <tr>
+                                <td>没有符合的数据</td>
+                            </tr>
+                    </#if>
                 </table>
             </div>
             <!--右边第三行(底部分页行)-->

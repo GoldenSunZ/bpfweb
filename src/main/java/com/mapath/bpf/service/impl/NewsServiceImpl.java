@@ -28,11 +28,18 @@ public class NewsServiceImpl implements NewsService {
         int page=keyword.getPage();
         //页面的起始位置开始获取，并且将数据赋值给sql语句。
         keyword.setStart((page-1)*10);
+        //记录的总录
+        int total=newsmapper.count();
+
+        //总的页数
+        int pagetotal=(total/10)+1;
 
         //每次只能拿到10 条数据
         List <NewsModel> newslist=newsmapper.findbyKeyword(keyword);
-
-        return newslist;
+        pageNumber pagenumber=new pageNumber();
+        pagenumber.setPagetotal(pagetotal);
+        pagenumber.setList(newslist);
+        return (List<NewsModel>) pagenumber;
     }
 
     @Override
@@ -60,4 +67,27 @@ public class NewsServiceImpl implements NewsService {
         newsModel.setIsdelete("1");
         newsmapper.update(newsModel);
     }
+}
+
+/**
+ * 用于封装提交页码的总数 ，以及数据
+ */
+class pageNumber{
+
+    private List<NewsModel> list;
+    private int pagetotal;
+
+    public List<NewsModel> getList(){
+        return list;
+    }
+    public void setList(List<NewsModel>  list){
+        this.list=list;
+    }
+    public int getPagetotal(){
+        return pagetotal;
+    }
+    public void setPagetotal(int pagetotal){
+        this.pagetotal=pagetotal;
+    }
+
 }
