@@ -2,6 +2,7 @@ package com.mapath.bpf.controller;
 
 import com.mapath.bpf.model.KeyWordModel;
 import com.mapath.bpf.model.NewsModel;
+import com.mapath.bpf.model.PageNumber;
 import com.mapath.bpf.service.AdminService;
 import com.mapath.bpf.service.NewsService;
 import com.mapath.bpf.service.impl.NewsServiceImpl;
@@ -39,8 +40,8 @@ public class NewsController {
 
     @RequestMapping(value = "newsContent")
     public String newsContent(Model model,KeyWordModel keyword){
-        List<NewsModel> newsModels=newsService.newslist(keyword);
-        model.addAttribute("newsModels",newsModels);
+        //List<NewsModel> newsModels=newsService.newslist(keyword);
+       // model.addAttribute("newsModels",newsModels);
         model.addAttribute("key",keyword.getKeyword());
         return "newscontent"; //新闻主体页面
     }
@@ -79,9 +80,10 @@ public class NewsController {
         KeyWordModel key=new KeyWordModel();
         key.setKeyword(keyword);
         key.setPage(1);
-        List<NewsModel> records = newsService.newslist(key);
-        logger.info((records == null)?"0条":records.size() + "条");
-
+        PageNumber records = newsService.newslist(key);
+        //将信息的条数以及分页的总页数输出
+        logger.info((records == null)?"0条":records+ "条");
+        //logger.info((records == null)?"0条":list.size() + "条");
         model.addAttribute("news", records);
         return "news";
     }

@@ -3,12 +3,13 @@ package com.mapath.bpf.service.impl;
 import com.mapath.bpf.mapper.NewsMapper;
 import com.mapath.bpf.model.KeyWordModel;
 import com.mapath.bpf.model.NewsModel;
+import com.mapath.bpf.model.PageNumber;
 import com.mapath.bpf.service.NewsService;
 import com.mapath.bpf.utils.DateUtil;
 import com.mapath.bpf.utils.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.util.Date;
+
 import java.util.List;
 
 /**
@@ -21,8 +22,9 @@ public class NewsServiceImpl implements NewsService {
     @Autowired
     private NewsMapper newsmapper;
 
-    @Override
-    public List<NewsModel> newslist(KeyWordModel keyword) {
+
+    public PageNumber newslist(KeyWordModel keyword) {
+
         //页码的总数
         int pagetotal;
         //从前端传过来的页码数，将数据取出来
@@ -32,7 +34,7 @@ public class NewsServiceImpl implements NewsService {
         //记录的总录
         int total=newsmapper.count();
 
-        if(total%10==0) {
+        if(total%10 == 0) {
             //总的页数
             pagetotal = total/10;
         } else{
@@ -41,10 +43,10 @@ public class NewsServiceImpl implements NewsService {
         }
         //每次只能拿到10 条数据
         List <NewsModel> newslist=newsmapper.findbyKeyword(keyword);
-        pageNumber pagenumber=new pageNumber();
+        PageNumber pagenumber=new PageNumber();
         pagenumber.setPagetotal(pagetotal);
         pagenumber.setList(newslist);
-        return (List<NewsModel>) pagenumber;
+        return pagenumber;
     }
 
     @Override
@@ -74,25 +76,3 @@ public class NewsServiceImpl implements NewsService {
     }
 }
 
-/**
- * 用于封装提交页码的总数 ，以及数据
- */
-class pageNumber{
-
-    private List<NewsModel> list;
-    private int pagetotal;
-
-    public List<NewsModel> getList(){
-        return list;
-    }
-    public void setList(List<NewsModel>  list){
-        this.list=list;
-    }
-    public int getPagetotal(){
-        return pagetotal;
-    }
-    public void setPagetotal(int pagetotal){
-        this.pagetotal=pagetotal;
-    }
-
-}
