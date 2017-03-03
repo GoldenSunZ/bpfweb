@@ -40,6 +40,9 @@ public class NewsController {
 
     @RequestMapping(value = "newsContent")
     public String newsContent(Model model,KeyWordModel keyword,HttpServletRequest request){
+        if(keyword.getPage()==0){
+            keyword.setPage(1);
+        }
         PageNumber pageNumber=newsService.newslist(keyword);
        List<NewsModel> newsModels=pageNumber.getList();
        int pagetotal=pageNumber.getPagetotal();
