@@ -25,15 +25,21 @@
           isdelete
     </sql>
 
+    <select id="count" resultType="int" >
+        select count(1) from news
+    </select>
+
+
     <select id="findbyKeyword" parameterType="String" resultMap="newsResult">
         select
           <include refid="newsColumn" />
         from
           news
+
         <where>
                 isdelete = '0'
                 <if test="keyword != null and keyword != ''">
-                    and (title like CONCAT('%',trim(#{keyword}),'%') || comments like CONCAT('%',trim(#{keyword}),'%'))
+                    and (title like CONCAT('%',trim(#{keyword}),'%') || comments like CONCAT('%',trim(#{keyword}),'%')) limit #{start},10
                 </if>
         </where>
     </select>

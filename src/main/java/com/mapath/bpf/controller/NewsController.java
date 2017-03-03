@@ -67,6 +67,7 @@ public class NewsController {
         //测试keyWord模糊查询
         KeyWordModel key=new KeyWordModel();
         key.setKeyword(keyword);
+        key.setPage(1);
         List<NewsModel> records = newsService.newslist(key);
         logger.info((records == null)?"0条":records.size() + "条");
 
