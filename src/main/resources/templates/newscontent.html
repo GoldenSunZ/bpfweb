@@ -168,11 +168,11 @@
                     <li><a href="${cpath}/newsContent">&laquo;</a></li>
                     <#if (pagetotal>5 && pagetotal=5)>
                         <#list 1..5 as t>
-                            <li><a href="${cpath}/newsContent"?page=${t}>${t}</a></li>
+                            <li><a href="${cpath}/newsContent?page=${t}">${t}</a></li>
                         </#list>
                     <#elseif (pagetotal>0 && pagetotal<5)>
                       <#list 1..pagetotal as t>
-                          <li><a href="${cpath}/newsContent"?page=${t}>${t}</a></li>
+                          <li><a href="${cpath}/newsContent?page=${t}">${t}</a></li>
                       </#list>
                     <#else>
                     <li><a href="#">空</a></li>
