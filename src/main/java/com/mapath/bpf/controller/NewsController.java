@@ -39,10 +39,13 @@ public class NewsController {
     /*测试跳转到新闻主体页面(只作为跳转使用)*/
 
     @RequestMapping(value = "newsContent")
-    public String newsContent(Model model,KeyWordModel keyword){
-        //List<NewsModel> newsModels=newsService.newslist(keyword);
-       // model.addAttribute("newsModels",newsModels);
-        model.addAttribute("key",keyword.getKeyword());
+    public String newsContent(Model model,KeyWordModel keyword,HttpServletRequest request){
+        PageNumber pageNumber=newsService.newslist(keyword);
+       List<NewsModel> newsModels=pageNumber.getList();
+       int pagetotal=pageNumber.getPagetotal();
+       model.addAttribute("pagetotal",pagetotal);
+       model.addAttribute("newsModels",newsModels);
+       model.addAttribute("key",keyword.getKeyword());
         return "newscontent"; //新闻主体页面
     }
 

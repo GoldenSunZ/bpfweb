@@ -45,7 +45,7 @@
             height: 50px;
             line-height: 50px;
             font-size: 20px;
-            background-image: url("images/new.jpg");
+            background-image: url("${cpath}/images/new.jpg");
             border-right: darkgray solid 1px;
             opacity: 0.7;
         }
@@ -55,7 +55,7 @@
             height: 50px;
             padding-top: 10px;
             border-bottom: darkgray solid 1px;
-            background-image: url("images/new.jpg");
+            background-image: url("${cpath}/images/new.jpg");
             opacity: 0.7;
         }
 
@@ -102,7 +102,7 @@
     <!--头部-->
     <div class="row" id="head">
 
-        <div class="col-lg-4" id="logo"><a href="${cpath}/index.html"><img src="images/bpf-farm-flavor-logo.png"></a></div>
+        <div class="col-lg-4" id="logo"><a href="${cpath}/index.html"><img src="${cpath}/images/bpf-farm-flavor-logo.png"></a></div>
         <div class="col-lg-4"></div>
         <div class="col-lg-3"></div>
         <div class="col-lg-1" style="color:dodgerblue;padding-top: 20px">欢迎<span class="username">${user!}</span></div>
@@ -166,11 +166,20 @@
             <div class="row" id="paging">
                 <ul class="pagination pagination-lg">
                     <li><a href="${cpath}/newsContent">&laquo;</a></li>
-                    <li><a href="${cpath}/newsContent/1">1</a></li>
-                    <li><a href="${cpath}/newsContent">2</a></li>
-                    <li><a href="${cpath}/newsContent">3</a></li>
-                    <li><a href="${cpath}/newsContent">4</a></li>
-                    <li><a href="${cpath}/newsContent">5</a></li>
+                    <#if (pagetotal>5 && pagetotal=5)>
+                        <#list 1..5 as t>
+                            <li><a href="${cpath}/newsContent"?page=${t}>${t}</a></li>
+                        </#list>
+                    <#elseif (pagetotal>0 && pagetotal<5)>
+                      <#list 1..pagetotal as t>
+                          <li><a href="${cpath}/newsContent"?page=${t}>${t}</a></li>
+                      </#list>
+                    <#else>
+                    <li><a href="#">空</a></li>
+                    </#if>
+                    <!--<li><a href="${cpath}/newsContent">3</a></li>-->
+                    <!--<li><a href="${cpath}/newsContent">4</a></li>-->
+                    <!--<li><a href="${cpath}/newsContent">5</a></li>-->
                     <li><a href="${cpath}/newsContent">&raquo;</a></li>
                 </ul>
             </div>
