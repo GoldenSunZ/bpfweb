@@ -41,7 +41,6 @@ public class LoginController {
         String messages="";
         String truename="root";
         String truepassword="root";
-        session.setAttribute("username",truename);
         if(name.equals("")) {
             messages="用户名不能为空!";
         }else if(!name.equals(truename)) {
@@ -52,6 +51,7 @@ public class LoginController {
             messages="密码不正确";
         }else{
             messages="登录成功!";
+            session.setAttribute("user",truename);
         }
         js.setMessage(messages);
         return js;
