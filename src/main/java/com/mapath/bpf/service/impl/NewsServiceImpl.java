@@ -23,17 +23,21 @@ public class NewsServiceImpl implements NewsService {
 
     @Override
     public List<NewsModel> newslist(KeyWordModel keyword) {
-
+        //页码的总数
+        int pagetotal;
         //从前端传过来的页码数，将数据取出来
         int page=keyword.getPage();
         //页面的起始位置开始获取，并且将数据赋值给sql语句。
         keyword.setStart((page-1)*10);
         //记录的总录
         int total=newsmapper.count();
-
-        //总的页数
-        int pagetotal=(total/10)+1;
-
+        if(total%10==0) {
+            //总的页数
+            pagetotal = total / 10;
+        } else{
+            //总的页数+1
+            pagetotal=(total/10)+1;
+        }
         //每次只能拿到10 条数据
         List <NewsModel> newslist=newsmapper.findbyKeyword(keyword);
         pageNumber pagenumber=new pageNumber();
