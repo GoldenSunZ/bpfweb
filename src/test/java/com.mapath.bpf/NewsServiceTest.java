@@ -4,7 +4,6 @@ package com.mapath.bpf;
  * Created by zhouxiaobo on 2017/2/28.
  */
 import com.mapath.bpf.controller.NewsController;
-import com.mapath.bpf.model.KeyWordModel;
 import com.mapath.bpf.model.NewsModel;
 import com.mapath.bpf.service.AdminService;
 import com.mapath.bpf.service.NewsService;

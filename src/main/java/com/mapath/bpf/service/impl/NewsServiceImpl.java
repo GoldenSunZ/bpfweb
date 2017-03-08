@@ -1,12 +1,13 @@
 package com.mapath.bpf.service.impl;
 
 import com.mapath.bpf.mapper.NewsMapper;
-import com.mapath.bpf.model.KeyWordModel;
 import com.mapath.bpf.model.NewsModel;
-import com.mapath.bpf.model.PageNumber;
+import com.mapath.bpf.model.NewsPage;
 import com.mapath.bpf.service.NewsService;
 import com.mapath.bpf.utils.DateUtil;
 import com.mapath.bpf.utils.UUID;
+import com.mapath.util.pagination.model.DataGrid;
+import com.mapath.util.pagination.model.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,32 +23,13 @@ public class NewsServiceImpl implements NewsService {
     @Autowired
     private NewsMapper newsmapper;
 
-
-    public PageNumber newslist(KeyWordModel keyword) {
-
-        //页码的总数
-        int pagetotal;
-        //从前端传过来的页码数，将数据取出来
-        int page=keyword.getPage();
-        //页面的起始位置开始获取，并且将数据赋值给sql语句。
-        keyword.setStart((page-1)*10);
-        //记录的总录
-        int total=newsmapper.count();
-
-        if(total%10 == 0) {
-            //总的页数
-            pagetotal = total/10;
-        } else{
-            //总的页数+1
-            pagetotal=(total/10)+1;
-        }
-        //每次只能拿到10 条数据
-        List <NewsModel> newslist=newsmapper.findbyKeyword(keyword);
-        PageNumber pagenumber=new PageNumber();
-        pagenumber.setPagetotal(pagetotal);
-        pagenumber.setList(newslist);
-        return pagenumber;
+    @Override
+    public DataGrid<NewsModel> newslist(NewsPage newsPage){
+        List<NewsModel> newsModels = newsmapper.findbyKeyword(newsPage);
+        DataGrid<NewsModel> dataGrid = new DataGrid(newsModels,newsPage);
+        return dataGrid;
     }
+
 
     @Override
     public NewsModel newsfindById(String id) {
@@ -58,11 +40,12 @@ public class NewsServiceImpl implements NewsService {
     @Override
     public void newsSave(NewsModel newsModel) {
         if(newsModel.getId() != null && !"".equals(newsModel.getId())){
-            newsmapper.update(newsModel);
+                newsmapper.update(newsModel);
         }else{
             newsModel.setId(UUID.uuid32());
             newsModel.setCreateDt(DateUtil.getSystemDateTime());
             newsModel.setClickNum(new Integer(0));
+            newsModel.setIsdelete("0");
             newsmapper.save(newsModel);
         }
     }

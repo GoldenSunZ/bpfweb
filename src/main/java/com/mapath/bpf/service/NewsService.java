@@ -1,8 +1,9 @@
 package com.mapath.bpf.service;
 
-import com.mapath.bpf.model.KeyWordModel;
 import com.mapath.bpf.model.NewsModel;
+import com.mapath.bpf.model.NewsPage;
 import com.mapath.bpf.model.PageNumber;
+import com.mapath.util.pagination.model.DataGrid;
 
 import java.util.Date;
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
  */
 public interface NewsService {
 
-    PageNumber newslist(KeyWordModel keyword);
+    DataGrid<NewsModel> newslist(NewsPage newsPage);
 
     NewsModel newsfindById(String id);
 

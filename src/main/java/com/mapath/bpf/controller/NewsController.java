@@ -1,13 +1,14 @@
 package com.mapath.bpf.controller;
 
-import com.mapath.bpf.model.KeyWordModel;
 import com.mapath.bpf.model.NewsModel;
-import com.mapath.bpf.model.PageNumber;
+import com.mapath.bpf.model.NewsPage;
 import com.mapath.bpf.service.AdminService;
 import com.mapath.bpf.service.NewsService;
 import com.mapath.bpf.service.impl.NewsServiceImpl;
 import com.mapath.bpf.utils.DateUtil;
 import com.mapath.bpf.utils.UUID;
+import com.mapath.util.pagination.model.DataGrid;
+import com.mapath.util.pagination.model.PageInfo;
 import org.apache.ibatis.javassist.compiler.ast.Keyword;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,21 +36,34 @@ public class NewsController {
     @Autowired
     private NewsService newsService;
 
-
-    /*测试跳转到新闻主体页面(只作为跳转使用)*/
-
-    @RequestMapping(value = "newsContent")
-    public String newsContent(Model model,KeyWordModel keyword,HttpServletRequest request){
-        if(keyword.getPage()==0){
-            keyword.setPage(1);
+    @RequestMapping("newsContent")
+    public String getPageData(NewsPage newsPage, Model model,NewsModel newsModel){
+        if(newsPage.getPageInfo() == null){
+            PageInfo pageInfo = new PageInfo();
+            pageInfo.setPage(1);
+            newsPage.setPageInfo(pageInfo);
         }
-        PageNumber pageNumber=newsService.newslist(keyword);
-       List<NewsModel> newsModels=pageNumber.getList();
-       int pagetotal=pageNumber.getPagetotal();
-       model.addAttribute("pagetotal",pagetotal);
-       model.addAttribute("newsModels",newsModels);
-       model.addAttribute("key",keyword.getKeyword());
-        return "newscontent"; //新闻主体页面
+        DataGrid<NewsModel> dataGrid = newsService.newslist(newsPage);
+        model.addAttribute("result",dataGrid);
+        model.addAttribute("keyWord",newsPage.getKeyWord());
+        return "newscontent";  //新闻主体页面
+    }
+
+    @RequestMapping(value = "saveNewseditor", method = RequestMethod.POST)
+    public String saveNews(NewsPage newsPage,Model model){
+        if(newsPage.getPageInfo() == null){
+            PageInfo pageInfo = new PageInfo();
+            pageInfo.setPage(1);
+            newsPage.setPageInfo(pageInfo);
+        }
+        NewsModel newsModel=newsService.newsfindById(newsPage.getId()); //通过id查询出newModel对象
+        newsModel.setTitle(newsPage.getTitle());
+        newsModel.setComments(newsPage.getComments());
+        newsService.newsSave(newsModel);
+        DataGrid<NewsModel> dataGrid = newsService.newslist(newsPage);
+        model.addAttribute("result",dataGrid);
+        model.addAttribute("keyWord",newsPage.getKeyWord());
+        return "newscontent";
     }
 
     /*ajax跳转删除数据*/
@@ -68,6 +82,7 @@ public class NewsController {
         NewsModel newsModel=newsService.newsfindById(id); //通过id找到对应的newsModel对象
         model.addAttribute("title",newsModel.getTitle());
         model.addAttribute("comments",newsModel.getComments());
+        model.addAttribute("id",id);
         return "newseditor";
     }
 
@@ -78,21 +93,6 @@ public class NewsController {
         return "news";
     }
 
-    @RequestMapping(value = "queryNews", method = RequestMethod.POST)
-    public String queryNews(String keyword, Model model){
-        logger.info("execute query");
-
-        //测试keyWord模糊查询
-        KeyWordModel key=new KeyWordModel();
-        key.setKeyword(keyword);
-        key.setPage(1);
-        PageNumber records = newsService.newslist(key);
-        //将信息的条数以及分页的总页数输出
-        logger.info((records == null)?"0条":records+ "条");
-        //logger.info((records == null)?"0条":list.size() + "条");
-        model.addAttribute("news", records);
-        return "news";
-    }
 }
 
 
