@@ -22,14 +22,14 @@
             <div class="row">
                 <div class="col-md-9 news-1 news-section news-insights-section_non_gmo">
                     <div class="row">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-8" id="listnews">新闻列表</div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-10" id="listnews">新闻列表</div>
                         <hr>
                     </div>
                     <#if (result.data?size>0)>
                         <#list result.data as items>
                             <div class="row">
-                                <div class="col-md-2"></div>
+                                <div class="col-md-1"></div>
                                 <div class="col-md-5">图片${items.picture!}</div>
                                 <div class="col-md-5">
                                     <div class="row" id="title">${items.title!}</div>
