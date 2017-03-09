@@ -41,6 +41,6 @@ public class PicCutUtil {
 
         String str1 = "12121";
 
-        System.out.print(PicCutUtil.spiltImage(str));
+        System.out.print(PicCutUtil.spiltImage(str1));
     }
 }
