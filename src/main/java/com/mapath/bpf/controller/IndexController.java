@@ -1,14 +1,20 @@
 package com.mapath.bpf.controller;
 
+import com.mapath.bpf.model.NewsModel;
+import com.mapath.bpf.model.NewsPage;
 import com.mapath.bpf.model.ReqSimpleModel;
 import com.mapath.bpf.service.AdminService;
+import com.mapath.bpf.service.NewsService;
 import com.mapath.bpf.utils.JsonInfo;
+import com.mapath.util.pagination.model.DataGrid;
+import com.mapath.util.pagination.model.PageInfo;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,6 +22,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by ulongx on 2017/2/21.
@@ -30,6 +38,9 @@ public class IndexController {
 
     @Autowired
     AdminService adminService;
+
+    @Autowired
+    NewsService newsService;
 
     @RequestMapping(value = {"index.html","/"})
     public String indexPage(){
@@ -61,9 +72,28 @@ public class IndexController {
         return "transparency";
     }
 
+    /*跳转到新闻展示页面*/
     @RequestMapping(value = {"news.html"})
-    public String newsPage(){
+    public String newsPage(NewsPage newsPage, Model model){
+        if(newsPage.getPageInfo() == null){
+            PageInfo pageInfo = new PageInfo();
+            pageInfo.setPage(1);
+            newsPage.setPageInfo(pageInfo);
+        }
+        DataGrid<NewsModel> dataGrid = newsService.newslist(newsPage);
+        /*以下有问题*/
+        String comments="";
+        for (Object neww:dataGrid.getData()){
+            NewsModel mo= (NewsModel) neww;
+            comments=mo.getComments();
+            String regx="/^<img src=\".*\">$/";
+            Pattern pattern=Pattern.compile(regx);
+            Matcher matcher=pattern.matcher(comments);
+            String img=matcher.group(1);
+            mo.setPicture("<img src="+'"'+img+'"'+">");
+        }
 
+        model.addAttribute("result",dataGrid);
         return "news";
     }
 

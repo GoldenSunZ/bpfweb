@@ -1,5 +1,13 @@
 <#import "layout/layout.ftl" as layout/>
+<#import "page.html" as page/>
 <@layout.page selId="news">
+<style>
+    #title,#listnews{
+        font-size: x-large;
+        font-weight: bold;
+        color: black;
+    }
+</style>
 <div class="main-container">
     <div class="news-insights-section">
         <div class="conyainer">
@@ -13,11 +21,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9 news-1 news-section news-insights-section_non_gmo">
-                    <div class="container">
-                        <h1>声明</h1>
-                        <p><a href="">2015</a></p>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-8" id="listnews">新闻列表</div>
+                        <hr>
                     </div>
+                    <#if (result.data?size>0)>
+                        <#list result.data as items>
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">图片${items.picture!}</div>
+                                <div class="col-md-5">
+                                    <div class="row" id="title">${items.title!}</div>
+                                    <br/>
+                                    <div class="row">${items.comments!}</div>
+                                    <hr>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </#list>
+                        <#else>
+                            <div class="row"><h1>没有合适的新闻数据</h1></div>
+                    </#if>
+                    <@page.paging pagination=result.page action="/news.html" />
                 </div>
+                <!--右边部分-->
                 <aside class="col-md-3 hidden-sm">
                     <div id="search-2" class="sidebox widget widget_search">
                         <form class="search" method="get" id="searchform" action="http://bluepacificflavors.com/">

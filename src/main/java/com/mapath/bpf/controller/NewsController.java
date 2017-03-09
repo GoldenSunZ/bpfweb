@@ -2,26 +2,18 @@ package com.mapath.bpf.controller;
 
 import com.mapath.bpf.model.NewsModel;
 import com.mapath.bpf.model.NewsPage;
-import com.mapath.bpf.service.AdminService;
 import com.mapath.bpf.service.NewsService;
-import com.mapath.bpf.service.impl.NewsServiceImpl;
-import com.mapath.bpf.utils.DateUtil;
-import com.mapath.bpf.utils.UUID;
 import com.mapath.util.pagination.model.DataGrid;
 import com.mapath.util.pagination.model.PageInfo;
-import org.apache.ibatis.javassist.compiler.ast.Keyword;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpServletRequest;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Created by zhouxiaobo on 2017/2/28.
@@ -36,8 +28,9 @@ public class NewsController {
     @Autowired
     private NewsService newsService;
 
+    /*新闻主体页面*/
     @RequestMapping("newsContent")
-    public String getPageData(NewsPage newsPage, Model model,NewsModel newsModel){
+    public String getPageData(NewsPage newsPage, Model model){
         if(newsPage.getPageInfo() == null){
             PageInfo pageInfo = new PageInfo();
             pageInfo.setPage(1);
@@ -49,6 +42,7 @@ public class NewsController {
         return "newscontent";  //新闻主体页面
     }
 
+    /*保存编辑页面*/
     @RequestMapping(value = "saveNewseditor", method = RequestMethod.POST)
     public String saveNews(NewsPage newsPage,Model model){
         if(newsPage.getPageInfo() == null){
