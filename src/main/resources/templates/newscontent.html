@@ -1,4 +1,5 @@
 <#global cpath=rca.contextPath>
+    <#import "page.html" as page/>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +17,7 @@
                var parent=this.parentNode.parentNode; //获取到的是button按钮的父父节点 ，也就是tr节点
                var id=jQuery(".isdelete").val();   //获取要删除对象的id值，传入控制器，进行删除
                var url="/deletedata";
-               jQuery.post(url,{id:id},function (result) {
+               jQuery.post(url,{id:id},function (res) {
                    parent.remove(); //删除tr节点
                });
            });
@@ -126,7 +127,7 @@
                 <div class="col-lg-3"></div>
                 <form action="newsContent" method="post">
                 <div class="col-lg-5">
-                    关键字:<input type="text" name="keyword" value="${key!}" class="keyword">
+                    关键字:<input type="text" name="keyWord" value="${keyWord!}" class="keyword" placeholder="查询关键字">
                     <button type="submit" class="query">查询</button>
                 </div>
                 <div class="col-lg-4"></div>
@@ -142,8 +143,8 @@
                         <td>发送人</td>
                         <td>操作</td>
                     </tr>
-                    <#if (newsModels?size>0)>
-                        <#list newsModels as items>
+                    <#if (result.data?size>0)>
+                        <#list result.data as items>
                     <tr>
                         <td id="id">${items_index+1}</td>
                         <td id="title">${items.title!}</td>
@@ -163,26 +164,7 @@
                 </table>
             </div>
             <!--右边第三行(底部分页行)-->
-            <div class="row" id="paging">
-                <ul class="pagination pagination-lg">
-                    <li><a href="${cpath}/newsContent">&laquo;</a></li>
-                    <#if (pagetotal>5 && pagetotal=5)>
-                        <#list 1..5 as t>
-                            <li><a href="${cpath}/newsContent?page=${t}">${t}</a></li>
-                        </#list>
-                    <#elseif (pagetotal>0 && pagetotal<5)>
-                      <#list 1..pagetotal as t>
-                          <li><a href="${cpath}/newsContent?page=${t}">${t}</a></li>
-                      </#list>
-                    <#else>
-                    <li><a href="#">空</a></li>
-                    </#if>
-                    <!--<li><a href="${cpath}/newsContent">3</a></li>-->
-                    <!--<li><a href="${cpath}/newsContent">4</a></li>-->
-                    <!--<li><a href="${cpath}/newsContent">5</a></li>-->
-                    <li><a href="${cpath}/newsContent">&raquo;</a></li>
-                </ul>
-            </div>
+            <@page.paging pagination=result.page action="/newsContent" />
         </div>
     </div>
 </div>

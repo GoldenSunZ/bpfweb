@@ -38,10 +38,9 @@
 
         <where>
                 isdelete = '0'
-                <if test="keyword != null and keyword != ''">
-                    and (title like CONCAT('%',trim(#{keyword}),'%') || comments like CONCAT('%',trim(#{keyword}),'%'))
+                <if test="keyWord != null and keyWord != ''">
+                    and (title like CONCAT('%',trim(#{keyWord}),'%') || comments like CONCAT('%',trim(#{keyWord}),'%'))
                 </if>
-            limit #{start},10
         </where>
     </select>
 

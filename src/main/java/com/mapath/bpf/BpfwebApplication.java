@@ -1,5 +1,6 @@
 package com.mapath.bpf;
 
+import com.mapath.util.pagination.PageSupportPlugin;
 import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
@@ -37,6 +38,13 @@ public class BpfwebApplication {
 		sqlSessionFactoryBean.setDataSource(dataSource());
 		PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
 		sqlSessionFactoryBean.setMapperLocations(resolver.getResources("classpath*:**mapper/*.xml"));
+
+		PageSupportPlugin pagePlugin = new PageSupportPlugin();
+		pagePlugin.setDatabaseType("mysql");
+		Interceptor[] mybatisPlugins = new Interceptor[1];
+		mybatisPlugins[0] = pagePlugin;
+		sqlSessionFactoryBean.setPlugins(mybatisPlugins);
+
 		return sqlSessionFactoryBean.getObject();
 	}
 

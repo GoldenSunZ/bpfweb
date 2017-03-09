@@ -82,6 +82,12 @@
 			<optional>true</optional>
 		</dependency>
 
+		<dependency>
+			<groupId>com.mapath.util</groupId>
+			<artifactId>mapath-pagination</artifactId>
+			<version>1.1</version>
+		</dependency>
+
 
 		<!-- log related -->
 		<dependency> <!-- exclude掉spring-boot的默认log配置 -->

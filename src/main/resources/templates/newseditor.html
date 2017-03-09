@@ -126,9 +126,10 @@
             </div>
             <!--右边第二行(表结构)-->
             <div class="row" id="table">
+                <form action="/saveNewseditor" method="post">
                 <table class="table-bordered" id="tb">
                     <!--此处为标题-->
-                    <tr><td><input type="text" class="modal-title" value="${title!}"/></td></tr>
+                    <tr><td><input type="text" class="modal-title" name="title" value="${title!}"/></td></tr>
                     <!--以下为主体内容-->
                     <tr><td>
                         <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
@@ -183,6 +184,9 @@
                             </div>
                             <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="">
                         </div>
+                        <!--隐藏域来存放值-->
+                        <input type="hidden" name="comments" id="hdd">
+                        <input type="hidden" name="id" value="${id}" id="hddd">
 
                         <div id="editor">
                             ${comments!}
@@ -190,12 +194,21 @@
                     </td>
                     </tr>
                     <!--底部按钮-->
-                    <tr><td><button class="btn btn-success" type="submit">保存</button></td></tr>
+                    <tr><td><button class="btn btn-success" id="store" type="button">保存</button></td></tr>
                 </table>
+                </form>
             </div>
         </div>
     </div>
 </div>
-
 </body>
+<script type="text/javascript">
+    jQuery(function () {
+       jQuery("#store").click(function () {
+           var comments=jQuery("#editor").html();
+           jQuery("#hdd").val(comments); //给隐藏域中赋值
+           jQuery("form").submit();
+       }) ;
+    });
+</script>
 </html>
