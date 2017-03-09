@@ -30,14 +30,14 @@
                         <#list result.data as items>
                             <div class="row">
                                 <div class="col-md-2"></div>
-                                <div class="col-md-4">图片${items.picture!}</div>
+                                <div class="col-md-5">图片${items.picture!}</div>
                                 <div class="col-md-5">
                                     <div class="row" id="title">${items.title!}</div>
                                     <br/>
                                     <div class="row">${items.comments!}</div>
                                     <hr>
                                 </div>
-                                <div class="col-md-1"></div>
+                                <!--<div class="col-md-1"></div>-->
                             </div>
                         </#list>
                         <#else>

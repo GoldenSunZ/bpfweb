@@ -6,6 +6,7 @@ import com.mapath.bpf.model.ReqSimpleModel;
 import com.mapath.bpf.service.AdminService;
 import com.mapath.bpf.service.NewsService;
 import com.mapath.bpf.utils.JsonInfo;
+import com.mapath.bpf.utils.PicCutUtil;
 import com.mapath.util.pagination.model.DataGrid;
 import com.mapath.util.pagination.model.PageInfo;
 import freemarker.template.Configuration;
@@ -22,8 +23,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * Created by ulongx on 2017/2/21.
@@ -86,11 +85,14 @@ public class IndexController {
         for (Object neww:dataGrid.getData()){
             NewsModel mo= (NewsModel) neww;
             comments=mo.getComments();
-            String regx="/^<img src=\".*\">$/";
-            Pattern pattern=Pattern.compile(regx);
-            Matcher matcher=pattern.matcher(comments);
-            String img=matcher.group(1);
-            mo.setPicture("<img src="+'"'+img+'"'+">");
+//            String regx="/^<img src=\".*\">$/";
+//            Pattern pattern=Pattern.compile(regx);
+//            Matcher matcher=pattern.matcher(comments);
+//            String img=matcher.group(1);
+            PicCutUtil picCutUtil=new PicCutUtil();
+            String img=picCutUtil.spiltImage(comments);
+            logger.info("图片是："+img);
+            mo.setPicture(img);  //设置图片值给picture
         }
 
         model.addAttribute("result",dataGrid);
