@@ -1,16 +1,7 @@
 package com.mapath.bpf.controller;
 import com.mapath.bpf.model.LoginSimpleModel;
-import com.mapath.bpf.model.ReqSimpleModel;
-import com.mapath.bpf.service.AdminService;
 import com.mapath.bpf.utils.JsonInfo;
-import freemarker.template.Configuration;
-import freemarker.template.Template;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -51,7 +42,7 @@ public class LoginController {
             messages="密码不正确";
         }else{
             messages="登录成功!";
-            session.setAttribute("user",truename);
+            session.setAttribute("user",truename); //把用户名放到session作用域
         }
         js.setMessage(messages);
         return js;

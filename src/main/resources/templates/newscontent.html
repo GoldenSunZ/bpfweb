@@ -15,10 +15,10 @@
             /*删除按钮的ajax*/
            jQuery(".isdelete").click(function () {
                var parent=this.parentNode.parentNode; //获取到的是button按钮的父父节点 ，也就是tr节点
-               var id=jQuery(".isdelete").val();   //获取要删除对象的id值，传入控制器，进行删除
+               var id=this.id;   //获取要删除对象的id值，传入控制器，进行删除
                var url="/deletedata";
                jQuery.post(url,{id:id},function (res) {
-                   parent.remove(); //删除tr节点
+                       parent.remove(); //删除tr节点
                });
            });
         });
@@ -71,15 +71,11 @@
         .news_control{
             font-size: 20px;
         }
-        /*        .news_control:hover{
-                    background-color: #000000;
-                    color: #ffffff;
-                }*/
         .control{
             list-style:none;
             padding-right: 35px;
         }
-        .control:hover{
+        li:hover {
             background-color: #000000;
             color: #ffffff;
         }
@@ -116,7 +112,8 @@
             <!--新闻管理主体内容-->
             <div class="row" id="news_content">
                 <ul class="control">
-                    <li><a class="news_control" href="#"><b>新闻管理</b></a></li>
+                    <li><a class="news_control" href="${cpath}/newsContent"><b>新闻管理</b></a></li>
+                    <li><a class="news_control" href="${cpath}/newsMessages"><b>新增新闻</b></a></li>
                 </ul>
             </div>
         </div>
@@ -151,7 +148,7 @@
                         <td id="createdate">${items.createDt?string('yyyy-MM-dd')}</td>
                         <td id="author">${items.author!}</td>
                         <td>
-                            <button type="button" class="isdelete" value="${items.id!}">删除</button>
+                            <a class="btn isdelete" href="javascript:;" id="${items.id!}">删除</a>
                             <a class="btn" role="button" href="${cpath}/newsEditor/${items.id!}">编辑</a>
                         </td>
                     </tr>

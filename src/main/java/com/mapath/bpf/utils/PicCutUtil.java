@@ -12,7 +12,7 @@ public class PicCutUtil {
 
     public static String spiltImage(String editString){
 
-        int startLoc = editString.indexOf("<img src=\"data:image");
+        int startLoc = editString.indexOf("<img style=\"width:");
         logger.info("start with " + startLoc);
 
         if(startLoc != -1){
@@ -27,6 +27,28 @@ public class PicCutUtil {
 
             if(endLoc > startLoc){
                 return editString.substring(startLoc,endLoc+1);
+            }
+        }
+        return "";
+    }
+
+    public static String splitComment(String editString){
+        int startLoc = editString.indexOf("<img src=\"data:image");
+        logger.info("start with " + startLoc);
+
+        if(startLoc != -1){
+            int endLoc = 0;
+            for(int i=startLoc;i<editString.length();i++){
+                if('>' == editString.charAt(i) ) {
+                    endLoc = i;
+                    logger.info("endLoc:" + i);
+                    break;
+                }
+            }
+
+            if(endLoc > startLoc){
+                /*return editString.substring(startLoc,endLoc+1);*/
+                return editString.substring(endLoc+2);
             }
         }
         return "";

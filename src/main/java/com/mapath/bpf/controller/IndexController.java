@@ -80,23 +80,30 @@ public class IndexController {
             newsPage.setPageInfo(pageInfo);
         }
         DataGrid<NewsModel> dataGrid = newsService.newslist(newsPage);
-        /*以下有问题*/
         String comments="";
         for (Object neww:dataGrid.getData()){
             NewsModel mo= (NewsModel) neww;
             comments=mo.getComments();
-//            String regx="/^<img src=\".*\">$/";
-//            Pattern pattern=Pattern.compile(regx);
-//            Matcher matcher=pattern.matcher(comments);
-//            String img=matcher.group(1);
             PicCutUtil picCutUtil=new PicCutUtil();
             String img=picCutUtil.spiltImage(comments);
             logger.info("图片是："+img);
+            String comment=picCutUtil.splitComment(comments);
+            logger.info("主体内容是："+comment);
             mo.setPicture(img);  //设置图片值给picture
+            mo.setComments(comment);
         }
-
         model.addAttribute("result",dataGrid);
         return "news";
+    }
+
+    /*跳转到新闻详细页面（单条显示详情页面）*/
+    @RequestMapping(value ="newsDetail")
+    public String newsDetailPage(NewsModel newsModel,Model model){
+        NewsModel nem=newsService.newsfindById(newsModel.getId());
+        nem.setPicture(PicCutUtil.spiltImage(nem.getComments()));
+        nem.setComments(PicCutUtil.splitComment(nem.getComments()));
+        model.addAttribute("newsmodel",nem);
+        return "newsdetail";
     }
 
     @RequestMapping(value = {"contact.html"})

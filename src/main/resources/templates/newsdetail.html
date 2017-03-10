@@ -2,14 +2,10 @@
 <#import "page.html" as page/>
 <@layout.page selId="news">
 <style>
-    #title,#listnews{
+    #title, #listnews {
         font-size: x-large;
         font-weight: bold;
         color: black;
-    }
-    .learnmore{
-        font-size: large;
-        color: #1e4eff;
     }
 </style>
 <div class="main-container">
@@ -24,33 +20,25 @@
     <section class="blog">
         <div class="container">
             <div class="row">
+                <!--左边新闻详情部分-->
                 <div class="col-md-9 news-1 news-section news-insights-section_non_gmo">
                     <div class="row">
                         <div class="col-md-2"></div>
-                        <div class="col-md-10" id="listnews">新闻列表</div>
+                        <div class="col-md-10" id="listnews">新闻详情</div>
                         <hr>
                     </div>
-                    <#if (result.data?size>0)>
-                        <#list result.data as items>
-                            <div class="row">
-                                <div class="col-md-1"></div>
-                                <div class="col-md-5">${items.picture!}</div>
-                                <div class="col-md-5">
-                                    <div class="row" id="title">${items.title!}</div>
-                                    <br/>
-                                    <div class="row">
-                                        ${items.comments!}<br/>
-                                        <a class="learnmore" href="/newsDetail?id=${items.id!}">Learn More</a>
-                                    </div>
-                                    <hr>
-                                </div>
-                                <div class="col-md-1"></div>
-                            </div>
-                        </#list>
-                        <#else>
-                            <div class="row"><h1>没有合适的新闻数据</h1></div>
-                    </#if>
-                    <@page.paging pagination=result.page action="/news.html" />
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">${newsmodel.picture!}</div>
+                        <div class="col-md-5">
+                            <div class="row" id="title">${newsmodel.title!}</div>
+                            <br/>
+                            <div class="row">${newsmodel.comments!}</div>
+                            <hr>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
                 </div>
                 <!--右边部分-->
                 <aside class="col-md-3 hidden-sm">

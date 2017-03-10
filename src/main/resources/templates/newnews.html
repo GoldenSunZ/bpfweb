@@ -129,32 +129,32 @@
                 <div class="row" id="table">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-6">
-                    <form action="/saveNewseditor" method="post">
-                        <table class="table-bordered" id="tb">
-                            <!--此处为标题-->
-                            <tr>
-                                <td><input type="text" class="modal-title" name="title" value="${title!}"/></td>
-                            </tr>
-                            <!--以下为主体内容-->
-                            <tr>
-                                <td>
-                                    <!--隐藏域来存放值-->
-                                    <input type="hidden" name="comments" id="hdd">
-                                    <input type="hidden" name="id" value="${id!}" id="hddd">
+                        <form action="/saveNewsMessages" method="post">
+                            <table class="table-bordered" id="tb">
+                                <!--此处为标题-->
+                                <tr>
+                                    <td><b>标题</b><input type="text" class="modal-title" name="title" value="${title!}"/></td>
+                                </tr>
+                                <!--以下为主体内容-->
+                                <tr>
+                                    <td>
+                                        <!--隐藏域来存放值-->
+                                        <input type="hidden" name="comments" id="hdd">
+                                        <input type="hidden" name="id" value="${id!}" id="hddd">
 
-                                    <div id="editor">
-                                        ${comments!}
-                                    </div>
-                                </td>
-                            </tr>
-                            <!--底部按钮-->
-                            <tr>
-                                <td>
-                                    <button class="btn btn-success" id="store" type="button">保存</button>
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
+                                        <div id="editor">
+                                            ${comments!}
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!--底部按钮-->
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-success" id="store" type="button">保存</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
                     </div>
                     <div class="col-lg-3"></div>
                 </div>
@@ -166,12 +166,15 @@
         jQuery(function () {
             jQuery("#store").click(function () {
                 var comments = jQuery("#editor").summernote('code');
+                alert(comments);
                 jQuery("#hdd").val(comments); //给隐藏域中赋值
                 jQuery("form").submit();
             });
         });
         jQuery(document).ready(function () {
-            jQuery('#editor').summernote();
+            jQuery('#editor').summernote({
+                height:350
+            });
         });
     </script>
     </html>

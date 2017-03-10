@@ -60,6 +60,31 @@ public class NewsController {
         return "newscontent";
     }
 
+    /*保存新增的新闻*/
+    @RequestMapping(value = "saveNewsMessages")
+    public String saveNewsMessages(NewsPage newsPage,Model model){
+        if(newsPage.getPageInfo() == null){
+            PageInfo pageInfo = new PageInfo();
+            pageInfo.setPage(1);
+            newsPage.setPageInfo(pageInfo);
+        }
+        NewsModel newsModel=new NewsModel();
+        newsModel.setTitle(newsPage.getTitle());
+        newsModel.setComments(newsPage.getComments());
+        newsService.newsSave(newsModel);
+        DataGrid<NewsModel> dataGrid = newsService.newslist(newsPage);
+        model.addAttribute("result",dataGrid);
+        model.addAttribute("keyWord",newsPage.getKeyWord());
+        return "newscontent";
+    }
+
+    /*新增新闻，跳转controller*/
+    @RequestMapping(value = "newsMessages")
+    public String newMessages(){
+
+        return "newnews";
+    }
+
     /*ajax跳转删除数据*/
     @RequestMapping(value = "deletedata")
     @ResponseBody
@@ -67,7 +92,7 @@ public class NewsController {
         String id=newsModel.getId();
         NewsModel deletenews=newsService.newsfindById(id);  //通过id找到对应的newsModel对象
         newsService.newsDelete(deletenews);   //删除操作，逻辑删除
-        return newsModel;
+        return deletenews;
     }
 
     /*跳转到新闻编辑页面*/
