@@ -43,6 +43,14 @@
         .social-2 .tweet {
             font-family: 'Questrial', "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
+
+    </style>
+    <style>
+        .number-list .pagination .active a {
+            background: #6cc87a;
+            color: #fff;
+            border-color: #6cc87a;
+        }
     </style>
 </head>
 <body class="home page page-id-160 page-template page-template-templates page-template-home page-template-templateshome-php wpb-js-composer js-comp-ver-5.0.1 vc_responsive">
@@ -281,7 +289,7 @@
 </div>
 <!-- Small modal -->
 
-<#--弹出框-->
+<#--弹出框(模态框)-->
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
     <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content" style="height: 60px;text-align: center;line-height: 60px">

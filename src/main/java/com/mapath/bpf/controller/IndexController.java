@@ -87,10 +87,20 @@ public class IndexController {
             PicCutUtil picCutUtil=new PicCutUtil();
             String img=picCutUtil.spiltImage(comments);
             logger.info("图片是："+img);
-            String comment=picCutUtil.splitComment(comments);
-            logger.info("主体内容是："+comment);
+            img = "<img class=\"attachment-post-thumbnail wp-post-image\" style=\"visibility: visible; opacity: 1;height:233px;\" src=\""+img;
+            String comment=picCutUtil.delHTMLTag(comments);
+            /*设置新闻列表页面显示新闻的字数*/
+            comment=comment.replace(" ", ""); //去除文本的空白
+            int length=comment.length();
+            String ment="";
+            if (length>250){
+                 ment=comment.substring(0,250)+"...";
+            }else{
+                 ment=comment.substring(0,length);
+            }
+            logger.info("主体内容是："+ment);
             mo.setPicture(img);  //设置图片值给picture
-            mo.setComments(comment);
+            mo.setComments(ment);
         }
         model.addAttribute("result",dataGrid);
         return "news";
@@ -100,8 +110,6 @@ public class IndexController {
     @RequestMapping(value ="newsDetail")
     public String newsDetailPage(NewsModel newsModel,Model model){
         NewsModel nem=newsService.newsfindById(newsModel.getId());
-        nem.setPicture(PicCutUtil.spiltImage(nem.getComments()));
-        nem.setComments(PicCutUtil.splitComment(nem.getComments()));
         model.addAttribute("newsmodel",nem);
         return "newsdetail";
     }

@@ -1,0 +1,93 @@
+<#macro paging pagination action method="post">
+    <Style>
+        .active{
+            color: #6cc87a;
+        }
+    </Style>
+    <form id="pagination-form" action="${cpath}${action}" method="${method}">
+        <div class="container">
+            <div class="numbering" id="prepage">
+                <button>Pre</button>
+            </div>
+            <ul class="pagination">
+
+            </ul>
+            <div class="numbering" id="nextpage">
+                <button>Next</button>
+            </div>
+        </div>
+        <input type="hidden" name="pageInfo.page" id="pageNo" value="${pagination.pageNo}">
+        <input type="hidden" name="pageInfo.totalPage" id="totalPage" value="${pagination.pageCount}">
+    </form>
+
+
+    <script type="text/javascript">
+        //page
+        var maxPageShow = 5;
+
+        var first = jQuery("<button type='button'>Pre</button>");
+        var last = jQuery("<button type='button'>Next</button>");
+        var pageshow = jQuery('#totalPage').val() > maxPageShow?maxPageShow:jQuery('#totalPage').val();
+        jQuery("#prepage").html(first);
+        for(var i=1;i<= pageshow;i++){
+            console.log("add page [" + i +"]");
+            if(i == jQuery('#pageNo').val()){
+                jQuery(".pagination").append("<li class='active' ><a href='#'>"+ i +"</a></li>");
+            }else{
+                jQuery(".pagination").append("<li><a href='#'>"+ i +"</a></li>");
+            }
+        }
+        jQuery("#nextpage").html(last);
+
+        if(jQuery("#pageNo").val() > maxPageShow){
+            jQuery(".pagination").find("li").each(function(i){
+                //alert("need add " + jQuery(this).find("a").html());
+                //alert(jQuery.isNumeric(jQuery(this).find("a").html()));
+
+                if(jQuery.isNumeric(jQuery(this).find("a").html())){
+                    jQuery(this).find("a").html(Number(jQuery(this).find("a").html()) + 1);
+//                    if(jQuery(this).find("a").html() == jQuery('#pageNo').val()){
+//                        jQuery(this).addClass("active");
+//                    }
+                }
+            });
+        }
+
+        jQuery(".pagination").on('click','li a',function(){
+            console.log(jQuery(this).html());
+            if(!jQuery(this).parent().hasClass("disabled")){
+                //console.log(jQuery(this).find("span").html());
+                //console.log(jQuery(this).find("span").attr('class'));
+                if(jQuery(this).find("span").attr('class') == "pre"){
+                    jQuery("#pageNo").val(Number(jQuery("#pageNo").val())-1);
+                }else if(jQuery(this).find("span").attr('class') == "next"){
+                    jQuery("#pageNo").val(Number(jQuery("#pageNo").val())+1);
+                }else{
+                    jQuery("#pageNo").val(jQuery(this).html());
+                }
+
+                jQuery('#pagination-form').submit();
+            }else{
+                console.log("disabled!");
+            }
+        });
+
+        last.on('click',function () {
+            jQuery("#pageNo").val(Number(jQuery("#pageNo").val())+1);
+            jQuery('#pagination-form').submit();
+        });
+        first.on('click',function () {
+            jQuery("#pageNo").val(Number(jQuery("#pageNo").val())-1);
+            jQuery('#pagination-form').submit();
+        });
+
+        if(jQuery('#totalPage').val() == jQuery('#pageNo').val()){
+            //last.addClass("disabled");
+            last.unbind();
+        }
+        if(1 == jQuery('#pageNo').val()){
+            first.unbind();
+        }
+    </script>
+
+</#macro>

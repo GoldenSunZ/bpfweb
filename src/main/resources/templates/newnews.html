@@ -166,7 +166,6 @@
         jQuery(function () {
             jQuery("#store").click(function () {
                 var comments = jQuery("#editor").summernote('code');
-                alert(comments);
                 jQuery("#hdd").val(comments); //给隐藏域中赋值
                 jQuery("form").submit();
             });
