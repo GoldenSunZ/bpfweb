@@ -2,22 +2,22 @@
 @font-face {
 	font-family: SourceHanSans-Bold;
 	src: url(../fonts/SourceHanSansCN-Bold.otf) format('truetype');
-	}
+}
 
 @font-face {
 	font-family: SourceHanSans-Semibold;
 	src: url(../fonts/SourceHanSansCN-Medium.otf) format('truetype');
-	}
+}
 
 @font-face {
 	font-family: SourceHanSans-Light;
 	src: url(../fonts/SourceHanSansCN-Light.otf) format('truetype');
-	}
+}
 
 @font-face {
 	font-family: SourceHanSans;
 	src: url(../fonts/SourceHanSansCN-Regular.otf) format('truetype');
-	}
+}
 
 /*@font-face {
   font-family: ThirstyScriptExtraBoldDemo;
@@ -27,20 +27,20 @@
 /* GENERAL */
 
 .bp-button{
-    padding: 10px 24px;
+	padding: 10px 24px;
 	cursor: pointer;
 }
 
 .menu-item.active a{
-    border-bottom: 2px solid #F38E2B;
-    padding-bottom: 2px;
+	border-bottom: 2px solid #F38E2B;
+	padding-bottom: 2px;
 }
 
 /* */
 
 .nav-1 .navbar .container{
 	/*width: 1326px;*/
-    padding: 0;
+	padding: 0;
 }
 .shopping-cart.menu-icon i.icon{
 	display: none;
@@ -70,12 +70,12 @@
 	background-color: #F38E2B;
 	border-radius: 20px;
 	padding: 10px;
-    text-align: center;
-    position: relative;
-    bottom: 10px;
-    line-height: 20px;
-    font-family: SourceHanSans-SemiBold;
-    width: 176px;
+	text-align: center;
+	position: relative;
+	bottom: 10px;
+	line-height: 20px;
+	font-family: SourceHanSans-SemiBold;
+	width: 176px;
 }
 #menu-item-651 a{
 	color:#fff;
@@ -83,22 +83,22 @@
 
 
 section .container {
-    position: relative;
-    z-index: 2;
-    /*margin-right: 0;*/
-    padding-right: 0;
+	position: relative;
+	z-index: 2;
+	/*margin-right: 0;*/
+	padding-right: 0;
 }
 .header-1 {
-    padding: 0;
+	padding: 0;
 }
 .header-1 .inner{
-    width: 455px;
-    min-height: 681px;
-    background-color: rgba(0,0,0,0.64);
-    padding: 40px;
-    max-width: 458px;
-    float: right;
-    border-radius: 1px;
+	width: 455px;
+	min-height: 681px;
+	background-color: rgba(0,0,0,0.64);
+	padding: 40px;
+	max-width: 458px;
+	float: right;
+	border-radius: 1px;
 }
 .top-text_white{
 	max-width: 314px;
@@ -109,27 +109,27 @@ section .container {
 	line-height: 30px;
 	color: #FFFFFF;
 	display: block;
-    margin: 0 auto;
-    
-    /* Discover Your Flavor: */
+	margin: 0 auto;
+
+	/* Discover Your Flavor: */
 	font-family: SourceHanSans-Bold;
 	font-size: 26px;
 	color: #FFFFFF;
 	letter-spacing: 0;
 }
 .text-white {
-    color: #fff !important;
-    text-align: center;
-    max-width: 314px;
+	color: #fff !important;
+	text-align: center;
+	max-width: 314px;
 	height: 115px;
 	font-family: ".AppleSystemUIFont";
 	font-size: 14px;
 	text-align: center;
 	line-height: 23px;
 	display: block;
-    margin: 0 auto;
-    
-    /* We can help you brin: */
+	margin: 0 auto;
+
+	/* We can help you brin: */
 	font-family: ".SFNSText";
 	font-size: 14px;
 	color: #FFFFFF;
@@ -140,58 +140,46 @@ section .container {
 	background-color: white;
 }
 .form-holder.contained-form.form-email input {
-    width: 100%;
-    width: 314px;
-    height: 40px;
-    background-color: #FFFFFF;
-    display: block;
-    margin: 0 auto;
-    border-radius: 1px;
-    border-color: transparent;
-    line-height: 29px;
+	width: 100%;
+	width: 314px;
+	height: 40px;
+	background-color: #FFFFFF;
+	display: block;
+	margin: 0 auto;
+	border-radius: 1px;
+	border-color: transparent;
+	line-height: 29px;
 }
 
 
 .bpn-main .your-industry select{
-    width: 314px;
-    height: 40px;
-    background-color: #FFFFFF;
-    display: block;
-    margin: 0 auto;
-    border-radius: 1px!important;
-    line-height: 29px;
-    color: #888 !important;
+	width: 314px;
+	height: 40px;
+	background-color: #FFFFFF;
+	display: block;
+	margin: 0 auto;
+	border-radius: 1px!important;
+	line-height: 29px;
+	color: #888 !important;
 }
 .form-holder.contained-form textarea {
-    margin-bottom: 14px;
-    width: 314px;
-    background-color: #FFFFFF;
-    display: block;
-    margin: 0 auto;
-    border-radius: 1px;
-    line-height: 29px;
+	margin-bottom: 14px;
+	width: 314px;
+	background-color: #FFFFFF;
+	display: block;
+	margin: 0 auto;
+	border-radius: 1px;
+	line-height: 29px;
 }
 .form-holder.contained-form.form-text input{
 	width: 314px;
-    height: 100px;
-    background-color: #FFFFFF;
-    display: block;
-    margin: 0 auto;
-    border-radius: 1px;
+	height: 100px;
+	background-color: #FFFFFF;
+	display: block;
+	margin: 0 auto;
+	border-radius: 1px;
 }
 .form-holder.contained-form.form-email input[type=submit]{
-	width: 200px;
-	height: 40px;
-	border-radius: 20px;
-	background: #F38E2B;
-    border-radius: 20px;
-    font-family: SourceHanSans-Semibold;
-    font-size: 14px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-    line-height: 14px;
-}
-.form-holder.contained-form.form-email input[type=button]{
 	width: 200px;
 	height: 40px;
 	border-radius: 20px;
@@ -212,16 +200,16 @@ h4{
 }
 #features .container{
 	position: relative;
-    z-index: 2;
-    margin-right: 140px;
-    padding-right: 10px;
+	z-index: 2;
+	margin-right: 140px;
+	padding-right: 10px;
 }
 
 #gallery .container{
 	position: relative;
-    z-index: 2;
-    margin-right: 140px;
-    padding-right: 10px;
+	z-index: 2;
+	margin-right: 140px;
+	padding-right: 10px;
 }
 #gallery h4{
 	width: 504px;
@@ -241,35 +229,35 @@ h4{
 }
 #gallery .more-flavors_button{
 	font-size: 14px;
-    text-align: center;
-    line-height: 17px;
-    color: #A4ADB0;
-    width: 222px;
-    height: 40px;
-    border: 1px solid #C4C4C4;
-    padding: 10px;
-    border-radius: 20px;
+	text-align: center;
+	line-height: 17px;
+	color: #A4ADB0;
+	width: 222px;
+	height: 40px;
+	border: 1px solid #C4C4C4;
+	padding: 10px;
+	border-radius: 20px;
 }
 #gallery .flexslider {
-    padding: 0;
-    margin: 0 0 60px;
-    background: transparent;
-    border: 1px solid transparent;
-    position: relative;
-    border-radius: 4px;
-    -o-box-shadow: 0 1px 4px transparent;
-    box-shadow: 0 1px 4px transparent;
-    zoom: 1;
+	padding: 0;
+	margin: 0 0 60px;
+	background: transparent;
+	border: 1px solid transparent;
+	position: relative;
+	border-radius: 4px;
+	-o-box-shadow: 0 1px 4px transparent;
+	box-shadow: 0 1px 4px transparent;
+	zoom: 1;
 }
 #gallery .flexslider .slides img {
-    width: 368px;
-    display: block;
+	width: 368px;
+	display: block;
 }
 #gallery-2 .container{
 	position: relative;
-    z-index: 2;
-    margin-right: 140px;
-    padding-right: 10px;
+	z-index: 2;
+	margin-right: 140px;
+	padding-right: 10px;
 }
 #gallery-2 h4{
 	width: 504px;
@@ -290,26 +278,26 @@ h4{
 }
 #gallery-2 .more-labels_button{
 	font-size: 14px;
-    text-align: center;
-    line-height: 17px;
-    color: #A4ADB0;
-    width: 222px;
-    height: 40px;
-    border: 1px solid #C4C4C4;
-    padding: 10px;
-    border-radius: 20px;
+	text-align: center;
+	line-height: 17px;
+	color: #A4ADB0;
+	width: 222px;
+	height: 40px;
+	border: 1px solid #C4C4C4;
+	padding: 10px;
+	border-radius: 20px;
 }
 #current-members .container{
 	position: relative;
-    z-index: 2;
-    margin-right: 140px;
-    padding-right: 10px;
+	z-index: 2;
+	margin-right: 140px;
+	padding-right: 10px;
 }
 #current-members h4{
 	text-align: center;
-    display: block;
-    margin-bottom: 50px;
-    width: 100%;
+	display: block;
+	margin-bottom: 50px;
+	width: 100%;
 }
 #pricing{
 	background-image: url('../../images/coastline.png');
@@ -318,9 +306,9 @@ h4{
 }
 #pricing .container{
 	position: relative;
-    z-index: 2;
-    margin-right: 140px;
-    padding-right: 10px;
+	z-index: 2;
+	margin-right: 140px;
+	padding-right: 10px;
 }
 #pricing h3{
 	width: 1017px;
@@ -341,9 +329,9 @@ h4{
 }
 #pricing .request-sample{
 	font-size: 14px;
-    text-align: center;
-    line-height: 17px;
-    color: #fff;
+	text-align: center;
+	line-height: 17px;
+	color: #fff;
 	width: 174px;
 	height: 40px;
 	background-color: #F38E2B;
@@ -353,18 +341,18 @@ h4{
 	padding-top: 8px;
 }
 .header-1 li:last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 .nav-1 .navbar {
-    height: 101px;
-    max-height: 101px;
+	height: 101px;
+	max-height: 101px;
 }
 .nav-1 .menu {
-    font-family: ".SFNSText";
-    font-size: 14px;
-    color: #3C4D55;
-    letter-spacing: -0.21px;
-    margin-top: 38px;
+	font-family: ".SFNSText";
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: -0.21px;
+	margin-top: 38px;
 }
 .nav-1 .logo{
 	margin-top: 27px;
@@ -375,53 +363,53 @@ h4{
 
 /** MAIN */
 .bp-main .container{
-    margin-right: 0px;
-    width: 100%;
+	margin-right: 0px;
+	width: 100%;
 }
 
 #home + p {
-    display: none;
+	display: none;
 }
 
 .bp-main__farm-to-flavor{
 	margin-left: 124px;
 }
 .your-industry select {
-    width: 314px;
-    height: 40px;
-    background-color: #FFFFFF;
-    display: block;
-    margin: 0 auto;
-    border-radius: 1px!important;
-    padding-left: 16px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    
-    background-image: url('../../images/Bitmap-16.png');
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: 15px;
-    border-right: 15px solid transparent;
+	width: 314px;
+	height: 40px;
+	background-color: #FFFFFF;
+	display: block;
+	margin: 0 auto;
+	border-radius: 1px!important;
+	padding-left: 16px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	background-image: url('../../images/Bitmap-16.png');
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: 15px;
+	border-right: 15px solid transparent;
 }
 
 .your-state select {
-    width: 314px;
-    height: 40px;
-    background-color: #FFFFFF;
-    display: block;
-    margin: 0 auto;
-    border-radius: 1px!important;
-    padding-left: 16px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    
-    background-image: url('../../images/Bitmap-16.png');
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: 15px;
-    border-right: 15px solid transparent;
+	width: 314px;
+	height: 40px;
+	background-color: #FFFFFF;
+	display: block;
+	margin: 0 auto;
+	border-radius: 1px!important;
+	padding-left: 16px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	background-image: url('../../images/Bitmap-16.png');
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: 15px;
+	border-right: 15px solid transparent;
 }
 
 /** CAPTURING THE ESSCENCE OF FRUIT JUST OFF THE VINE */
@@ -476,7 +464,7 @@ h4{
 	color: #FFFFFF;
 	letter-spacing: 0;
 	text-align: center;
-	
+
 }
 .a-heritage-section p{
 	/* Our heritage is in r: */
@@ -500,18 +488,18 @@ h4{
 	color: #3C4D55;
 	letter-spacing: 0;
 	line-height: 22px;
-	
+
 	max-width: 325px;
 	margin-right: 16px;
 	margin-left: 16px;
-    display: inline-block;
-    /*height: 325px;*/
-    height: 350px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 41px;
-    
-    vertical-align: top;
+	display: inline-block;
+	/*height: 325px;*/
+	height: 350px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 41px;
+
+	vertical-align: top;
 }
 .heritage-content h1{
 	/* Since 1993: */
@@ -523,17 +511,17 @@ h4{
 	margin-bottom: 20px;
 }
 .heritage-content h1 sup{
-    top: -2em;
-    left: .5em;
-    font-size: 10px;
-    text-transform: uppercase;
+	top: -2em;
+	left: .5em;
+	font-size: 10px;
+	text-transform: uppercase;
 }
 sup {
-    font-size: 50%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-    top: -.8em;
+	font-size: 50%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+	top: -.8em;
 }
 .heritage-content p{
 	/* Since 1993, weâ€™ve gr: */
@@ -552,55 +540,55 @@ sup {
 	font-size: 14px;
 	color: #FFFFFF;
 	letter-spacing: 0;
-	
+
 	margin-top: 55px;
 	padding: 24px;
 	padding-bottom: 10px;
-	
+
 	margin-bottom: 99px;
 	display: inline-block;
 	cursor: pointer;
-	
-    width: 229px;
-    height: 40px;
-    padding-top: 7px;
+
+	width: 229px;
+	height: 40px;
+	padding-top: 7px;
 }
 
 /** CLEANLABELS SECTION */
 .cleanlabels-section{
-    padding-top: 99px;
-    background-color: white;
-    padding-bottom: 100px;
+	padding-top: 99px;
+	background-color: white;
+	padding-bottom: 100px;
 }
 .cleanlabels-section h1{
-    /* Clean Labels, Natura: */
-    font-family: SourceHanSans-Semibold;
-    font-size: 26px;
-    color: #3C4D55;
-    letter-spacing: 0;
+	/* Clean Labels, Natura: */
+	font-family: SourceHanSans-Semibold;
+	font-size: 26px;
+	color: #3C4D55;
+	letter-spacing: 0;
 }
 .cleanlabels-section p{
-    /* When consumer demand: */
-    font-family: SourceHanSans-Light;
-    font-size: 14px;
-    color: #3C4D55;
-    letter-spacing: 0;
-    line-height: 28px;
+	/* When consumer demand: */
+	font-family: SourceHanSans-Light;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 28px;
 }
 .cleanlabels-more-button{
-    /* Rectangle 4 Copy 2: */
-    border: 1px solid #C5C5C5;
-    border-radius: 20px;
-    font-size: 14px;
+	/* Rectangle 4 Copy 2: */
+	border: 1px solid #C5C5C5;
+	border-radius: 20px;
+	font-size: 14px;
 }
 .cleanlabels-logos{
-    text-align: center;
+	text-align: center;
 }
 .cleanlabels-logos img{
-    width: 341px;
-    height: 318px;
-    margin: 0 auto;
-    margin-top: 15px;
+	width: 341px;
+	height: 318px;
+	margin: 0 auto;
+	margin-top: 15px;
 }
 
 /* CAPTURING THE ESSENCE OF FRUIT OFF THE VINE */
@@ -677,28 +665,28 @@ sup {
 
 .bp-footer__newsletter input{
 	width: 100%;
-    height: 40px;
-    background-color: #FFFFFF;
-    display: block;
-    margin: 0 auto;
-    
-    padding: 5px;
-    padding-left: 17px;
-    margin-bottom: 6px;
+	height: 40px;
+	background-color: #FFFFFF;
+	display: block;
+	margin: 0 auto;
+
+	padding: 5px;
+	padding-left: 17px;
+	margin-bottom: 6px;
 }
 
 .bp-footer a.footer__submit-button{
-    display: inline-block;
-    border: 1px solid #786D68;
-    border-radius: 20px;
-    font-family: SourceHanSans-Semibold;
-    font-size: 14px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-    padding-left: 45px;
-    padding-right: 45px;
-    display: inline-block;
-    margin-top: 10px;
+	display: inline-block;
+	border: 1px solid #786D68;
+	border-radius: 20px;
+	font-family: SourceHanSans-Semibold;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	padding-left: 45px;
+	padding-right: 45px;
+	display: inline-block;
+	margin-top: 10px;
 }
 
 .footer__bottom{
@@ -713,7 +701,7 @@ sup {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
-	
+
 	/* Â©2015 Blue Pacific F: */
 	font-family: SourceHanSans;
 	font-size: 10px;
@@ -741,7 +729,7 @@ sup {
 		max-width: 298px;
 		height: 385px;
 		margin-right: 5px;
-    	margin-left: 5px;
+		margin-left: 5px;
 	}
 	.heritage-content h1{
 		font-size: 38px;
@@ -753,7 +741,7 @@ sup {
 		max-width: 298px;
 		height: 355px;
 		margin-right: 5px;
-    	margin-left: 5px;
+		margin-left: 5px;
 	}
 	.heritage-content h1{
 		font-size: 38px;
@@ -762,34 +750,34 @@ sup {
 
 @media only screen and (max-width: 990px){
 	.v-align-children {
-	    display: block !important;
-	    margin-top: 62px;
+		display: block !important;
+		margin-top: 62px;
 	}
 	.header-1 .header-content * {
-	    color: #fff;
-	    margin-bottom: 30px;
+		color: #fff;
+		margin-bottom: 30px;
 	}
 	.bp-main__farm-to-flavor {
-	    margin: 0 auto;
+		margin: 0 auto;
 	}
 	.header-1 .inner {
-	    width: 100%;
-	    height: auto;
-	    background-color: rgba(0,0,0,0.64);
-	    padding: 40px;
-	    max-width: 100%;
-	    float: none;
-	    border-radius: 1px;
-	    margin: 0 auto;
-	    display: block;
+		width: 100%;
+		height: auto;
+		background-color: rgba(0,0,0,0.64);
+		padding: 40px;
+		max-width: 100%;
+		float: none;
+		border-radius: 1px;
+		margin: 0 auto;
+		display: block;
 	}
 	#bp-main .v-align-children .col-md-6{
 		padding-right: 0;
 		padding-left: 0;
 	}
 	.header-1 form {
-	    width: 100%;
-	    max-width: 100%;
+		width: 100%;
+		max-width: 100%;
 	}
 
 
@@ -806,31 +794,31 @@ sup {
 		width: 50%;
 	}
 	.wpb_single_image.vc_align_left {
-	    text-align: center;
-	    margin: 0 auto;
-	    display: block;
+		text-align: center;
+		margin: 0 auto;
+		display: block;
 	}
 	.capture-essence-section__image {
-	    width: 75%;
-	    padding-bottom: 30px;
+		width: 75%;
+		padding-bottom: 30px;
 	}
 	#capturing-essence{
-	    /*padding: 0px 0;*/
-	    position: relative;
-	    background: #fff;
+		/*padding: 0px 0;*/
+		position: relative;
+		background: #fff;
 	}
 	.wpb_single_image .vc_figure {
-	    display: inline-block;
-	    vertical-align: top;
-	    margin: 0;
-	    max-width: 90%;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0;
+		max-width: 90%;
 	}
 	.heritage-content{
 		margin-right: 10px;
-	    margin-left: 10px;
-	    margin-bottom: 10px;
-	    max-width: 75%;
-	    height: 259px;
+		margin-left: 10px;
+		margin-bottom: 10px;
+		max-width: 75%;
+		height: 259px;
 	}
 	sup{
 		font-size: 50%;
@@ -847,41 +835,41 @@ sup {
 @media only screen and (max-width: 767px){
 	.nav-container{
 		min-height: 87px;
-    	height: 87px;
+		height: 87px;
 	}
 	.admin-bar nav.fixed, .admin-bar nav.overlay {
-	    top: 46px;
+		top: 46px;
 	}
 	.v-align-children {
-	    display: block !important;
-	    margin-top: 32px;
+		display: block !important;
+		margin-top: 32px;
 	}
 	.header-1 .header-content * {
-	    color: #fff;
-	    margin-bottom: 30px;
+		color: #fff;
+		margin-bottom: 30px;
 	}
 	.bp-main__farm-to-flavor {
-	    margin-left: 0;
-	    margin: 0 auto;
+		margin-left: 0;
+		margin: 0 auto;
 	}
 	.header-1 .inner {
-	    width: 100%;
-	    height: auto;
-	    background-color: rgba(0,0,0,0.64);
-	    padding: 40px;
-	    max-width: 100%;
-	    float: none;
-	    border-radius: 1px;
-	    margin: 0 auto;
-	    display: block;
+		width: 100%;
+		height: auto;
+		background-color: rgba(0,0,0,0.64);
+		padding: 40px;
+		max-width: 100%;
+		float: none;
+		border-radius: 1px;
+		margin: 0 auto;
+		display: block;
 	}
 	#bp-main .v-align-children .col-md-6{
 		padding-right: 0;
 		padding-left: 0;
 	}
 	.header-1 form {
-	    width: 100%;
-	    max-width: 100%;
+		width: 100%;
+		max-width: 100%;
 	}
 	.form-holder.contained-form.form-email input{
 		width: 70%;
@@ -907,9 +895,9 @@ sup {
 		margin-top: 0;
 	}
 	.wpb_single_image.vc_align_left {
-	    text-align: center;
-	    display: block;
-	    margin: 0 auto;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
 	}
 	.heritage-content{
 		margin-bottom: 10px;
@@ -934,20 +922,20 @@ sup {
 @media only screen and (max-width: 400px){
 	.bp-main__farm-to-flavor{
 		margin-left: 0;
-    	margin-top: 50px;
+		margin-top: 50px;
 	}
 	.header-1 form {
-	    padding-left: 0;
+		padding-left: 0;
 	}
 	.form-holder.contained-form.form-email input{
 		margin-bottom: 10px;
 		width: 100%;
 	}
 	.form-holder.contained-form.form-email {
-	    margin-top: 0px;
+		margin-top: 0px;
 	}
 	.form-holder.contained-form.form-email input[type=submit]{
-		    margin-top: 30px;
+		margin-top: 30px;
 	}
 	.wpb_single_image img{
 		max-width: 100%;
@@ -977,7 +965,7 @@ sup {
 	}
 	.cleanlabels-section h1{
 		line-height: 32px;
-		    margin-bottom: 15px;
+		margin-bottom: 15px;
 	}
 	.cleanlabels-section{
 		padding-top: 60px;
@@ -986,14 +974,14 @@ sup {
 		margin-top: 30px;
 	}
 	.cleanlabels-logos img {
-	    width: auto;
-	    height: auto;
-	    margin: 0 auto;
-	    margin-top: 20px;
+		width: auto;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 20px;
 	}
 	.capture-essence-section h1{
 		line-height: 34px;
-    	margin-bottom: 10px;
+		margin-bottom: 10px;
 	}
 	.header-content{
 		padding-right: 0;
@@ -1003,30 +991,30 @@ sup {
 		padding-left: 0;
 	}
 	.header-1 .header-content * {
-	    color: #fff;
-	    margin-bottom: 40px;
-	    padding-left: 30px;
+		color: #fff;
+		margin-bottom: 40px;
+		padding-left: 30px;
 	}
 	.top-text_white{
 		max-width: 100%;
-    	height: auto;
+		height: auto;
 	}
 	.text-white {
-	    max-width: 100%;
-	    height: 115px;
+		max-width: 100%;
+		height: 115px;
 	}
 	.form-holder.contained-form textarea {
-	    width: 100%;
-	    margin-bottom: 30px;
+		width: 100%;
+		margin-bottom: 30px;
 	}
 	.v-align-children {
-	    display: block !important;
-	    margin-top: 0;
+		display: block !important;
+		margin-top: 0;
 	}
 	#capturing-essence{
-	    padding: 55px 0;
-	    position: relative;
-	    background: #fff;
+		padding: 55px 0;
+		position: relative;
+		background: #fff;
 	}
 	.your-state select{
 		width: 100%;
@@ -1048,17 +1036,17 @@ sup {
 .applicatio-section h1{
 	text-align: center;
 	font-family: SourceHanSans-Light;
-    font-size: 45px;
-    color: #FFFFFF;
-    letter-spacing: -1.64px;
+	font-size: 45px;
+	color: #FFFFFF;
+	letter-spacing: -1.64px;
 }
 .applicatio-section h1 span{
 	font-weight: 700;
-    margin-left: 10px;
-    font-family: SourceHanSans-Light;
-    font-size: 45px;
-    color: #FFFFFF;
-    letter-spacing: -1.64px;
+	margin-left: 10px;
+	font-family: SourceHanSans-Light;
+	font-size: 45px;
+	color: #FFFFFF;
+	letter-spacing: -1.64px;
 }
 .applicatio-section p{
 	font-family: SourceHanSans-Bold;
@@ -1067,9 +1055,9 @@ sup {
 	letter-spacing: 0;
 	line-height: 36px;
 	text-align: center;
-    width: 73%;
-    display: block;
-    margin: 0 auto;
+	width: 73%;
+	display: block;
+	margin: 0 auto;
 }
 .applicatio-section button{
 	width: 176px;
@@ -1141,10 +1129,10 @@ sup {
 	line-height: 42px;
 }
 .flavor-porfolio img {
-    max-width: 458px;
-    height: 328px;
-    float: right;
-    width: 100%;
+	max-width: 458px;
+	height: 328px;
+	float: right;
+	width: 100%;
 }
 
 /*flavor-porfolio-second*/
@@ -1197,10 +1185,10 @@ sup {
 	line-height: 42px;
 }
 .flavor-porfolio-second img {
-    max-width: 458px;
-    height: 328px;
-    margin: 0 auto;
-    display: block;
+	max-width: 458px;
+	height: 328px;
+	margin: 0 auto;
+	display: block;
 }
 /*---------------End Flavors Portfolio----------------*/
 
@@ -1210,12 +1198,12 @@ sup {
 	width: 100%;
 	height: auto;
 	background-color: #fff;
-	
+
 }
 .curated-flavor-porfolio .container{
 	width: 100%;
 	margin: 0;
-    padding: 0;
+	padding: 0;
 }
 .curated-flavor-porfolio_list{
 	padding: 0;
@@ -1255,8 +1243,8 @@ sup {
 	color: #3C4D55;
 	letter-spacing: -1.02px;
 	position: relative;
-    top: 20px;
-    text-align: center;
+	top: 20px;
+	text-align: center;
 }
 
 .curated-flavor-porfolio ul li{
@@ -1277,15 +1265,15 @@ sup {
 .curated-flavor-porfolio_list_img{
 	background-image: url('../../images/Bitmap-4.png');
 	height: 600px;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .curated-flavor-porfolio_list.curated-flavor-porfolio_list_img{
-    padding: 0;
-    width: 100%;
-    height: auto;
-    background-size: cover;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	background-size: cover;
 }
 
 /*---------------End Curated Flavors Portfolio-------------*/
@@ -1317,7 +1305,7 @@ sup {
 	letter-spacing: 0;
 	line-height: 25px;
 	width: 455px;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .product-application img{
@@ -1329,39 +1317,39 @@ sup {
 
 /*---------------Customized Beverage-------------*/
 .customized-section {
-    padding-top: 50px;
-    background-color: white;
-    padding-bottom: 70px;
+	padding-top: 50px;
+	background-color: white;
+	padding-bottom: 70px;
 }
 
 .customized-section h1 {
-    font-family: SourceHanSans-Semibold;
-    font-size: 26px;
-    color: #3C4D55;
-    letter-spacing: 0;
-    line-height: 35px;
-    margin-bottom: 20px;
-    margin-top: 40px;
+	font-family: SourceHanSans-Semibold;
+	font-size: 26px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 35px;
+	margin-bottom: 20px;
+	margin-top: 40px;
 }
 .customized-section p {
-    font-family: SourceHanSans-Light;
-    font-size: 14px;
-    color: #3C4D55;
-    letter-spacing: 0;
-    line-height: 28px;
-    width: 100%;
+	font-family: SourceHanSans-Light;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 28px;
+	width: 100%;
 }
 .customized-section img{
 	width: 546px;
 	height: 405px;
 }
 .cleanlabels-logos img {
-    max-width: 565px;
-    height: auto!important;
-    float: right;
-    width: 100%;
-    position: relative;
-    bottom: 0!important; 
+	max-width: 565px;
+	height: auto!important;
+	float: right;
+	width: 100%;
+	position: relative;
+	bottom: 0!important;
 }
 /*---------------End Product Application-------------*/
 
@@ -1397,8 +1385,8 @@ sup {
 	color: #3C4D55;
 	letter-spacing: 0;
 	width: 60%;
-    line-height: 32px;
-    margin-bottom: 20px;
+	line-height: 32px;
+	margin-bottom: 20px;
 }
 
 .resaerch-development p{
@@ -1413,7 +1401,7 @@ sup {
 
 @media only screen and (min-width: 1300px){
 	.curated-flavor-porfolio img {
-	    height: auto!important;
+		height: auto!important;
 	}
 	.resaerch-development img{
 		width: 100%;
@@ -1443,14 +1431,14 @@ sup {
 	.flavor-porfolio-second img{
 		height: auto;
 		position: relative;
-    	bottom: 56px;
+		bottom: 56px;
 	}
 	.product-application .container{
 		width: 100%;
 	}
 	.resaerch-development_listed {
-	    padding-top: 80px;
-	    padding-left: 20px;
+		padding-top: 80px;
+		padding-left: 20px;
 	}
 	.resaerch-development h1{
 		width: 74%;
@@ -1466,7 +1454,7 @@ sup {
 		margin-top: 42px;
 	}
 	.resaerch-development p {
-	    width: 89%;
+		width: 89%;
 	}
 	.curated-flavor-porfolio_list_img{
 		background-position-x: -116px;
@@ -1476,8 +1464,8 @@ sup {
 @media only screen and (max-width: 991px){
 	.flavor-porfolio img{
 		float: none;
-	    margin: 0 auto;
-	    display: block;
+		margin: 0 auto;
+		display: block;
 	}
 	.flavor-porfolio-second img{
 		bottom: 20px;
@@ -1492,14 +1480,14 @@ sup {
 		margin-bottom: 66px;
 	}
 	.resaerch-development img {
-	    width: 100%;
-	    height: auto;
+		width: 100%;
+		height: auto;
 	}
 }
 @media only screen and (max-width: 892px){
 	.curated-flavor-porfolio img {
-	    width: 100%;
-	    height: 590px;
+		width: 100%;
+		height: 590px;
 	}
 	.curated-flavor-porfolio_list_img{
 		background-position-x: -142px;
@@ -1510,14 +1498,14 @@ sup {
 		padding-bottom: 30px;
 	}
 	.resaerch-development img {
-	    width: 100%;
-	    height: auto;
+		width: 100%;
+		height: auto;
 	}
 	.resaerch-development_listed{
 		padding-bottom: 50px;
 	}
 	.resaerch-development p {
-	    width: 89%;
+		width: 89%;
 	}
 	.curated-flavor-porfolio_list_img{
 		height: 600px;
@@ -1527,13 +1515,13 @@ sup {
 
 @media only screen and (max-width: 676px){
 	.applicatio-section p {
-	    width: 100%;
-	    font-size: 16px;
-	    line-height: 24px;
+		width: 100%;
+		font-size: 16px;
+		line-height: 24px;
 	}
 	.applicatio-section h1{
 		font-size: 36px;
-    	line-height: 36px;
+		line-height: 36px;
 	}
 	.applicatio-section button{
 		margin-top: 20px!important;
@@ -1543,14 +1531,14 @@ sup {
 	}
 	.product-application .container{
 		padding-left: 0;
-    	padding-right: 0;
+		padding-right: 0;
 	}
 	.product-application p{
 		width: 100%;
 	}
 	.product-application{
 		padding-left: 15px;
-    	padding-right: 15px;
+		padding-right: 15px;
 	}
 	.product-application h1{
 		line-height: 32px;
@@ -1559,13 +1547,13 @@ sup {
 
 @media only screen and (max-width: 525px){
 	.flavor-porfolio img {
-	    max-width: 100%;
-	    height: 328px;
-	    float: none;
+		max-width: 100%;
+		height: 328px;
+		float: none;
 	}
 	.flavor-porfolio-second img {
-	    bottom: 20px;
-	    width: 100%;
+		bottom: 20px;
+		width: 100%;
 	}
 	.curated-flavor-porfolio_list_img{
 		height: 401px;
@@ -1574,17 +1562,17 @@ sup {
 }
 @media only screen and (max-width: 481px){
 	.flavor-porfolio img {
-	    max-width: 100%;
-	    height: 328px;
-	    float: none;
+		max-width: 100%;
+		height: 328px;
+		float: none;
 	}
 	.flavor-porfolio-second img {
-	    bottom: 20px;
-	    width: 100%;
+		bottom: 20px;
+		width: 100%;
 	}
 	.curated-flavor-porfolio_listing {
-	    margin-top: 70px;
-	    padding: 0;
+		margin-top: 70px;
+		padding: 0;
 	}
 	.curated-flavor-porfolio h2{
 		padding-bottom: 30px;
@@ -1593,18 +1581,18 @@ sup {
 		height: auto!important;
 	}
 	.resaerch-development_listed {
-	    padding-top: 75px;
-	    padding-left: 20px;
+		padding-top: 75px;
+		padding-left: 20px;
 	}
 	.resaerch-development p {
-	    width: 97%;
+		width: 97%;
 	}
 	.resaerch-development h1 {
-	    width: 94%;
+		width: 94%;
 	}
 	.cleanlabels-logos {
-	    text-align: center;
-	    padding: 0;
+		text-align: center;
+		padding: 0;
 	}
 	.cleanlabels-logos img{
 		left: -20px;
@@ -1620,11 +1608,11 @@ sup {
 		width: 70%;
 	}*/
 	.product-application img {
-	    height: auto;
-	    margin-top: 20px;
+		height: auto;
+		margin-top: 20px;
 	}
 	.resaerch-development p {
-	    width: 90%;
+		width: 90%;
 	}
 	.curated-flavor-porfolio_list_img{
 		height: 295px;
@@ -1636,67 +1624,67 @@ sup {
 /*------------------EXPERTISE INNOVATION-------------*/
 .expertise-section{
 	background-image: url(../../images/innovation.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 325px;
-    padding: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 325px;
+	padding: 50px;
 }
 
 .expertise-section h1{
 	text-align: center;
-    font-family: SourceHanSans-Light;
-    font-size: 45px;
-    color: #FFFFFF;
-    letter-spacing: -1.64px;
+	font-family: SourceHanSans-Light;
+	font-size: 45px;
+	color: #FFFFFF;
+	letter-spacing: -1.64px;
 }
 
 .expertise-section h1 span {
-    font-weight: 700;
-    margin-left: 10px;
-    font-family: SourceHanSans-Light;
-    font-size: 45px;
-    color: #FFFFFF;
-    letter-spacing: -1.64px;
+	font-weight: 700;
+	margin-left: 10px;
+	font-family: SourceHanSans-Light;
+	font-size: 45px;
+	color: #FFFFFF;
+	letter-spacing: -1.64px;
 }
 
 .expertise-section p{
 	font-family: SourceHanSans-Bold;
-    font-size: 26px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-    line-height: 36px;
-    text-align: center;
-    width: 65%;
-    display: block;
-    margin: 0 auto;
+	font-size: 26px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 36px;
+	text-align: center;
+	width: 65%;
+	display: block;
+	margin: 0 auto;
 }
 
 .expertise-section button {
-    width: 176px;
-    height: 40px;
-    background: #F38E2B;
-    border: 1px solid #F38E2B;
-    border-radius: 20px;
-    font-family: SourceHanSans-Semibold;
-    font-size: 14px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-    margin-top: 38px!important;
-    margin: 0 auto;
-    display: block;
+	width: 176px;
+	height: 40px;
+	background: #F38E2B;
+	border: 1px solid #F38E2B;
+	border-radius: 20px;
+	font-family: SourceHanSans-Semibold;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	margin-top: 38px!important;
+	margin: 0 auto;
+	display: block;
 }
 /*---------------End Resaerch Development-------------*/
 
 @media only screen and (max-width: 676px){
 	.expertise-section p {
-	    width: 100%;
-	    font-size: 16px;
-	    line-height: 24px;
+		width: 100%;
+		font-size: 16px;
+		line-height: 24px;
 	}
 	.expertise-section h1{
 		font-size: 36px;
-    	line-height: 36px;
+		line-height: 36px;
 	}
 	.expertise-section button{
 		margin-top: 20px!important;
@@ -1708,35 +1696,35 @@ sup {
 /*---------------Mothres Nature-------------*/
 .mothres-nature{
 	padding-top: 50px;
-    background-color: #ffefe1;
+	background-color: #ffefe1;
 }
 
 .mothres-nature h1{
 	font-family: SourceHanSans-Semibold;
-    font-size: 26px;
-    color: #3C4D55;
-    letter-spacing: 0;
-    line-height: 35px;
-    margin-bottom: 20px;
-    margin-top: 40px;
+	font-size: 26px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 35px;
+	margin-bottom: 20px;
+	margin-top: 40px;
 }
 
 .mothres-nature p{
 	font-family: SourceHanSans-Light;
-    font-size: 14px;
-    color: #3C4D55;
-    letter-spacing: 0;
-    line-height: 28px;
-    width: 96%;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 28px;
+	width: 96%;
 }
 
 .cleanlabels-logos img{
 	max-width: 565px;
-    height: 400px;
-    float: right;
-    width: 100%;
-    position: relative;
-    bottom: 40px;
+	height: 400px;
+	float: right;
+	width: 100%;
+	position: relative;
+	bottom: 40px;
 }
 
 /*---------------End Mothres Nature-------------*/
@@ -1744,14 +1732,14 @@ sup {
 /*--------------------Madagascar----------------*/
 .madagascar{
 	width: 100%;
-    height: auto;
-    background-color: #fff;
+	height: auto;
+	background-color: #fff;
 }
 
 .madagascar .container {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 .madagascar_list{
@@ -1760,40 +1748,40 @@ sup {
 
 .madagascar_listed{
 	padding-top: 100px;
-    padding-left: 100px;
+	padding-left: 100px;
 }
 
 .madagascar img{
 	width: 100%;
-    /*height: 499px;*/
-    height: auto;
+	/*height: 499px;*/
+	height: auto;
 }
 
 .madagascar h1{
 	font-family: SourceHanSans-Semibold;
-    font-size: 26px;
-    color: #3C4D55;
-    letter-spacing: 0;
-    width: 60%;
-    line-height: 32px;
-    margin-bottom: 20px;
+	font-size: 26px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	width: 60%;
+	line-height: 32px;
+	margin-bottom: 20px;
 }
 
 .madagascar p{
 	font-family: SourceHanSans-Light;
-    font-size: 14px;
-    color: #3C4D55;
-    letter-spacing: 0;
-    line-height: 28px;
-    width: 91%;
-    padding-bottom: 100px;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 28px;
+	width: 91%;
+	padding-bottom: 100px;
 }
 /*------------------End Madagascar---------------*/
 
 /*------------------End Madagascar---------------*/
 .simply-grain-section{
 	/*padding-top: 50px;*/
-    background-color: #F1F8FD;
+	background-color: #F1F8FD;
 }
 
 .simply-grain-section .container{
@@ -1802,35 +1790,35 @@ sup {
 
 .simply-grain-section h1{
 	font-family: SourceHanSans-Semibold;
-    font-size: 26px;
-    color: #3C4D55;
-    letter-spacing: 0;
-    line-height: 35px;
-    margin-bottom: 20px;
-    margin-top: 40px;
+	font-size: 26px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 35px;
+	margin-bottom: 20px;
+	margin-top: 40px;
 }
 .simply-grain-section sup {
-    font-size: 50%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-    top: -.8em;
+	font-size: 50%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+	top: -.8em;
 }
 
 .simply-grain-section p{
 	font-family: SourceHanSans-Light;
-    font-size: 14px;
-    color: #3C4D55;
-    letter-spacing: 0;
-    line-height: 28px;
-    width: 81%;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 28px;
+	width: 81%;
 }
 
 .simply-grain-section img{
 	/*width: 565px;*/
 	width: 100%;
-    height: 454px;
-    float: right;
+	height: 454px;
+	float: right;
 }
 
 /*------------------End Madagascar---------------*/
@@ -1839,8 +1827,8 @@ sup {
 /*---------------------Pure Plant---------------*/
 .pure-plant{
 	width: 100%;
-    height: auto;
-	background-color: #fff;	
+	height: auto;
+	background-color: #fff;
 }
 .pure-plant .container{
 	width: 100%;
@@ -1850,9 +1838,9 @@ sup {
 
 .pure-plant .row{
 	/*padding-left: 100px;*/
- /*   padding-top: 70px;*/
- /*   padding-right: 100px;*/
- /*   padding-bottom: 70px;*/
+	/*   padding-top: 70px;*/
+	/*   padding-right: 100px;*/
+	/*   padding-bottom: 70px;*/
 }
 
 .pure-plant h1{
@@ -1869,10 +1857,10 @@ sup {
 
 .pure-plant sup{
 	font-size: 50%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-    top: -.8em;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+	top: -.8em;
 }
 
 .pure-plant h2{
@@ -1910,21 +1898,21 @@ sup {
 	/*padding-top: 150px;*/
 }
 .pure-plant .pure-plant_listing h1 {
-    font-family: SourceHanSans-Semibold;
-    font-size: 26px;
-    color: #3C4D55;
-    letter-spacing: 0;
-    line-height: 32px;
-    margin-bottom: 20px;
-    width: 90%;
-} 
+	font-family: SourceHanSans-Semibold;
+	font-size: 26px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 32px;
+	margin-bottom: 20px;
+	width: 90%;
+}
 .pure-plant .pure-plant_listing p {
-    font-family: SourceHanSans-Light;
-    font-size: 14px;
-    color: #3C4D55;
-    letter-spacing: 0;
-    line-height: 22px;
-    width: 91%;
+	font-family: SourceHanSans-Light;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 22px;
+	width: 91%;
 }
 /*------------------End Pure Plant---------------*/
 
@@ -1935,73 +1923,73 @@ sup {
 /*------------------End Pure Plant---------------*/
 .heritage-section{
 	background-image: url(../../images/heritage.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 325px;
-    padding: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 325px;
+	padding: 50px;
 }
 
 .heritage-section h1{
 	text-align: center;
-    font-family: SourceHanSans-Light;
-    font-size: 45px;
-    color: #FFFFFF;
-    letter-spacing: -1.64px;
+	font-family: SourceHanSans-Light;
+	font-size: 45px;
+	color: #FFFFFF;
+	letter-spacing: -1.64px;
 }
 
 .heritage-section h1 span{
 	font-weight: 700;
-    margin-left: 10px;
-    font-family: SourceHanSans-Light;
-    font-size: 45px;
-    color: #FFFFFF;
-    letter-spacing: -1.64px;
+	margin-left: 10px;
+	font-family: SourceHanSans-Light;
+	font-size: 45px;
+	color: #FFFFFF;
+	letter-spacing: -1.64px;
 }
 
 .heritage-section p{
 	font-family: SourceHanSans-Bold;
-    font-size: 26px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-    line-height: 36px;
-    text-align: center;
-    width: 65%;
-    display: block;
-    margin: 0 auto;
+	font-size: 26px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 36px;
+	text-align: center;
+	width: 65%;
+	display: block;
+	margin: 0 auto;
 }
 
 .heritage-section button{
 	width: 176px;
-    height: 40px;
-    background: #F38E2B;
-    border: 1px solid #F38E2B;
-    border-radius: 20px;
-    font-family: SourceHanSans-Semibold;
-    font-size: 14px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-    margin-top: 38px!important;
-    margin: 0 auto;
-    display: block;
+	height: 40px;
+	background: #F38E2B;
+	border: 1px solid #F38E2B;
+	border-radius: 20px;
+	font-family: SourceHanSans-Semibold;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	margin-top: 38px!important;
+	margin: 0 auto;
+	display: block;
 }
 /*------------------End Pure Plant---------------*/
 
 /*------------------End Pure Plant---------------*/
 .spirit-section{
 	padding-top: 50px;
-    background-color: white;
-    padding-bottom: 70px;
+	background-color: white;
+	padding-bottom: 70px;
 }
 
 .spirit-section h1{
 	font-family: SourceHanSans-Semibold;
-    font-size: 26px;
-    color: #3C4D55;
-    letter-spacing: 0;
-    line-height: 35px;
-    margin-bottom: 20px;
-    margin-top: 40px;
+	font-size: 26px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 35px;
+	margin-bottom: 20px;
+	margin-top: 40px;
 }
 .spirit-section h2{
 	/* Discovering Heirloom: */
@@ -2010,50 +1998,50 @@ sup {
 	color: #3C4D55;
 	letter-spacing: 0;
 	position: relative;
-    top: 30px;
+	top: 30px;
 }
 
 .spirit-section p{
 	font-family: SourceHanSans-Light;
-    font-size: 14px;
-    color: #3C4D55;
-    letter-spacing: 0;
-    line-height: 28px;
-    width: 95%;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 28px;
+	width: 95%;
 }
 
 .spirit-logos img{
 	width: 535px;
 	height: 297px;
 	position: relative;
-    top: 30px;
+	top: 30px;
 }
 
 .spirit-logos img.spirit-logos_oval{
 	width: 93px;
-    height: 93px;
-    position: absolute;
-    left: 41%;
-    top: 56%;
+	height: 93px;
+	position: absolute;
+	left: 41%;
+	top: 56%;
 }
 .spirit-logos img.spirit-logos_triangle{
 	width: 23px;
-    height: 34px;
-    position: absolute;
-    left: 48%;
-    top: 64%;
+	height: 34px;
+	position: absolute;
+	left: 48%;
+	top: 64%;
 }
 /*------------------End Pure Plant---------------*/
 
 /*---------------------Ceo Vision---------------*/
 .ceo-vision-section{
 	padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-    background: url(../../images/orange-ladders-3.png);
-    background-size: cover;
-    width: 100%;
-    min-height: 333px;
+	padding-bottom: 100px;
+	text-align: center;
+	background: url(../../images/orange-ladders-3.png);
+	background-size: cover;
+	width: 100%;
+	min-height: 333px;
 }
 
 .ceo-vision-section h1{
@@ -2064,8 +2052,8 @@ sup {
 	color: #FFFFFF;
 	letter-spacing: -1.1px;
 	width: 76%;
-    margin: 0 auto;
-    line-height: 36px;
+	margin: 0 auto;
+	line-height: 36px;
 }
 
 .ceo-vision-section p{
@@ -2095,8 +2083,8 @@ sup {
 	width: 49px;
 	height: 49px;
 	margin: 0 auto;
-    display: block;
-    margin-top: 30px;
+	display: block;
+	margin-top: 30px;
 }
 
 .vision h2{
@@ -2127,7 +2115,7 @@ sup {
 	line-height: 22px;
 	text-align: center;
 	width: 64%;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .vision-list{
@@ -2137,13 +2125,13 @@ sup {
 
 @media only screen and (max-width: 676px){
 	.heritage-section p {
-	    width: 100%;
-	    font-size: 16px;
-	    line-height: 24px;
+		width: 100%;
+		font-size: 16px;
+		line-height: 24px;
 	}
 	.heritage-section h1{
 		font-size: 36px;
-    	line-height: 36px;
+		line-height: 36px;
 	}
 	.heritage-section button{
 		margin-top: 20px!important;
@@ -2157,9 +2145,9 @@ sup {
 /*------------------California World------------------*/
 .california-world{
 	width: 100%;
-    height: auto;
-    background-color: #F0F7FC;
-    
+	height: auto;
+	background-color: #F0F7FC;
+
 }
 
 .california-world .container{
@@ -2207,64 +2195,64 @@ sup {
 .california-world_list{
 	padding: 96px;
 	padding-top: 50px;
-    padding-bottom: 50px;
+	padding-bottom: 50px;
 }
 /*------------------End California World---------------*/
 
 /*--------------------Clean Label----------------*/
 .clean-label-section{
 	background-image: url(../../images/Bitmap-13.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 325px;
-    padding: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 325px;
+	padding: 50px;
 }
 
 .clean-label-section h1{
 	text-align: center;
-    font-family: SourceHanSans-Light;
-    font-size: 45px;
-    color: #FFFFFF;
-    letter-spacing: -1.64px;
+	font-family: SourceHanSans-Light;
+	font-size: 45px;
+	color: #FFFFFF;
+	letter-spacing: -1.64px;
 }
 
 .clean-label-section p{
 	font-family: SourceHanSans-Bold;
-    font-size: 26px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-    line-height: 36px;
-    text-align: center;
-    width: 65%;
-    display: block;
-    margin: 0 auto;
+	font-size: 26px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 36px;
+	text-align: center;
+	width: 65%;
+	display: block;
+	margin: 0 auto;
 }
 .clean-label-section button{
 	width: 176px;
-    height: 40px;
-    background: #F38E2B;
-    border: 1px solid #F38E2B;
-    border-radius: 20px;
-    font-family: SourceHanSans-Semibold;
-    font-size: 14px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-    margin-top: 38px!important;
-    margin: 0 auto;
-    display: block;
+	height: 40px;
+	background: #F38E2B;
+	border: 1px solid #F38E2B;
+	border-radius: 20px;
+	font-family: SourceHanSans-Semibold;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	margin-top: 38px!important;
+	margin: 0 auto;
+	display: block;
 }
 
 /*------------------End Clean Label---------------*/
 @media only screen and (max-width: 676px){
 	.clean-label-section p {
-	    width: 100%;
-	    font-size: 16px;
-	    line-height: 24px;
+		width: 100%;
+		font-size: 16px;
+		line-height: 24px;
 	}
 	.clean-label-section h1{
 		font-size: 36px;
-    	line-height: 36px;
+		line-height: 36px;
 	}
 	.clean-label-section button{
 		margin-top: 20px!important;
@@ -2276,8 +2264,8 @@ sup {
 /*--------------------Non Gmo--------------------*/
 .non-gmo-section{
 	padding-top: 50px;
-    background-color:  #F0F7FC;
-    padding-bottom: 70px;
+	background-color:  #F0F7FC;
+	padding-bottom: 70px;
 }
 
 .non-gmo-section .container{
@@ -2286,21 +2274,21 @@ sup {
 
 .non-gmo-section h1{
 	font-family: SourceHanSans-Semibold;
-    font-size: 26px;
-    color: #3C4D55;
-    letter-spacing: 0;
-    line-height: 35px;
-    margin-bottom: 20px;
-    margin-top: 40px;
+	font-size: 26px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 35px;
+	margin-bottom: 20px;
+	margin-top: 40px;
 }
 
 .non-gmo-section p{
 	font-family: SourceHanSans-Light;
-    font-size: 14px;
-    color: #3C4D55;
-    letter-spacing: 0;
-    line-height: 28px;
-    width: 100%;
+	font-size: 14px;
+	color: #3C4D55;
+	letter-spacing: 0;
+	line-height: 28px;
+	width: 100%;
 }
 
 .non-gmo-section img{
@@ -2313,8 +2301,8 @@ sup {
 /*--------------------Project Verified-----------------*/
 .project-verified{
 	width: 100%;
-    height: auto;
-    background-color: #fff;
+	height: auto;
+	background-color: #fff;
 }
 
 .project-verified .container{
@@ -2371,52 +2359,52 @@ sup {
 /*--------------------News Insights--------------*/
 .news-insights-section{
 	background-image: url(../../images/News.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 325px;
-    padding: 50px;
-    padding-top: 100px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 325px;
+	padding: 50px;
+	padding-top: 100px;
 }
 
 .news-insights-section h1{
 	text-align: center;
-    font-family: SourceHanSans-Light;
-    font-size: 45px;
-    color: #FFFFFF;
-    letter-spacing: -1.64px;
+	font-family: SourceHanSans-Light;
+	font-size: 45px;
+	color: #FFFFFF;
+	letter-spacing: -1.64px;
 }
 .news-insights-section h1 span{
 	font-weight: 700;
-    margin-left: 10px;
-    font-family: SourceHanSans-Light;
-    font-size: 45px;
-    color: #FFFFFF;
-    letter-spacing: -1.64px;
+	margin-left: 10px;
+	font-family: SourceHanSans-Light;
+	font-size: 45px;
+	color: #FFFFFF;
+	letter-spacing: -1.64px;
 }
 
 .news-insights-section p{
 	font-family: SourceHanSans-Bold;
-    font-size: 26px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-    line-height: 36px;
-    text-align: center;
-    width: 65%;
-    display: block;
-    margin: 0 auto;
+	font-size: 26px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 36px;
+	text-align: center;
+	width: 65%;
+	display: block;
+	margin: 0 auto;
 }
 
 /*----------------End News Insights--------------*/
 @media only screen and (max-width: 676px){
 	.news-insights-section p {
-	    width: 100%;
-	    font-size: 16px;
-	    line-height: 24px;
+		width: 100%;
+		font-size: 16px;
+		line-height: 24px;
 	}
 	.news-insights-section h1{
 		font-size: 36px;
-    	line-height: 36px;
+		line-height: 36px;
 	}
 	.news-insights-section button{
 		margin-top: 20px!important;
@@ -2428,10 +2416,10 @@ sup {
 /*----------------News Insights Non GMO-----------------*/
 .news-insights-section_non_gmo{
 	padding-top: 90px;
-    padding-bottom: 90px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: #fff;
+	padding-bottom: 90px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #fff;
 }
 
 .news-insights-section_non_gmo .container{
@@ -2471,25 +2459,25 @@ sup {
 	font-size: 14px;
 	color: #A5ADB0;
 	letter-spacing: 0;
-	
+
 	margin: 0;
-    width: 159px;
-    height: 45px;
-    background-color: transparent;
-    border: 1px solid #C5C5C5;
-    /*border-radius: 22px;*/
-    padding: 10px;
-    /*position: relative;*/
-    /*bottom: 10px;*/
-    line-height: 22px;
-    outline: none;
+	width: 159px;
+	height: 45px;
+	background-color: transparent;
+	border: 1px solid #C5C5C5;
+	/*border-radius: 22px;*/
+	padding: 10px;
+	/*position: relative;*/
+	/*bottom: 10px;*/
+	line-height: 22px;
+	outline: none;
 }
 
 .news-insights-section_non_gmo img{
 	/*width: 314px;*/
 	/*height: 199px;*/
 	width: 100%;
-    height: auto;
+	height: auto;
 }
 
 .news-insights-section_non_gmo_listed{
@@ -2518,9 +2506,9 @@ sup {
 	width: 29px;
 	height:29px;
 	position: absolute;
-    top: 15px;
-    left: 25px;
-    
+	top: 15px;
+	left: 25px;
+
 }
 .news-insights-section_non_gmo_listing h1{
 	/* RECENT POSTS: */
@@ -2543,7 +2531,8 @@ sup {
 .news-insights-section_non_gmo_list{
 	padding: 0;
 }
-
+.entry-header .product_title.entry-title{line-height: 40px; margin-bottom: 15px;}
+.entry-header p.date{ margin-bottom: 25px;}
 .number-list{
 	padding-top: 90px;
 	padding-bottom: 0px;
@@ -2559,33 +2548,35 @@ sup {
 	background-color: transparent;
 	color: #C5C5C5;
 	width: 55px;
-    height: 40px;
-    border: 1px solid #C5C5C5;
-    border-radius: 3px;
-    outline: none;
-    font-size: 18px;
+	height: 40px;
+	border: 1px solid #C5C5C5;
+	border-radius: 3px;
+	outline: none;
+	font-size: 18px;
+	padding:0;
 }
 .number-list button:focus{
 	outline: none;
-    background-color: #6BC879;
+	background-color: #6BC879;
 }
 
 .number-list .numbering{
 	display: inline-block;
+	vertical-align: top;
 }
 .number-list ul.pagination {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
 }
 
 .number-list ul.pagination li {display: inline;}
 
 .number-list ul.pagination li a {
-    color: #6cc87a;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
+	color: #6cc87a;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
 }
 
 .number-list ul.pagination li a:focus{
@@ -2600,78 +2591,78 @@ sup {
 
 .news-insights__single-item img{
 	max-width: 100%;
-    height: auto;
-    width: 100%;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-right: 50px;
+	height: auto;
+	width: 100%;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-right: 50px;
 }
 .news-insights__single-item p{
 	font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 24px;
-    cursor: default;
-    padding-left: 20px;
-    padding-top: 40px;
-    padding-right: 20px;
+	line-height: 24px;
+	margin-bottom: 24px;
+	cursor: default;
+	padding-left: 20px;
+	padding-top: 40px;
+	padding-right: 20px;
 }
 .comments h5 {
-    margin-bottom: 24px;
-    padding-left: 60px;
+	margin-bottom: 24px;
+	padding-left: 60px;
 }
 .comments-list, .comments-list ul {
-    width: 100%;
-    overflow: hidden;
-    padding-left: 50px;
+	width: 100%;
+	overflow: hidden;
+	padding-left: 50px;
 }
 .news-insights__single-item .comments{
 	padding-left: 60px;
 }
 .comments hr{
 	width: 94%;
-    float: right;
+	float: right;
 }
 .news-insights__single-item .comment-respond{
-		padding-left: 60px;
+	padding-left: 60px;
 }
 #commentform {
-    display: block;
-    padding-left: 60px;
+	display: block;
+	padding-left: 60px;
 }
 .comments input[type="submit"] {
-    float: right;
-    border-radius: 32px;
+	float: right;
+	border-radius: 32px;
 }
 #searchform input[type="text"]{
-    min-width: 100%;
-    max-width: 100%;
-    background-image:url('../../images/Search.png');
-    background-repeat: no-repeat;
-    background-position-y: 15px;
-    background-position-x: 15px;
+	min-width: 100%;
+	max-width: 100%;
+	background-image:url('../../images/Search.png');
+	background-repeat: no-repeat;
+	background-position-y: 15px;
+	background-position-x: 15px;
 }
 /*----------------End News Insights Non GMO--------------*/
 
 div.wpcf7-mail-sent-ng {
-    border: 2px solid #ff0000;
-    background-color: wheat;
+	border: 2px solid #ff0000;
+	background-color: wheat;
 }
 
 .tagcloud a {
-    /* float: left; */
-    float: none;
-    margin-right: 4px;
-    margin-bottom: 4px;
-    /* border: 1px solid #6dc77a; */
-    border: none;
-    color: #6dc77a;
-    display: block;
-    padding: 2px 6px;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
+	/* float: left; */
+	float: none;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	/* border: 1px solid #6dc77a; */
+	border: none;
+	color: #6dc77a;
+	display: block;
+	padding: 2px 6px;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
 }
- 
+
 .bp-footer a.footer_terms{
 	/* Terms & Conditions |: */
 	font-family: SourceHanSans;
@@ -2682,24 +2673,24 @@ div.wpcf7-mail-sent-ng {
 	display: inline-block;
 }
 .curated-flavor-portfolio .tile-right {
-    padding: 0;
-    width: 50%;
-    height: auto;
-    background-size: cover;
+	padding: 0;
+	width: 50%;
+	height: auto;
+	background-size: cover;
 }
 .curated-flavor-porfolio_list.curated-flavor-portfolio__image1.tile-right {
-    padding: 0;
-    width: 50%;
-    height: auto;
-    background-size: cover;
+	padding: 0;
+	width: 50%;
+	height: auto;
+	background-size: cover;
 }
 
 .newsletter-form .footer-submit-button {
-    border: 1px solid #786D68;
-    border-radius: 26px;
-    font-family: SourceHanSans-Semibold;
-    font-size: 14px;
-    color: #FFFFFF;
-    background-color: #000000;
-    padding-bottom: 50px;
+	border: 1px solid #786D68;
+	border-radius: 26px;
+	font-family: SourceHanSans-Semibold;
+	font-size: 14px;
+	color: #FFFFFF;
+	background-color: #000000;
+	padding-bottom: 50px;
 }

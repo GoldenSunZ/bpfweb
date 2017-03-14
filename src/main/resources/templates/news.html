@@ -1,6 +1,106 @@
 <#import "layout/layout.ftl" as layout/>
 <#import "page.html" as page/>
 <@layout.page selId="news">
+<div class="main-container">
+    <div class="news-insights-section">
+        <div class="conyainer">
+            <div class="col-sm-12">
+                <h1>展会记</h1>
+
+                <p>BPF展览和参与工业博览会的清单</p>
+            </div>
+        </div>
+    </div>
+    <section class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 news-1 news-section news-insights-section_non_gmo">
+                    <div class="container">
+                        <article class="row">
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="post-thumb">
+                                    <a href="/newsDetail?id=2" title="Nature and wildlife photography tips" class=""><img src="http://labs.saurabh-sharma.net/themes/newsplus/wp/wp-content/uploads/2013/03/np5-480x270.jpg" class="attachment-post-thumbnail wp-post-image" alt="np5.jpg" style="visibility: visible; opacity: 1;"></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-xs-12">
+                                <h1>
+                                    <a href="#" title="Nature and wildlife photography tips">Nature and wildlife photography tips</a>
+                                </h1>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus. Etiam varius dui eget … <a href="news-detail.html" title="Read full post">Read more</a></p>
+                                <p class="date" datetime="2013-03-05T09:00:08+00:00">March 5, 2013</p>
+                            </div><!-- .entry-list-right -->
+                        </article>
+                        <article class="row">
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="post-thumb">
+                                    <a href="news-detail.html" title="Nature and wildlife photography tips" class=""><img src="http://labs.saurabh-sharma.net/themes/newsplus/wp/wp-content/uploads/2013/03/np5-480x270.jpg" class="attachment-post-thumbnail wp-post-image" alt="np5.jpg" style="visibility: visible; opacity: 1;"></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-xs-12">
+                                <h1>
+                                    <a href="#" title="Nature and wildlife photography tips">Nature and wildlife photography tips</a>
+                                </h1>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus. Etiam varius dui eget … <a href="news-detail.html" title="Read full post">Read more</a></p>
+                                <p class="date" datetime="2013-03-05T09:00:08+00:00">March 5, 2013</p>
+                            </div><!-- .entry-list-right -->
+                        </article>
+                        <article class="row">
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="post-thumb">
+                                    <a href="news-detail.html" title="Nature and wildlife photography tips" class=""><img src="http://labs.saurabh-sharma.net/themes/newsplus/wp/wp-content/uploads/2013/03/np5-480x270.jpg" class="attachment-post-thumbnail wp-post-image" alt="np5.jpg" style="visibility: visible; opacity: 1;"></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-xs-12">
+                                <h1>
+                                    <a href="#" title="Nature and wildlife photography tips">Nature and wildlife photography tips</a>
+                                </h1>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus. Etiam varius dui eget … <a href="news-detail.html" title="Read full post">Read more</a></p>
+                                <p class="date" datetime="2013-03-05T09:00:08+00:00">March 5, 2013</p>
+                            </div><!-- .entry-list-right -->
+                        </article>
+                        <div class="number-list">
+                            <div class="container">
+                                <div class="numbering"><button>Pre</button></div>
+                                <ul class="pagination">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                </ul>
+                                <div class="numbering"><button>Next</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="col-md-3 hidden-sm">
+                    <div id="search-2" class="sidebox widget widget_search">
+                        <form class="search" method="get" id="searchform" action="searchnews">
+                            <input type="text" id="s2" name="s" placeholder="">
+                        </form>
+                    </div>
+                    <div id="categories-2" class="sidebox widget widget_categories"><h6 class="light">分类</h6>
+                        <hr>
+                        <ul>
+                            <li class="cat-item-none">新闻公告</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div><!--end of row-->
+        </div><!--end of container-->
+    </section>
+</div>
+</@layout.page>
+
+
+<!--
+
 <style>
     #title,#listnews{
         font-size: x-large;
@@ -52,22 +152,22 @@
                     </#if>
                     <@page.paging pagination=result.page action="/news.html" />
                 </div>
-                <!--右边部分-->
-                <aside class="col-md-3 hidden-sm">
-                    <div id="search-2" class="sidebox widget widget_search">
-                        <form class="search" method="get" id="searchform" action="http://bluepacificflavors.com/">
-                            <input type="text" id="s2" name="s" placeholder="">
-                        </form>
-                    </div>
-                    <div id="categories-2" class="sidebox widget widget_categories"><h6 class="light">Categories</h6>
-                        <hr>
-                        <ul>
-                            <li class="cat-item-none">No categories</li>
-                        </ul>
-                    </div>
-                </aside>
-            </div><!--end of row-->
-        </div><!--end of container-->
-    </section>
+<aside class="col-md-3 hidden-sm">
+    <div id="search-2" class="sidebox widget widget_search">
+        <form class="search" method="get" id="searchform" action="http://bluepacificflavors.com/">
+            <input type="text" id="s2" name="s" placeholder="">
+        </form>
+    </div>
+    <div id="categories-2" class="sidebox widget widget_categories"><h6 class="light">Categories</h6>
+        <hr>
+        <ul>
+            <li class="cat-item-none">No categories</li>
+        </ul>
+    </div>
+</aside>
 </div>
-</@layout.page>
+</div>
+</section>
+</div>
+
+-->
