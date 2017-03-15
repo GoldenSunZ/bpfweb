@@ -37,17 +37,18 @@ public class LoginController {
         String messages="";
         String truename="root";
         String truepassword="root";
-        if(name.equals("")) {
+        if("".equals(name)) {
             messages="用户名不能为空!";
-        }else if(!name.equals(truename)) {
+        }else if(!truename.equals(name)) {
             messages = "用户名不正确!";
-        }else if(password.equals("")){
+        }else if("".equals(password)){
             messages="密码不能为空!";
-        }else if(!password.equals(truepassword)){
+        }else if(!truepassword.equals(password)){
             messages="密码不正确";
         }else{
             messages="登录成功!";
             session.setAttribute("user",truename); //把用户名放到session作用域
+            js.setCode(JsonInfo.OK);
         }
         js.setMessage(messages);
         return js;
