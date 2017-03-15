@@ -22,8 +22,9 @@
                                 <article class="row">
                                     <div class="col-sm-4 col-xs-12">
                                         <div class="post-thumb">
-                                            <!--<img src="" class="attachment-post-thumbnail wp-post-image" alt="np5.jpg" style="visibility: visible; opacity: 1;">-->
-                                            <a href="/newsDetail?id=${items.id!}" title="Nature and wildlife photography tips" class="">${items.picture!}</a>
+                                            <a href="/newsDetail?id=${items.id!}"
+                                               title="Nature and wildlife photography tips"
+                                               class="">${items.picture!}</a>
                                         </div>
                                     </div>
                                     <div class="col-sm-8 col-xs-12">
@@ -35,7 +36,8 @@
                                             ${items.comments!}
                                             <a href="/newsDetail?id=${items.id!}" title="Read full post">Read more</a>
                                         </p>
-                                        <p class="date" datetime="2013-03-05T09:00:08+00:00">${items.createDt?string('yyyy-MM-dd')!}</p>
+                                        <p class="date" datetime="2013-03-05T09:00:08+00:00">
+                                            ${items.createDt?string('yyyy-MM-dd')!}</p>
                                     </div><!-- .entry-list-right -->
                                 </article>
                             </#list>
@@ -49,8 +51,8 @@
                 </div>
                 <aside class="col-md-3 hidden-sm">
                     <div id="search-2" class="sidebox widget widget_search">
-                        <form class="search" method="get" id="searchform" action="searchnews">
-                            <input type="text" id="s2" name="s" placeholder="">
+                        <form class="search" method="post" id="searchform" action="news.html">
+                            <input type="text" id="s2" name="keyWord" placeholder="">
                         </form>
                     </div>
                     <div id="categories-2" class="sidebox widget widget_categories"><h6 class="light">分类</h6>
@@ -64,4 +66,15 @@
         </div><!--end of container-->
     </section>
 </div>
+<!--新闻页面查询js-->
+<script type="text/javascript">
+    jQuery(function () {
+        document.onkeydown = function (event) {
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+            if (e && e.keyCode == 13) { // enter 键
+                jQuery(".search").submit(); //要做的事情
+            }
+        }
+    });
+</script>
 </@layout.page>
