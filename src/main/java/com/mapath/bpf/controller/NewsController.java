@@ -5,6 +5,7 @@ import com.mapath.bpf.model.NewsPage;
 import com.mapath.bpf.service.NewsService;
 import com.mapath.util.pagination.model.DataGrid;
 import com.mapath.util.pagination.model.PageInfo;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.servlet.http.HttpSession;
 
 /**
  * Created by zhouxiaobo on 2017/2/28.
@@ -30,7 +33,11 @@ public class NewsController {
 
     /*新闻主体页面*/
     @RequestMapping("newsContent")
-    public String getPageData(NewsPage newsPage, Model model){
+    public String getPageData(NewsPage newsPage, Model model, HttpSession session){
+        String user=(String) session.getAttribute("user");
+        if (StringUtils.isEmpty(user)){
+            return "login";
+        }
         if(newsPage.getPageInfo() == null){
             PageInfo pageInfo = new PageInfo();
             pageInfo.setPage(1);
