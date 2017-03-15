@@ -13,16 +13,21 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class LoginController {
 
-    //跳转到login.html页面
+    /**
+     * 跳转到login.html页面
+     * @return
+     */
     @RequestMapping(value = "login.html")
     public String gotoLogin(){
-
-//        return "forward:login"; 转发（默认就是转发）
-//        return "redirect:login"; 重定向 ：必须加redirect：xxx
         return "login";
     }
 
-    //登陆页面的验证
+    /**
+     * 登陆页面的验证
+     * @param loginSimpleModel
+     * @param session
+     * @return
+     */
     @RequestMapping(value = "loginin",produces = "application/json")
     @ResponseBody
     public JsonInfo login(LoginSimpleModel loginSimpleModel,HttpSession session){

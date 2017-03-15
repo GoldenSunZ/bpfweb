@@ -6,7 +6,6 @@
         <div class="conyainer">
             <div class="col-sm-12">
                 <h1>展会记</h1>
-
                 <p>BPF展览和参与工业博览会的清单</p>
             </div>
         </div>
@@ -18,12 +17,10 @@
                     <div class="container">
                         <header class="entry-header">
                             <h1 class="product_title entry-title">${newsmodel.title!}</h1>
-
                             <p class="date" datetime="2013-03-05T09:00:08+00:00">${newsmodel.createDt?string('yyyy-MM-dd')!}</p>
                         </header>
                         <div class="entry-content">
                             <p>${newsmodel.comments!}</p>
-
                         </div>
                     </div>
                 </div>
@@ -33,7 +30,8 @@
                             <input type="text" id="s2" name="s" placeholder="">
                         </form>
                     </div>
-                    <div id="categories-2" class="sidebox widget widget_categories"><h6 class="light">分类</h6>
+                    <div id="categories-2" class="sidebox widget widget_categories">
+                        <h6 class="light">分类</h6>
                         <hr>
                         <ul>
                             <li class="cat-item-none">新闻公告</li>
@@ -45,63 +43,3 @@
     </section>
 </div>
 </@layout.page>
-
-<!--
-
-<style>
-    #title, #listnews {
-        font-size: x-large;
-        font-weight: bold;
-        color: black;
-    }
-</style>
-<div class="main-container">
-    <div class="news-insights-section">
-        <div class="conyainer">
-            <div class="col-sm-12">
-                <h1>展会记</h1>
-                <p>BPF展览和参与工业博览会的清单</p>
-            </div>
-        </div>
-    </div>
-    <section class="blog">
-        <div class="container">
-            <div class="row">
-<div class="col-md-9 news-1 news-section news-insights-section_non_gmo">
-    <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-10" id="listnews">新闻详情</div>
-        <hr>
-    </div>
-    <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">${newsmodel.picture!}</div>
-        <div class="col-md-5">
-            <div class="row" id="title">${newsmodel.title!}</div>
-            <br/>
-            <div class="row">${newsmodel.comments!}</div>
-            <hr>
-        </div>
-        <div class="col-md-1"></div>
-    </div>
-
-</div>
-<aside class="col-md-3 hidden-sm">
-    <div id="search-2" class="sidebox widget widget_search">
-        <form class="search" method="get" id="searchform" action="http://bluepacificflavors.com/">
-            <input type="text" id="s2" name="s" placeholder="">
-        </form>
-    </div>
-    <div id="categories-2" class="sidebox widget widget_categories"><h6 class="light">Categories</h6>
-        <hr>
-        <ul>
-            <li class="cat-item-none">No categories</li>
-        </ul>
-    </div>
-</aside>
-</div>
-</div>
-</section>
-</div>
-
--->

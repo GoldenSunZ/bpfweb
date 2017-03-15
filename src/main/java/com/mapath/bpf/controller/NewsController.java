@@ -25,17 +25,22 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class NewsController {
 
-     private Logger logger = LoggerFactory.getLogger(NewsController.class);
-
+    private Logger logger = LoggerFactory.getLogger(NewsController.class);
 
     @Autowired
     private NewsService newsService;
 
-    /*新闻主体页面*/
+    /**
+     * 新闻主体页面
+     * @param newsPage
+     * @param model
+     * @param session
+     * @return
+     */
     @RequestMapping("newsContent")
     public String getPageData(NewsPage newsPage, Model model, HttpSession session){
-        String user=(String) session.getAttribute("user");
-        if (StringUtils.isEmpty(user)){
+        String user=(String) session.getAttribute("user");  //获取session中的user
+        if (StringUtils.isEmpty(user)){      //user为空时，不能进入后台管理页面，跳到登陆页面
             return "login";
         }
         if(newsPage.getPageInfo() == null){
@@ -49,7 +54,12 @@ public class NewsController {
         return "newscontent";  //新闻主体页面
     }
 
-    /*保存编辑页面*/
+    /**
+     * 保存编辑页面
+     * @param newsPage
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "saveNewseditor", method = RequestMethod.POST)
     public String saveNews(NewsPage newsPage,Model model){
         if(newsPage.getPageInfo() == null){
@@ -67,7 +77,12 @@ public class NewsController {
         return "newscontent";
     }
 
-    /*保存新增的新闻*/
+    /**
+     * 保存新增的新闻
+     * @param newsPage
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "saveNewsMessages")
     public String saveNewsMessages(NewsPage newsPage,Model model){
         if(newsPage.getPageInfo() == null){
@@ -85,14 +100,21 @@ public class NewsController {
         return "newscontent";
     }
 
-    /*新增新闻，跳转controller*/
+    /**
+     * 新增新闻，跳转controller
+     * @return
+     */
     @RequestMapping(value = "newsMessages")
     public String newMessages(){
-
         return "newnews";
     }
 
-    /*ajax跳转删除数据*/
+    /**
+     * ajax跳转删除数据
+     * @param model
+     * @param newsModel
+     * @return
+     */
     @RequestMapping(value = "deletedata")
     @ResponseBody
     public NewsModel newsDeleteData(Model model,NewsModel newsModel){
@@ -102,7 +124,12 @@ public class NewsController {
         return deletenews;
     }
 
-    /*跳转到新闻编辑页面*/
+    /**
+     * 跳转到新闻编辑页面
+     * @param id
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "newsEditor/{id}")
     public String newsEditor(@PathVariable String id, Model model){
         NewsModel newsModel=newsService.newsfindById(id); //通过id找到对应的newsModel对象
@@ -112,13 +139,11 @@ public class NewsController {
         return "newseditor";
     }
 
-
     @RequestMapping(value = "newsList")
     public String newsList(){
         logger.info("enter news page");
         return "news";
     }
-
 }
 
 

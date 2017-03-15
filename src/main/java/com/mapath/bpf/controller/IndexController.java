@@ -43,35 +43,35 @@ public class IndexController {
 
     @RequestMapping(value = {"index.html","/"})
     public String indexPage(){
-
         return "index";
     }
 
     @RequestMapping(value = {"applications.html"})
     public String applicationsPage(){
-
         return "applications";
     }
 
     @RequestMapping(value = {"vision.html"})
     public String visionPage(){
-
         return "vision";
     }
 
     @RequestMapping(value = {"expertise.html"})
     public String expertisePage(){
-
         return "expertise";
     }
 
     @RequestMapping(value = {"transparency.html"})
     public String transparencyPage(){
-
         return "transparency";
     }
 
-    /*跳转到新闻展示页面*/
+    /**
+     * 跳转到新闻展示页面
+     * @param newsPage
+     * @param model
+     * @return
+     */
     @RequestMapping(value = {"news.html"})
     public String newsPage(NewsPage newsPage, Model model){
         if(newsPage.getPageInfo() == null){
@@ -89,11 +89,10 @@ public class IndexController {
             logger.info("图片是："+img);
             img = "<img class=\"attachment-post-thumbnail wp-post-image\" style=\"visibility: visible; opacity: 1;height:233px;\" src=\""+img;
             String comment=picCutUtil.delHTMLTag(comments);
-            /*设置新闻列表页面显示新闻的字数*/
             comment=comment.replace(" ", ""); //去除文本的空白
             int length=comment.length();
             String ment="";
-            if (length>250){
+            if (length>250){   //设置新闻列表页面显示新闻的字数
                  ment=comment.substring(0,250)+"...";
             }else{
                  ment=comment.substring(0,length);
@@ -102,11 +101,17 @@ public class IndexController {
             mo.setPicture(img);  //设置图片值给picture
             mo.setComments(ment);
         }
+        model.addAttribute("keyword",newsPage.getKeyWord());
         model.addAttribute("result",dataGrid);
         return "news";
     }
 
-    /*跳转到新闻详细页面（单条显示详情页面）*/
+    /**
+     * 跳转到新闻详细页面（单条显示详情页面）
+     * @param newsModel
+     * @param model
+     * @return
+     */
     @RequestMapping(value ="newsDetail")
     public String newsDetailPage(NewsModel newsModel,Model model){
         NewsModel nem=newsService.newsfindById(newsModel.getId());
@@ -116,7 +121,6 @@ public class IndexController {
 
     @RequestMapping(value = {"contact.html"})
     public String contactPage(){
-
         return "contact";
     }
 
@@ -133,7 +137,6 @@ public class IndexController {
         model.put("phoneNumber",reqSimpleModel.getPhoneNumber());
         model.put("projectContext",reqSimpleModel.getProjectContext());
         model.put("companyName",reqSimpleModel.getCompanyName());
-
         try {
             Template t = configuration.getTemplate("mailtemplates/email-html.ftl");
             String content = FreeMarkerTemplateUtils.processTemplateIntoString(t, model);
@@ -150,7 +153,6 @@ public class IndexController {
             info.setMessage("索取失败!!");
             info.setCode(JsonInfo.ERROR);
         }
-
         return info;
     }
 }

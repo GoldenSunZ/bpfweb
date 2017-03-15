@@ -3,16 +3,12 @@ package com.mapath.bpf.mapper;
 import com.mapath.bpf.model.NewsModel;
 import com.mapath.bpf.model.NewsPage;
 
-import java.util.Date;
 import java.util.List;
 
 /**
  * Created by zhouxiaobo on 2017/2/28.
  */
 public interface NewsMapper {
-
-    //返回总数
-    int count();
 
     /**
      * 将标题或者内容的信息查询

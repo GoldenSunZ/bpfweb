@@ -7,7 +7,6 @@ import com.mapath.bpf.service.NewsService;
 import com.mapath.bpf.utils.DateUtil;
 import com.mapath.bpf.utils.UUID;
 import com.mapath.util.pagination.model.DataGrid;
-import com.mapath.util.pagination.model.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,7 +29,6 @@ public class NewsServiceImpl implements NewsService {
         return dataGrid;
     }
 
-
     @Override
     public NewsModel newsfindById(String id) {
         NewsModel newsmodel=newsmapper.findById(id);
@@ -49,6 +47,7 @@ public class NewsServiceImpl implements NewsService {
             newsmapper.save(newsModel);
         }
     }
+
     @Override
     /**
      * 将用户删除的信息也更新显示出来.

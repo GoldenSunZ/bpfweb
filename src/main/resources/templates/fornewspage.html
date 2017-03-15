@@ -41,14 +41,9 @@
 
         if(jQuery("#pageNo").val() > maxPageShow){
             jQuery(".pagination").find("li").each(function(i){
-                //alert("need add " + jQuery(this).find("a").html());
-                //alert(jQuery.isNumeric(jQuery(this).find("a").html()));
 
                 if(jQuery.isNumeric(jQuery(this).find("a").html())){
                     jQuery(this).find("a").html(Number(jQuery(this).find("a").html()) + 1);
-//                    if(jQuery(this).find("a").html() == jQuery('#pageNo').val()){
-//                        jQuery(this).addClass("active");
-//                    }
                 }
             });
         }
@@ -56,8 +51,6 @@
         jQuery(".pagination").on('click','li a',function(){
             console.log(jQuery(this).html());
             if(!jQuery(this).parent().hasClass("disabled")){
-                //console.log(jQuery(this).find("span").html());
-                //console.log(jQuery(this).find("span").attr('class'));
                 if(jQuery(this).find("span").attr('class') == "pre"){
                     jQuery("#pageNo").val(Number(jQuery("#pageNo").val())-1);
                 }else if(jQuery(this).find("span").attr('class') == "next"){
@@ -81,10 +74,21 @@
             jQuery('#pagination-form').submit();
         });
 
+        /**
+         * 判断页面是否查询出新闻（为空则表示没有新闻内容，隐藏上下页按钮）
+         */
+        if(""==jQuery(".hid").val() || null==jQuery(".hid").val()){
+            jQuery("#prepage").addClass("hidden");
+            jQuery("#nextpage").addClass("hidden");
+        }
+
+        /**
+         * 下面是判断上下页 按钮失效的
+         */
         if(jQuery('#totalPage').val() == jQuery('#pageNo').val()){
-            //last.addClass("disabled");
             last.unbind();
         }
+
         if(1 == jQuery('#pageNo').val()){
             first.unbind();
         }

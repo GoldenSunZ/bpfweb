@@ -102,7 +102,8 @@
         <div class="col-lg-4" id="logo"><a href="${cpath}/index.html"><img src="${cpath}/images/bpf-farm-flavor-logo.png"></a></div>
         <div class="col-lg-4"></div>
         <div class="col-lg-3"></div>
-        <div class="col-lg-1" style="color:dodgerblue;padding-top: 20px">欢迎<span class="username">${user!}</span></div>
+        <div class="col-lg-1" style="color:dodgerblue;padding-top: 20px">欢迎<span class="username">${user!}</span>
+        </div>
     </div>
     <!--主体部分-->
     <div class="row" id="content">
@@ -123,11 +124,11 @@
             <div class="row" id="first">
                 <div class="col-lg-3"></div>
                 <form action="newsContent" method="post">
-                <div class="col-lg-5">
-                    关键字:<input type="text" name="keyWord" value="${keyWord!}" class="keyword" placeholder="查询关键字">
-                    <button type="submit" class="query">查询</button>
-                </div>
-                <div class="col-lg-4"></div>
+                    <div class="col-lg-5">
+                        关键字:<input type="text" name="keyWord" value="${keyWord!}" class="keyword" placeholder="查询关键字">
+                        <button type="submit" class="query">查询</button>
+                    </div>
+                    <div class="col-lg-4"></div>
                 </form>
             </div>
             <!--右边第二行(表结构)-->
@@ -155,7 +156,7 @@
                         </#list>
                         <#else>
                             <tr>
-                                <td>没有符合的数据</td>
+                                <td colspan="5">没有符合的数据</td>
                             </tr>
                     </#if>
                 </table>
@@ -165,6 +166,5 @@
         </div>
     </div>
 </div>
-
 </body>
 </html>
